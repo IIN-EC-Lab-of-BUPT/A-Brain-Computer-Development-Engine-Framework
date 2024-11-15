@@ -1,0 +1,49 @@
+zookeeper:
+#  address: 10.101.170.35:2181
+  address: 127.0.0.1:2181
+  #address: 211.159.174.75:60001
+  session:
+    timeout: 5000
+  connection:
+    timeout: 5000
+grpc:
+  client:
+    __name__:
+      negotiationType: PLAINTEXT
+    readLocalDataService:
+      # gRPC服务端地址
+#      address: 'static://127.0.0.1:50053'
+#      address: 'static://10.112.233.242.:50053'
+      address: 'static://localhost.:50053'
+#      enableKeepAlive: true
+#      keepAliveWithoutCalls: true
+      negotiationType: plaintext
+#      maxInboundMessageSize: 1089600010
+  server:
+    host: localhost
+#
+#    port: 9000
+    port: 9001
+    max-message-size: 1089600010
+kafka:
+  producer:
+#    bootstrap-servers: server:9092
+#    bootstrap-servers: 10.101.170.35:9092
+    bootstrap-servers: 127.0.0.1:9092
+    #bootstrap-servers: 211.159.174.75:60000
+    key-serializer: org.apache.kafka.common.serialization.StringSerializer
+  consumer:
+    max-poll-records: "1"
+    auto-offset-reset: latest
+    bootstrap-servers: 127.0.0.1:9092
+#    bootstrap-servers: 10.101.170.35:9092
+    #    bootstrap-servers: 211.159.174.75:60000
+    key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  topicOperator:
+    bootstrap-servers: 127.0.0.1:9092
+#    bootstrap-servers: 10.101.170.35:9092
+    #    bootstrap-servers: 211.159.174.75:60000
+server:
+  port: 8081
+
+
