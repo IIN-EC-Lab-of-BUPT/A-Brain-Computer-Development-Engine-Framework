@@ -1,0 +1,78 @@
+syntax = "proto3";
+import "Common/protobuf/BaseDataClassMessage.proto";
+import "Common/protobuf/CommonMessage.proto";
+
+
+package Algorithm.api.protobuf;
+
+
+
+// 定义数据消息类型，包含数据源标识、时间戳和数据包
+message AlgorithmDataMessage {
+  string sourceLabel = 1;  // 标记数据源ID，用于区分不同数据源的响应
+  float timestamp = 2;  // 时间戳，记录发送数据包的时间
+
+  oneof package {  // 数据包的类型之一
+    Common.protobuf.DevicePackage devicePackage= 3;
+    Common.protobuf.EventPackage eventPackage = 4;
+    Common.protobuf.DataPackage dataPackage = 5;
+    Common.protobuf.ImpedancePackage impedancePackage = 6;
+    Common.protobuf.InformationPackage informationPackage = 7;
+    Common.protobuf.ControlPackage controlPackage = 8;
+  }
+}
+
+
+// 定义报告消息，包含报告结果、报告源信息、结束标志和时间戳
+message AlgorithmReportMessage {
+  float timestamp = 1;
+  oneof package {
+    Common.protobuf.ResultPackage resultPackage = 2;
+    Common.protobuf.ControlPackage controlPackage = 3;
+    Common.protobuf.ExceptionPackage exceptionPackage = 4;
+  }
+}
+
+enum AlgorithmStatusEnum{
+    INITIALIZING = 0;    // 初始化过程状态
+    READY = 1;   // 就绪状态
+    STARTING = 2;    // 启动过程状态
+    RUNNING = 3;  // 运行状态
+    STOPPING = 4;    // 停止过程状态
+    STOPPED = 5;     // 停止状态
+    ERROR = 6;      // 错误状态
+}
+
+message AlgorithmStatusMessage{
+  AlgorithmStatusEnum status = 1;
+}
+
+// 定义服务控制服务，包括初始化配置、更新配置、获取配置、启动和关闭操作
+service AlgorithmRPCServiceControl{
+  // 发送配置，接收配置字符串并返回空消息，配置字符串通常采用YAML格式
+  // 发送内容仅包含一个字段:
+  //  'challenge_to_algorithm_config':
+  //      challeng_config.yaml中对应字段的配置信息
+  rpc sendConfig(Common.protobuf.StringMessage) returns (Common.protobuf.EmptyMessage);
+
+  // 获取配置，返回配置字符串，配置字符串通常采用YAML格式
+  // 返回内容包括两个主要字段
+  //   'sources':
+  //      source_label_1:
+  //          None
+  //      source_label_2:
+  //          None
+  //      ……
+  //  'challenge_to_algorithm_config':
+  //      challeng_config.yaml中对应字段的配置信息
+  rpc getConfig(Common.protobuf.EmptyMessage) returns (Common.protobuf.StringMessage);
+
+  // 关闭服务，返回关闭成功与否的布尔值（只应用在需要彻底关闭服务的模式下，通常情况下系统服务由框架管理，不需要关闭)
+  rpc shutdown(Common.protobuf.EmptyMessage) returns (Common.protobuf.BooleanMessage);
+}
+
+// 定义数据连接服务，支持双向流式传输数据消息和报告消息
+service AlgorithmRPCDataConnect{
+  // 建立连接，接收流式数据消息并返回流式报告消息
+  rpc connect(stream AlgorithmDataMessage) returns (stream AlgorithmReportMessage);
+}

@@ -1,0 +1,3 @@
+
+在bcicompetitionframework根目录下
+python -m grpc_tools.protoc -I . --python_out=. --grpc_python_out=. ./Algorithm/api/proto/AlgorithmRPCService.proto

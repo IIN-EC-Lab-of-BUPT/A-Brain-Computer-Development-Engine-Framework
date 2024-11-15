@@ -1,0 +1,54 @@
+// example.proto
+syntax = "proto3";
+
+//java_multiple_files 是一个用于指定生成的 Java 代码是否应该放在单个文件中的选项。
+option java_multiple_files = true;
+option java_package = "com.coreplantform.daemonproceed.controller.grpc";
+option java_outer_classname = "ConnectManagerProto";
+
+
+package com.coreplantform.daemonproceed.controller.grpc;
+
+service ConnectManagerService{
+
+  //2.4.2.2.关闭
+  rpc ShutDown(ShutDownRequest) returns(ShutDownResponse);
+  //监听请求组件停止
+  rpc AddListenerOnRequestComponentStop(AddListenerOnRequestComponentStopRequest) returns(stream AddListenerOnRequestComponentStopResponse);
+  //确认请求组件停止
+  rpc ConfirmRequestComponentStop(ConfirmRequestComponentStopRequest) returns(ConfirmRequestComponentStopResponse);
+  //取消监听请求组件停止
+  rpc CancelAddListenerOnRequestComponentStop(CancelAddListenerOnRequestComponentStopRequest) returns(CancelAddListenerOnRequestComponentStopResponse);
+}
+//2.4.2.2.关闭
+message ShutDownRequest{
+  string request=1;
+}
+//2.4.2.2.关闭
+message ShutDownResponse{
+  string response=1;
+}
+
+message AddListenerOnRequestComponentStopRequest{
+  string request=1;
+}
+message AddListenerOnRequestComponentStopResponse{
+  string response=1;
+}
+
+
+message ConfirmRequestComponentStopRequest{
+  string request=1;
+}
+message ConfirmRequestComponentStopResponse{
+  string response=1;
+}
+
+
+
+message CancelAddListenerOnRequestComponentStopRequest{
+  string request=1;
+}
+message CancelAddListenerOnRequestComponentStopResponse{
+  string response=1;
+}

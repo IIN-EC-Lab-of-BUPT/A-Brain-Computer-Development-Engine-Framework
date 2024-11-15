@@ -1,0 +1,30 @@
+2024-08-16 19:12:01.845 - componentLogger - Launcher.startup - ERROR - 组件注册运行发生异常:Failed to bind to address [::]:8972; set GRPC_VERBOSITY=debug environment variable to see detailed error message.
+Traceback (most recent call last):
+  File "C:\Users\st1\Desktop\2024bci_group3\2024bci_group2\2024bci_group2\Collector\ApplicationFramework\launcher\Launcher.py", line 89, in startup
+    await self.__application_task
+  File "C:\Users\st1\Desktop\2024bci_group3\2024bci_group2\2024bci_group2\Collector\Collector/application\ApplicationImplement.py", line 158, in run
+    await self.__rpc_controller.startup()
+  File "C:\Users\st1\Desktop\2024bci_group3\2024bci_group2\2024bci_group2\Collector\Collector\control\RPCController.py", line 33, in startup
+    await self.__rpc_server.startup()
+  File "C:\Users\st1\Desktop\2024bci_group3\2024bci_group2\2024bci_group2\Collector\Collector\control\GrpcServer.py", line 43, in startup
+    self.__server.add_insecure_port(listen_addr)
+  File "C:\Users\st1\AppData\Local\Programs\Python\Python310\lib\site-packages\grpc\aio\_server.py", line 102, in add_insecure_port
+    return _common.validate_port_binding_result(
+  File "C:\Users\st1\AppData\Local\Programs\Python\Python310\lib\site-packages\grpc\_common.py", line 181, in validate_port_binding_result
+    raise RuntimeError(_ERROR_MESSAGE_PORT_BINDING_FAILED % address)
+RuntimeError: Failed to bind to address [::]:8972; set GRPC_VERBOSITY=debug environment variable to see detailed error message.
+2024-08-16 19:12:25.722 - componentLogger - Launcher.startup - ERROR - 组件注册运行发生异常:Failed to bind to address [::]:8972; set GRPC_VERBOSITY=debug environment variable to see detailed error message.
+Traceback (most recent call last):
+  File "C:\Users\st1\Desktop\2024bci_group3\2024bci_group2\2024bci_group2\Collector\ApplicationFramework\launcher\Launcher.py", line 89, in startup
+    await self.__application_task
+  File "C:\Users\st1\Desktop\2024bci_group3\2024bci_group2\2024bci_group2\Collector\Collector/application\ApplicationImplement.py", line 158, in run
+    await self.__rpc_controller.startup()
+  File "C:\Users\st1\Desktop\2024bci_group3\2024bci_group2\2024bci_group2\Collector\Collector\control\RPCController.py", line 33, in startup
+    await self.__rpc_server.startup()
+  File "C:\Users\st1\Desktop\2024bci_group3\2024bci_group2\2024bci_group2\Collector\Collector\control\GrpcServer.py", line 43, in startup
+    self.__server.add_insecure_port(listen_addr)
+  File "C:\Users\st1\AppData\Local\Programs\Python\Python310\lib\site-packages\grpc\aio\_server.py", line 102, in add_insecure_port
+    return _common.validate_port_binding_result(
+  File "C:\Users\st1\AppData\Local\Programs\Python\Python310\lib\site-packages\grpc\_common.py", line 181, in validate_port_binding_result
+    raise RuntimeError(_ERROR_MESSAGE_PORT_BINDING_FAILED % address)
+RuntimeError: Failed to bind to address [::]:8972; set GRPC_VERBOSITY=debug environment variable to see detailed error message.

@@ -1,0 +1,18 @@
+# 初始化配置信息
+# 初始化配置信息
+component:
+  # 组件ID遵循如下规则：
+  # 1.如果在配置文件中写入，则优先使用配置文件定义的ID
+  # 2.如果配置文件中未写入，则检查环境变量中COMPONENT_ID字段，如果存在则使用环境变量中定义的ID
+  # 3.如果环境变量中未找到COMPONENT_ID字段，则根据component_type字段自动生成component_type+随机uuid作为component_id
+  component_id: central_controller
+  component_type: CONTROLLER # 可自定义，比赛中限制为 PROCESSOR/STIMULATOR/COLLECTOR/MONITOR/CONTROLLER/DATASTORAGE/DATABASE
+  component_info:
+    ui_config:
+      rpc_address: '[::]:7963'
+      auto_start: true # 是否自动启动UI true/false
+    container_control_config:
+      processor_container_control_address: '10.101.169.213:88'
+      challenge_id: 1 # 挑战赛ID，1对应ecog赛题，2对应mi赛题，3对应元宇宙Generation
+      start_processor_container: 'task/execAllTaskForFinals'
+      stop_processor_container: 'task/stopAllTaskForFinals'

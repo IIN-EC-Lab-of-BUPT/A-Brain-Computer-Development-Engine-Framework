@@ -1,0 +1,8 @@
+python -m grpc_tools.protoc -I . --python_out=. --grpc_python_out=. ./Collector/api/protobuf/CollectorControl.proto
+python -m grpc_tools.protoc -I . --python_out=. --grpc_python_out=. ./Collector/api/protobuf/CollectorControl.proto
+
+
+修改内容
+
+ExternalTriggerService_pb2_grpc.py
+import Collector.api.protobuf.out.ExternalTriggerService_pb2 as ExternalTriggerService__pb2

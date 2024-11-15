@@ -1,0 +1,29 @@
+# 初始化配置信息
+component:
+  # 组件ID遵循如下规则：
+  # 1.如果在配置文件中写入，则优先使用配置文件定义的ID
+  # 2.如果配置文件中未写入，则检查环境变量中COMPONENT_ID字段，如果存在则使用环境变量中定义的ID
+  # 3.如果环境变量中未找到COMPONENT_ID字段，则根据component_type字段自动生成component_type+随机uuid作为component_id
+  component_id: team_0.group_1
+  component_type: PROCESSOR # 可自定义，比赛中限制为 PROCESSOR/STIMULATOR/COLLECTOR/MONITOR/CONTROLLER/DATASTORAGE/DATABASE
+  component_info:
+    team_name: null
+    algorithm_number: null
+    ip: null
+    # 所有预定义message,message_key(对应于MessageKeyEnum.REPROT.value): 默认topic
+    message:
+      # 结果报告
+      report: null
+
+    algorithm_connection:
+      address: 'localhost:9981'
+      max_connection_timeout: 600
+
+    challenge:
+      challenge_class_file: Task/challenge/SSVEP/ChallengeSSVEP.py
+      challenge_class_name: ChallengeSSVEP
+
+    strategy:
+      # 策略相关配置信息
+      strategy_class_file: Task/strategies/final_mode/FinalModeStrategy.py
+      strategy_class_name: FinalModeStrategy

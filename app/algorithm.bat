@@ -1,0 +1,1 @@
+start cmd /k "cd .\Algorithm && ..\..\Python310\python.exe -m Algorithm.main"

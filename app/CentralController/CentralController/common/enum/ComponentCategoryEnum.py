@@ -1,0 +1,12 @@
+from enum import Enum
+
+
+class ComponentCategoryEnum(Enum):
+    PROCESSOR = 'PROCESSOR'
+    STIMULATOR = 'STIMULATOR'
+    COLLECTOR = 'COLLECTOR'
+    MONITOR = 'MONITOR'
+    CONTROLLER = 'CONTROLLER'
+    DATASTORAGE = 'DATASTORAGE'
+    DATABASE = 'DATABASE'
+    OTHER = 'OTHER'

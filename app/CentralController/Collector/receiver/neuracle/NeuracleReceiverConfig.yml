@@ -1,0 +1,19 @@
+connection:
+  connect_address: "127.0.0.1:8712"
+  max_connection_timeout: 5 # 最长连接等待时间，如果设置为0，则表示不限制
+
+send_config:
+  send_package_points: 40 # 发送数据包点数 （硬件赛写死40ms一包）
+
+device_info:
+  channel_number: 8 # 导联数动态 >=2
+  sample_rate: 1000 # 采样率，硬件赛写死（250Hz）
+  channel_label:
+    POz:
+    PO3:
+    PO4:
+    PO5:
+    PO6:
+    Oz:
+    O1:
+    O2:

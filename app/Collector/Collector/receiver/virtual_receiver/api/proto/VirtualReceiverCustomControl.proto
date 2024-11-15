@@ -1,0 +1,13 @@
+syntax = "proto3";
+import "Common/protobuf/CommonMessage.proto";
+package Collector.receiver.virtual_receiver.api.protobuf;
+
+
+
+//自定义控制信息，转成二进制流存入CustomControlMessage中
+message VirtualReceiverCustomControlMessage {
+  oneof package {
+    Common.protobuf.InformationPackage virtualReceiverStartSendingPointMessage = 1;
+  }
+}
+

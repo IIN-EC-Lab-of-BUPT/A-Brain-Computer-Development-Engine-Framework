@@ -1,0 +1,1 @@
+start cmd /k "cd .\Collector && ..\..\Python310\python.exe -m ApplicationFramework.main""

@@ -1,0 +1,27 @@
+syntax = "proto3";
+option java_multiple_files = true;
+option java_package = "com.coreplantform.EEGDataPersistence.api.out";
+option java_outer_classname = "EEGPersistenceControl";
+package EEGDataPersistence.api.protobuf;
+
+//开始接收指令
+message StartReceiveEEGControlMessage {
+
+}
+//停止接收指令
+message StopReceiveEEGControlMessage {
+
+}
+
+//应用退出指令
+message EEGPersistenceExitControlMessage {
+
+}
+
+message EEGPersistenceControlMessage {
+  oneof package {
+    StartReceiveEEGControlMessage  startReceiveEEGControlMessage= 1;
+    StopReceiveEEGControlMessage stopReceiveEEGControlMessage = 2;
+    EEGPersistenceExitControlMessage eegPersistenceExitControlMessage = 3;
+  }
+}

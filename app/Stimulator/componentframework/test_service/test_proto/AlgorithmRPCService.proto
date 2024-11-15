@@ -1,0 +1,64 @@
+syntax = "proto3";
+import "BaseDataClassMessage.proto";
+import "CommonMessage.proto";
+
+
+package BCICompetitionFramework.Algorithm;
+
+
+
+// 定义数据消息类型，包含数据源标识、时间戳和数据包
+message AlgorithmDataMessage {
+  string sourceLabel = 1;  // 标记数据源ID，用于区分不同数据源的响应
+  float timestamp = 2;  // 时间戳，记录发送数据包的时间
+
+  oneof package {  // 数据包的类型之一
+    DevicePackage devicePackage= 3;
+    EventPackage eventPackage = 4;
+    DataPackage dataPackage = 5;
+    ImpedancePackage impedancePackage = 6;
+    InformationPackage informationPackage = 7;
+    ControlPackage controlPackage = 8;
+  }
+}
+
+
+// 定义报告消息，包含报告结果、报告源信息、结束标志和时间戳
+message AlgorithmReportMessage {
+  float timestamp = 1;
+  oneof package {
+    ResultPackage resultPackage = 2;
+    ControlPackage controlPackage = 3;
+    ExceptionPackage exceptionPackage = 4;
+  }
+}
+
+// 定义服务控制服务，包括初始化配置、更新配置、获取配置、启动和关闭操作
+service AlgorithmRPCServiceControl{
+  // 发送配置，接收配置字符串并返回空消息，配置字符串通常采用YAML格式
+  // 发送内容仅包含一个字段:
+  //  'challenge_to_algorithm_config':
+  //      challeng_config.yaml中对应字段的配置信息
+  rpc sendConfig(StringMessage) returns (EmptyMessage);
+
+  // 获取配置，返回配置字符串，配置字符串通常采用YAML格式
+  // 返回内容包括两个主要字段
+  //   'sources':
+  //      source_label_1:
+  //          None
+  //      source_label_2:
+  //          None
+  //      ……
+  //  'challenge_to_algorithm_config':
+  //      challeng_config.yaml中对应字段的配置信息
+  rpc getConfig(EmptyMessage) returns (StringMessage);
+
+  // 关闭服务，返回关闭成功与否的布尔值（只应用在需要彻底关闭服务的模式下，通常情况下系统服务由框架管理，不需要关闭)
+  rpc shutdown(EmptyMessage) returns (BooleanMessage);
+}
+
+// 定义数据连接服务，支持双向流式传输数据消息和报告消息
+service AlgorithmRPCDataConnect{
+  // 建立连接，接收流式数据消息并返回流式报告消息
+  rpc connect(stream AlgorithmDataMessage) returns (stream AlgorithmReportMessage);
+}

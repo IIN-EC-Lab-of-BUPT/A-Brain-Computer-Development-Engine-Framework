@@ -1,0 +1,34 @@
+# 初始化配置信息
+component_info:
+  component_id: stimulator_group_1
+  component_type: STIMULATOR # 可自定义，比赛中限制为 PROCESSOR/STIMULATOR/COLLECTOR/MONITOR/CONTROLLER/DATASTORAGE/DATABASE
+  external_trigger_address: 'localhost:1017'
+
+  paradigm:
+    paradigm_class_file: Stimulator/Paradigm/ssvep/ssvep.py
+    paradigm_class_name: SSVEP
+
+  trigger_sender:
+    trigger_sender_class_file: Stimulator/facade/ExternalTriggerSend.py
+    trigger_sender_class_name: ExternalTriggerSend
+#    trigger_sender_class_file: Stimulator/facade/TriggerSend/Neuracle/NeuracleTriggerSystemImplement.py
+#    trigger_sender_class_name: NeuracleTriggerSystemImplement
+    #Neuracle需要配置triggerBoxHandle,port参数
+    #串口请输入'serial',并口请输入'parallel',输入为字符串格式
+    #串口/并口所对应的端口,如:串口输入'COM3'(字符串格式),并口输入32760
+
+    #Neuroscan需要配置port,neuroscan并口端口号,如:16376
+
+    triggerBoxHandle: 'serial'
+    port: 'COM4'
+
+
+  message:
+    # 默认使用message_key:topic形式，如果topic为空，则由中控服务器分配
+    external_trigger: null
+    command_control: null
+    feedback_control: null
+    random_number_seeds: null
+    information: null
+
+

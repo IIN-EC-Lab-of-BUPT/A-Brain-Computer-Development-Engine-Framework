@@ -1,0 +1,1 @@
+start cmd /k "cd ..\proceed\task && ..\..\jdk8\bin\java -jar task.jar"

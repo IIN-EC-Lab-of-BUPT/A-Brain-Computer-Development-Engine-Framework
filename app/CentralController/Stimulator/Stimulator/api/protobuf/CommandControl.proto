@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package BCICompetitionFramework.StimulationSystem.api.protobuf;
+
+
+message StartStimulationControlMessage {
+
+}
+
+message StopStimulationControlMessage {
+
+}
+message QuitStimulationControlMessage {
+
+}
+
+message StimulationControlMessage {
+  oneof package {
+    StartStimulationControlMessage start_stimulation_control_message = 1;
+    StopStimulationControlMessage stop_stimulation_control_message = 2;
+    QuitStimulationControlMessage quit_stimulation_control_message = 3;
+  }
+}

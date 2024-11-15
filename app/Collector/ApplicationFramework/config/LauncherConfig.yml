@@ -1,0 +1,5 @@
+version: 1
+
+application:
+  application_class_file: Collector/application/ApplicationImplement.py
+  application_class_name: ApplicationImplement

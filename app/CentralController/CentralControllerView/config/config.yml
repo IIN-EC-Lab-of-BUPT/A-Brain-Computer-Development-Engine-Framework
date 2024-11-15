@@ -1,0 +1,2 @@
+ui_config:
+  rpc_address: 'localhost:7963'

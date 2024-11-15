@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package Collector.api.protobuf;
+
+
+message StartDataSendingControlMessage {
+
+}
+
+message StopDataSendingControlMessage {
+
+}
+
+message SendDeviceInfoControlMessage {
+
+}
+
+message SendImpedanceControlMessage {
+
+}
+
+
+message ApplicationExitControlMessage {
+
+}
+
+message CollectorControlMessage {
+  oneof package {
+    ApplicationExitControlMessage applicationExitControlMessage = 1;
+    StartDataSendingControlMessage startDataSendingControlMessage = 2;
+    StopDataSendingControlMessage stopDataSendingControlMessage = 3;
+    SendDeviceInfoControlMessage sendDeviceInfoControlMessage = 4;
+    SendImpedanceControlMessage sendImpedanceControlMessage = 5;
+  }
+}

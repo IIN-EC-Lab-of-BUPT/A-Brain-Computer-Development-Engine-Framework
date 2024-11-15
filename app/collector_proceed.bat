@@ -1,0 +1,1 @@
+start cmd /k "cd ..\proceed\collector && ..\..\jdk8\bin\java -jar collector.jar"

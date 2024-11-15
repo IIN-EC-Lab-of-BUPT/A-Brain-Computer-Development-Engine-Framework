@@ -1,0 +1,114 @@
+syntax = "proto3";
+
+package BCICompetitionFramework;
+
+// 数据类型枚举
+enum DataType{
+  UNKNOWN = 0;
+  EEG = 1;
+  EYETRACKING = 2;
+  MEG = 3;
+  MRI = 4;
+  ECOG = 5;
+  SPIKE =6;
+  EMG = 7;
+  ECG = 8;
+  NIRS = 9;
+}
+
+enum BaseDataMessageClass{
+  EMPTY = 0;
+  BOOLEAN = 1;
+  STRING = 2;
+  BINARY = 3;
+  FLOATLIST = 4;
+  DOUBLELIST = 5;
+  INT32LIST = 6;
+  INT64LIST = 7;
+  STRINGLIST = 8;
+}
+
+//DataResponse中设备报文
+message DevicePackage{
+  DataType dataType = 1;
+  uint32 channelNumber = 2;
+  float sampleRate = 3;
+  repeated string channelLabel = 4;
+  string otherInformation = 5; //其他配置信息,为yaml格式，可通过yaml工具转换为dict
+}
+
+//DataResponse中事件报文
+message EventPackage{
+  repeated float eventPosition = 1; //事件位置
+  repeated string eventData = 2; //事件内容
+}
+//DataResponse中数据报文
+message DataPackage {
+  float dataPosition = 1; //本次响应数据启始位置
+  bytes data = 2; //本次响应数据内容,为二进制格式，内容通常为BaseDataClass所定义的数据结构
+  BaseDataMessageClass dataMessageClass = 3;  //数据类型定义，指明传输的数据为何种数据类型
+}
+//DataResponse阻抗报文
+message ImpedancePackage{
+  repeated float channelImpedance = 1;
+}
+
+//DataResponse 信息报文
+message InformationPackage{
+  string subjectId = 1; //被试者Id，可以是字符串
+  string blockId = 2; //blockId，也可以是字符串
+}
+
+message ControlPackage{
+  bool endFlag = 1; //系统关闭通知，收到此包且endFlag为true时，系统关闭
+}
+
+message DataMessage {
+  // 定义数据订阅服务的响应消息结构体
+  oneof package {
+    DevicePackage devicePackage= 1;
+    EventPackage eventPackage = 2;
+    DataPackage dataPackage = 3;
+    ImpedancePackage impedancePackage = 4;
+    InformationPackage informationPackage = 5;
+    ControlPackage controlPackage = 6;
+  }
+}
+
+
+message ReportSourceInformation {
+  // 定义结果报告服务的请求消息结构体
+  string sourceLabel = 1;  //标记数据源ID，多数据源时用于区分来自不同数据源的响应
+  float position = 2;  //报告时读取对应源的位置
+}
+
+//结果报告报文
+message ResultPackage{
+  bytes result = 1; // 报告结果,为二进制格式，内容通常为BaseDataClass所定义的数据结构
+  BaseDataMessageClass resultMessageClass = 2; // 报告结果类型，指明报告的结果为何种数据类型
+  repeated ReportSourceInformation reportSourceInformation =3; // 报告时所用源信息
+}
+
+message ScorePackage{
+  float score = 1;
+  float trialTime = 2;
+  string trialId = 3;
+  string blockId = 4;
+  string subjectId = 5;
+}
+
+message ExceptionPackage{
+  string exceptionType = 1;
+  string exceptionMessage = 2;
+  repeated string exceptionStackTrace = 3;
+}
+
+message ReportMessage {
+  // 定义数据订阅服务的响应消息结构体
+  oneof package {
+    ResultPackage resultPackage= 1;
+    ScorePackage scorePackage = 2;
+    ControlPackage controlPackage = 3;
+    ExceptionPackage exceptionPackage = 4;
+  }
+}

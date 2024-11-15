@@ -1,0 +1,128 @@
+// example.proto
+syntax = "proto3";
+
+//java_multiple_files 是一个用于指定生成的 Java 代码是否应该放在单个文件中的选项。
+option java_multiple_files = true;
+option java_package = "com.coreplantform.daemonproceed.controller.grpc";
+option java_outer_classname = "MessageManagerProto";
+
+package com.coreplantform.daemonproceed.controller.grpc;
+
+service MessageManagerService{
+  //  2.4.1.	话题绑定
+  rpc BindMessage(BindMessageRequest) returns(BindMessageResponse);
+  //  2.4.2.	话题绑定监听
+  rpc AddListenerOnBindMessage(AddListenerOnBindMessageRequest) returns(stream AddListenerOnBindMessageResponse);
+  //  2.4.3.	中控确认话题绑定
+  rpc ConfirmBindMessage(ConfirmBindMessageRequest) returns(ConfirmBindMessageResponse);
+  //  2.4.4.	通过message_key获取topic
+  rpc GetTopicByMessageKey(GetTopicByMessageKeyRequest) returns(GetTopicByMessageKeyResponse);
+  //  2.4.5.	话题订阅
+  rpc SubscribeTopic(SubscribeTopicRequest) returns (stream SubscribeTopicResponse);
+  //  2.4.6.	消息发送
+  rpc SendMessage(stream SendMessageRequest) returns(SendMessageResponse);
+  //  2.4.7. 单次信息结果 发送
+  rpc SendResult(SendResultRequest) returns(SendResultResponse);
+  //  2.4.8.	话题取消订阅
+  rpc UnsubscribeTopic(UnsubscribeTopicRequest) returns(UnsubscribeTopicResponse);
+  //  2.4.9.	取消话题绑定监听
+  rpc CancelAddListenerOnBindMessage(CancelAddListenerOnBindMessageRequest) returns(CancelAddListenerOnBindMessageResponse);
+
+}
+
+//  2.4.1.	话题绑定
+message BindMessageRequest{
+  string serviceID=1;
+  string messageKey=2;
+  string topic=3;
+  string componentPattern=4;
+}
+message BindMessageResponse{
+  string serviceID=1;
+  string messageKey=2;
+  string topic=3;
+}
+
+
+//  2.4.2.	话题绑定监听
+message AddListenerOnBindMessageRequest{
+  string request=1;
+}
+message AddListenerOnBindMessageResponse{
+  string serviceID=1;
+  string messageKey=2;
+  string topic=3;
+}
+
+
+//  2.4.3.	中控确认话题绑定
+message ConfirmBindMessageRequest{
+  string serviceID=1;
+  string messageKey=2;
+  string topic=3;
+}
+message ConfirmBindMessageResponse{
+  string response=1;
+}
+
+
+//  2.4.4.	通过message_key获取topic
+message GetTopicByMessageKeyRequest{
+  string messageKey=1;
+  string serviceID=2;
+}
+message GetTopicByMessageKeyResponse{
+  string topic=1;
+}
+
+
+//2.4.2.	话题订阅
+message SubscribeTopicRequest{
+  string messageKey=1;
+}
+
+message SubscribeTopicResponse{
+  bytes response=1;
+}
+
+
+
+//  2.4.3.	消息发送
+message SendMessageRequest{
+  string messageKey=1;
+  bytes value=2;
+}
+message SendMessageResponse{
+  string response=1;
+}
+
+
+//  2.4.30.1 单次信息结果 发送
+message SendResultRequest{
+  string messageKey=1;
+  bytes value=2;
+}
+message SendResultResponse{
+  string response=1;
+}
+
+
+
+//2.4.2.1.	话题取消订阅
+message UnsubscribeTopicRequest{
+  string request=1;
+  string messageKey=2;
+}
+//2.4.2.1.	话题取消订阅
+message UnsubscribeTopicResponse{
+  string response=1;
+}
+
+//2.4.2.2.	取消话题绑定监听
+message CancelAddListenerOnBindMessageRequest{
+  string request=1;
+}
+message CancelAddListenerOnBindMessageResponse{
+  string response=1;
+}
+

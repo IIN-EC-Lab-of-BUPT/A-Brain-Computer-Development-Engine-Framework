@@ -1,0 +1,11 @@
+channel_number: 8
+sample_rate: 250
+channel_label:
+  POz: null
+  PO3: null
+  PO4: null
+  PO5: null
+  PO6: null
+  Oz: null
+  O1: null
+  O2: null

@@ -1,0 +1,210 @@
+2024-11-15 10:51:50.581 - centralControllerLogger - ApplicationImplement.on_register_component - DEBUG - 收到组件注册请求，central_controller组件注册
+2024-11-15 10:51:50.633 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的collector_group_1.command_control消息
+2024-11-15 10:51:50.634 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='collector_group_1.command_control', topic='collector_group_1.command_control')
+2024-11-15 10:51:50.830 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的collector_group_2.command_control消息
+2024-11-15 10:51:50.831 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='collector_group_2.command_control', topic='collector_group_2.command_control')
+2024-11-15 10:51:50.910 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的collector_group_3.command_control消息
+2024-11-15 10:51:50.910 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='collector_group_3.command_control', topic='collector_group_3.command_control')
+2024-11-15 10:51:50.982 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的data_storage.command_control消息
+2024-11-15 10:51:50.982 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='data_storage.command_control', topic='data_storage.command_control')
+2024-11-15 10:51:51.055 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的database.command_control消息
+2024-11-15 10:51:51.055 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='database.command_control', topic='database.command_control')
+2024-11-15 10:51:51.132 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的stimulator_group_1.command_control消息
+2024-11-15 10:51:51.133 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='stimulator_group_1.command_control', topic='stimulator_group_1.command_control')
+2024-11-15 10:51:51.210 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的stimulator_group_1.random_number_seeds消息
+2024-11-15 10:51:51.211 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='stimulator_group_1.random_number_seeds', topic='stimulator_group_1.random_number_seeds')
+2024-11-15 10:51:51.288 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的stimulator_group_2.command_control消息
+2024-11-15 10:51:51.289 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='stimulator_group_2.command_control', topic='stimulator_group_2.command_control')
+2024-11-15 10:51:51.354 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的stimulator_group_2.random_number_seeds消息
+2024-11-15 10:51:51.354 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='stimulator_group_2.random_number_seeds', topic='stimulator_group_2.random_number_seeds')
+2024-11-15 10:51:51.430 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的stimulator_group_3.command_control消息
+2024-11-15 10:51:51.430 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='stimulator_group_3.command_control', topic='stimulator_group_3.command_control')
+2024-11-15 10:51:51.508 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的stimulator_group_3.random_number_seeds消息
+2024-11-15 10:51:51.509 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='stimulator_group_3.random_number_seeds', topic='stimulator_group_3.random_number_seeds')
+2024-11-15 10:51:51.562 - centralControllerLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-11-15 10:51:51.572 - centralControllerLogger - GrpcServer.startup - DEBUG - GRPC Server add servicer <CentralController.control.CentralManagementControlServer.CentralManagementControlServer object at 0x0000017E35EA10F0>
+2024-11-15 10:51:51.574 - centralControllerLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:7963
+2024-11-15 10:51:51.574 - centralControllerLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-11-15 10:51:51.877 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:51:52.874 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:51:53.878 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:51:54.871 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:51:55.874 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:51:56.876 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:51:57.868 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:51:58.876 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:51:59.868 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:00.214 - centralControllerLogger - ApplicationImplement.on_register_component - DEBUG - 收到组件注册请求，team_0.group_1组件注册
+2024-11-15 10:52:00.214 - centralControllerLogger - ServiceCoordinator.on_register_component - INFO - team_0.group_1组件注册成功
+2024-11-15 10:52:00.221 - centralControllerLogger - ServiceCoordinator.on_register_component - DEBUG - ComponentModel(component_id='team_0.group_1', component_type='PROCESSOR', component_info={'algorithm_connection': {'address': 'localhost:9981'}})
+2024-11-15 10:52:00.265 - centralControllerLogger - ApplicationImplement.on_register_component - DEBUG - 收到组件注册请求，collector_group_1组件注册
+2024-11-15 10:52:00.266 - centralControllerLogger - ServiceCoordinator.on_register_component - INFO - collector_group_1组件注册成功
+2024-11-15 10:52:00.271 - centralControllerLogger - ServiceCoordinator.on_register_component - DEBUG - ComponentModel(component_id='collector_group_1', component_type='COLLECTOR', component_info={'data_sender': {'data_sender_class_file': 'Collector/datasender/FinalModeDataSender.py', 'data_sender_class_name': 'FinalModeDataSender'}, 'external_trigger_rpc_address': '[::]:8972', 'message': {'command_control': None, 'external_trigger': None, 'send_data': None}, 'receiver': {'receiver_class_file': 'Collector/receiver/neuracle/NeuracleReceiverImplement.py', 'receiver_class_name': 'NeuracleReceiverImplement'}})
+2024-11-15 10:52:00.349 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自team_0.group_1组件的command_control消息
+2024-11-15 10:52:00.350 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='team_0.group_1', message_key='command_control', topic='team_0.group_1.command_control')
+2024-11-15 10:52:00.388 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自collector_group_1组件的send_data消息
+2024-11-15 10:52:00.393 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='collector_group_1', message_key='send_data', topic='group_1.data')
+2024-11-15 10:52:00.623 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自team_0.group_1组件的eeg_1消息
+2024-11-15 10:52:00.624 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='team_0.group_1', message_key='eeg_1', topic='group_1.data')
+2024-11-15 10:52:00.712 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自team_0.group_1组件的report消息
+2024-11-15 10:52:00.713 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='team_0.group_1', message_key='report', topic='team_0.group_1.report')
+2024-11-15 10:52:00.869 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:01.872 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:02.871 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:02.973 - centralControllerLogger - ApplicationImplement.on_register_component - DEBUG - 收到组件注册请求，stimulator_group_1组件注册
+2024-11-15 10:52:02.974 - centralControllerLogger - ServiceCoordinator.on_register_component - INFO - stimulator_group_1组件注册成功
+2024-11-15 10:52:02.978 - centralControllerLogger - ServiceCoordinator.on_register_component - DEBUG - ComponentModel(component_id='stimulator_group_1', component_type='STIMULATOR', component_info={'component_id': 'stimulator_group_1', 'component_type': 'STIMULATOR', 'external_trigger_address': '127.0.0.1:8972', 'message': {'command_control': None, 'external_trigger': None, 'feedback_control': None, 'information': None, 'random_number_seeds': None}, 'paradigm': {'paradigm_class_file': 'Stimulator/Paradigm/ssvep/ssvep.py', 'paradigm_class_name': 'SSVEP'}, 'trigger_sender': {'port': 'COM4', 'triggerBoxHandle': 'serial', 'trigger_sender_class_file': 'Stimulator/facade/ExternalTriggerSend.py', 'trigger_sender_class_name': 'ExternalTriggerSend'}})
+2024-11-15 10:52:03.869 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:04.868 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:05.191 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自stimulator_group_1组件的information消息
+2024-11-15 10:52:05.191 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='stimulator_group_1', message_key='information', topic='group_1.data')
+2024-11-15 10:52:05.392 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自stimulator_group_1组件的random_number_seeds消息
+2024-11-15 10:52:05.393 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='stimulator_group_1', message_key='random_number_seeds', topic='stimulator_group_1.random_number_seeds')
+2024-11-15 10:52:05.551 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自stimulator_group_1组件的feedback_control消息
+2024-11-15 10:52:05.551 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='stimulator_group_1', message_key='feedback_control', topic='team_0.group_1.report')
+2024-11-15 10:52:05.610 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自stimulator_group_1组件的command_control消息
+2024-11-15 10:52:05.611 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='stimulator_group_1', message_key='command_control', topic='stimulator_group_1.command_control')
+2024-11-15 10:52:05.769 - centralControllerLogger - ApplicationImplement.on_unregister_component - DEBUG - 收到组件注销请求，collector_group_1组件注销
+2024-11-15 10:52:05.770 - centralControllerLogger - ServiceCoordinator.on_unregister_component - INFO - collector_group_1组件注销成功
+2024-11-15 10:52:05.867 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:06.865 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:07.865 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:07.962 - centralControllerLogger - CentralManagementControlServer.start_group - INFO - 收到系统group_1组启动请求
+2024-11-15 10:52:07.962 - centralControllerLogger - ProcessManager.start_group - INFO - group_1采集设备信息发送
+2024-11-15 10:52:08.966 - centralControllerLogger - ProcessManager.start_group - INFO - 启动group_1采集设备数据发送
+2024-11-15 10:52:09.970 - centralControllerLogger - ProcessManager.start_group - INFO - group_1发送随机数种子: 0.5580688394359669
+2024-11-15 10:52:10.992 - centralControllerLogger - ProcessManager.start_group - INFO - group_1启动刺激组件
+2024-11-15 10:52:12.002 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:12.869 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:13.885 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:14.897 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:15.899 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:16.895 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:17.908 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:18.905 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:19.906 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:20.896 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:21.895 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:22.898 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:23.903 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:24.899 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:25.898 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:26.907 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:27.898 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:28.907 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:29.898 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:30.903 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:31.904 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:32.898 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:33.894 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:34.901 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:35.907 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:36.909 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 10:52:37.903 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:12.561 - centralControllerLogger - ApplicationImplement.on_register_component - DEBUG - 收到组件注册请求，central_controller组件注册
+2024-11-15 11:17:12.621 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的collector_group_1.command_control消息
+2024-11-15 11:17:12.622 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='collector_group_1.command_control', topic='collector_group_1.command_control')
+2024-11-15 11:17:12.816 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的collector_group_2.command_control消息
+2024-11-15 11:17:12.816 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='collector_group_2.command_control', topic='collector_group_2.command_control')
+2024-11-15 11:17:12.892 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的collector_group_3.command_control消息
+2024-11-15 11:17:12.893 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='collector_group_3.command_control', topic='collector_group_3.command_control')
+2024-11-15 11:17:12.969 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的data_storage.command_control消息
+2024-11-15 11:17:12.969 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='data_storage.command_control', topic='data_storage.command_control')
+2024-11-15 11:17:13.045 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的database.command_control消息
+2024-11-15 11:17:13.045 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='database.command_control', topic='database.command_control')
+2024-11-15 11:17:13.113 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的stimulator_group_1.command_control消息
+2024-11-15 11:17:13.114 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='stimulator_group_1.command_control', topic='stimulator_group_1.command_control')
+2024-11-15 11:17:13.189 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的stimulator_group_1.random_number_seeds消息
+2024-11-15 11:17:13.189 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='stimulator_group_1.random_number_seeds', topic='stimulator_group_1.random_number_seeds')
+2024-11-15 11:17:13.264 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的stimulator_group_2.command_control消息
+2024-11-15 11:17:13.265 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='stimulator_group_2.command_control', topic='stimulator_group_2.command_control')
+2024-11-15 11:17:13.343 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的stimulator_group_2.random_number_seeds消息
+2024-11-15 11:17:13.343 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='stimulator_group_2.random_number_seeds', topic='stimulator_group_2.random_number_seeds')
+2024-11-15 11:17:13.410 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的stimulator_group_3.command_control消息
+2024-11-15 11:17:13.410 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='stimulator_group_3.command_control', topic='stimulator_group_3.command_control')
+2024-11-15 11:17:13.484 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的stimulator_group_3.random_number_seeds消息
+2024-11-15 11:17:13.485 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='stimulator_group_3.random_number_seeds', topic='stimulator_group_3.random_number_seeds')
+2024-11-15 11:17:13.542 - centralControllerLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-11-15 11:17:13.543 - centralControllerLogger - GrpcServer.startup - DEBUG - GRPC Server add servicer <CentralController.control.CentralManagementControlServer.CentralManagementControlServer object at 0x000001CF26F710F0>
+2024-11-15 11:17:13.545 - centralControllerLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:7963
+2024-11-15 11:17:13.545 - centralControllerLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-11-15 11:17:13.826 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:14.823 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:15.833 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:16.827 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:17.825 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:18.818 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:19.829 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:20.817 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:21.831 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:21.954 - centralControllerLogger - ApplicationImplement.on_register_component - DEBUG - 收到组件注册请求，team_0.group_1组件注册
+2024-11-15 11:17:21.955 - centralControllerLogger - ServiceCoordinator.on_register_component - INFO - team_0.group_1组件注册成功
+2024-11-15 11:17:21.963 - centralControllerLogger - ServiceCoordinator.on_register_component - DEBUG - ComponentModel(component_id='team_0.group_1', component_type='PROCESSOR', component_info={'algorithm_connection': {'address': 'localhost:9981'}})
+2024-11-15 11:17:22.019 - centralControllerLogger - ApplicationImplement.on_register_component - DEBUG - 收到组件注册请求，collector_group_1组件注册
+2024-11-15 11:17:22.019 - centralControllerLogger - ServiceCoordinator.on_register_component - INFO - collector_group_1组件注册成功
+2024-11-15 11:17:22.024 - centralControllerLogger - ServiceCoordinator.on_register_component - DEBUG - ComponentModel(component_id='collector_group_1', component_type='COLLECTOR', component_info={'data_sender': {'data_sender_class_file': 'Collector/datasender/FinalModeDataSender.py', 'data_sender_class_name': 'FinalModeDataSender'}, 'external_trigger_rpc_address': '[::]:8972', 'message': {'command_control': None, 'external_trigger': None, 'send_data': None}, 'receiver': {'receiver_class_file': 'Collector/receiver/virtual_receiver/VirtualReceiverImplement.py', 'receiver_class_name': 'VirtualReceiverImplement'}})
+2024-11-15 11:17:22.106 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自team_0.group_1组件的command_control消息
+2024-11-15 11:17:22.108 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='team_0.group_1', message_key='command_control', topic='team_0.group_1.command_control')
+2024-11-15 11:17:22.154 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自collector_group_1组件的send_data消息
+2024-11-15 11:17:22.155 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='collector_group_1', message_key='send_data', topic='group_1.data')
+2024-11-15 11:17:22.357 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自team_0.group_1组件的eeg_1消息
+2024-11-15 11:17:22.358 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='team_0.group_1', message_key='eeg_1', topic='group_1.data')
+2024-11-15 11:17:22.433 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自collector_group_1组件的virtual_receiver_custom_control消息
+2024-11-15 11:17:22.434 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='collector_group_1', message_key='virtual_receiver_custom_control', topic='collector_group_1.virtual_receiver_custom_control')
+2024-11-15 11:17:22.473 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自team_0.group_1组件的report消息
+2024-11-15 11:17:22.474 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='team_0.group_1', message_key='report', topic='team_0.group_1.report')
+2024-11-15 11:17:22.677 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自collector_group_1组件的external_trigger消息
+2024-11-15 11:17:22.679 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='collector_group_1', message_key='external_trigger', topic='collector_group_1.external_trigger')
+2024-11-15 11:17:22.780 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自collector_group_1组件的command_control消息
+2024-11-15 11:17:22.781 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='collector_group_1', message_key='command_control', topic='collector_group_1.command_control')
+2024-11-15 11:17:22.829 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:22.896 - centralControllerLogger - ApplicationImplement.on_register_component - DEBUG - 收到组件注册请求，stimulator_group_1组件注册
+2024-11-15 11:17:22.896 - centralControllerLogger - ServiceCoordinator.on_register_component - INFO - stimulator_group_1组件注册成功
+2024-11-15 11:17:22.901 - centralControllerLogger - ServiceCoordinator.on_register_component - DEBUG - ComponentModel(component_id='stimulator_group_1', component_type='STIMULATOR', component_info={'component_id': 'stimulator_group_1', 'component_type': 'STIMULATOR', 'external_trigger_address': '127.0.0.1:8972', 'message': {'command_control': None, 'external_trigger': None, 'feedback_control': None, 'information': None, 'random_number_seeds': None}, 'paradigm': {'paradigm_class_file': 'Stimulator/Paradigm/ssvep/ssvep.py', 'paradigm_class_name': 'SSVEP'}, 'trigger_sender': {'port': 'COM4', 'triggerBoxHandle': 'serial', 'trigger_sender_class_file': 'Stimulator/facade/ExternalTriggerSend.py', 'trigger_sender_class_name': 'ExternalTriggerSend'}})
+2024-11-15 11:17:23.821 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:24.511 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自stimulator_group_1组件的information消息
+2024-11-15 11:17:24.512 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='stimulator_group_1', message_key='information', topic='group_1.data')
+2024-11-15 11:17:24.687 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自stimulator_group_1组件的random_number_seeds消息
+2024-11-15 11:17:24.687 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='stimulator_group_1', message_key='random_number_seeds', topic='stimulator_group_1.random_number_seeds')
+2024-11-15 11:17:24.818 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:24.844 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自stimulator_group_1组件的feedback_control消息
+2024-11-15 11:17:24.844 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='stimulator_group_1', message_key='feedback_control', topic='team_0.group_1.report')
+2024-11-15 11:17:24.895 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自stimulator_group_1组件的command_control消息
+2024-11-15 11:17:24.896 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='stimulator_group_1', message_key='command_control', topic='stimulator_group_1.command_control')
+2024-11-15 11:17:25.828 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:26.826 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:27.375 - centralControllerLogger - CentralManagementControlServer.start_group - INFO - 收到系统group_1组启动请求
+2024-11-15 11:17:27.377 - centralControllerLogger - ProcessManager.start_group - INFO - group_1采集设备信息发送
+2024-11-15 11:17:28.392 - centralControllerLogger - ProcessManager.start_group - INFO - 启动group_1采集设备数据发送
+2024-11-15 11:17:29.410 - centralControllerLogger - ProcessManager.start_group - INFO - group_1发送随机数种子: 0.8601256309160099
+2024-11-15 11:17:30.430 - centralControllerLogger - ProcessManager.start_group - INFO - group_1启动刺激组件
+2024-11-15 11:17:31.449 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:31.823 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:32.823 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:33.827 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:34.829 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:35.828 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:36.821 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:37.828 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:38.820 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:39.821 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:40.828 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:41.819 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:42.818 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:43.824 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:44.820 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:45.824 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:46.818 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:47.825 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:48.819 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:49.818 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:50.820 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:51.820 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:52.824 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:53.818 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:54.818 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:55.829 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:56.817 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:57.817 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:58.827 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求
+2024-11-15 11:17:59.818 - centralControllerLogger - CentralManagementControlServer.get_components_status_list - DEBUG - 收到获取组件状态请求

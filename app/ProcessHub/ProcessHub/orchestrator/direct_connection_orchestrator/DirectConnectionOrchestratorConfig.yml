@@ -1,0 +1,16 @@
+version: 1
+
+algorithm_connection:
+  address: 'localhost:9981'
+  max_time_out: 600
+
+sources:
+  # 数据源配置信息，此处为challenge端订阅的数据源及topic列表，当算法请求数据源时，将根据下列数据源信息转发对应数据源
+  # 赛题端数据源需包含所有算法端数据源，以便进行转发，但也可以进一步添加其他数据源用于成绩评估等任务
+  # 按照message_key:topic形式，如果topic为空，则由中控服务器分配
+  eeg_1: null
+
+# 所有预定义message,message_key
+report_key_topic_dict:
+  # 结果报告(对应于MessageKeyEnum.REPROT.value): 默认topic
+  report: null

@@ -1,0 +1,206 @@
+// example.proto
+syntax = "proto3";
+
+//java_multiple_files 是一个用于指定生成的 Java 代码是否应该放在单个文件中的选项。
+option java_multiple_files = true;
+option java_package = "com.coreplantform.daemonproceed.controller.grpc";
+option java_outer_classname = "ComponmentManagerProto";
+
+package com.coreplantform.daemonproceed.controller.grpc;
+
+service ComponentManagerService{
+
+  //2.6.1.	组件注册
+  rpc RegisterComponent(RegisterComponentRequest) returns(RegisterComponentResponse);
+  //2.6.2.	获取指定组件信息：
+  rpc GetComponentInfo(GetComponentInfoRequest) returns (GetComponentInfoResponse);
+  //2.6.3.	组件注册监听回调：
+  rpc AddListenerOnRegisterComponent(AddListenerOnRegisterComponentRequest) returns (stream AddListenerOnRegisterComponentResponse);
+  //2.6.4.	修改组件配置信息：
+  rpc UpdateComponentInfo(UpdateComponentInfoRequest) returns (UpdateComponentInfoResponse);
+  //2.6.5.	监听组件组件配置信息更新回调：
+  rpc AddListenerOnUpdateComponentInfo(AddListenerOnUpdateComponentInfoRequest) returns (stream AddListenerOnUpdateComponentInfoResponse);
+  //2.6.6.	组件注销
+  rpc UnregisterComponent(UnregisterComponentRequest) returns(UnregisterComponentResponse);
+  //2.6.7.	组件注销监听
+  rpc AddListenerOnUnregisterComponent(ComponentUnregisteredListenerRequest) returns(stream ComponentUnregisteredListenerResponse);
+  //2.6.8.	获取所有组件信息
+  rpc GetAllComponent(GetAllComponentRequest) returns( GetAllComponentResponse);
+  //2.6.9.	组件注销确认
+  rpc ConfirmComponentUnregister(ConfirmComponentUnregisterRequest) returns( ConfirmComponentUnregisterResponse);
+  //2.6.10.	获取组件状态
+  rpc GetComponentState(GetComponentStateRequest) returns(GetComponentStateResponse);
+  //2.6.11.	组件状态更新监听
+  rpc AddListenerOnUpdateComponentState(AddListenerOnUpdateComponentStateRequest) returns (stream AddListenerOnUpdateComponentStateResponse);
+  //2.6.12.	更新组件状态
+  rpc UpdateComponentState(UpdateComponentStateRequest) returns(UpdateComponentStateResponse);
+  //2.6.13.	取消监听组件注销更新回调：
+  rpc CancelAddListenerOnUnregisterComponent(CancelAddListenerOnUnregisterComponentRequest) returns(CancelAddListenerOnUnregisterComponentResponse);
+  //2.6.14.	取消监听组件配置信息更新回调：
+  rpc CancelAddListenerOnUpdateComponentInfo(CancelAddListenerOnUpdateComponentInfoRequest) returns(CancelAddListenerOnUpdateComponentInfoResponse);
+  //2.6.15.	取消监听组件注册更新回调：
+  rpc CancelAddListenerOnRegisterComponent(CancelAddListenerOnRegisterComponentRequest) returns(CancelAddListenerOnRegisterComponentResponse);
+  //2.6.16.	取消监听组件状态更新回调：
+  rpc CancelAddListenerOnUpdateComponentState(CancelAddListenerOnUpdateComponentStateRequest) returns (CancelAddListenerOnUpdateComponentStateResponse);
+  //2.6.17.	确认组件注册
+  rpc ConfirmRegisterComponent(ConfirmRegisterComponentRequest) returns(ConfirmRegisterComponentResponse);
+}
+
+  //2.6.1.	组件注册
+message RegisterComponentRequest{
+  string componentID=1;
+  string componentType=2;
+  //以yaml的str形式传递对应的config
+  string componentInfo=3;
+  string componentPattern=4;
+}
+message RegisterComponentResponse{
+  string componentID=1;
+  string componentType=2;
+  //以yaml的str形式传递对应的config
+  string componentInfo=3;
+}
+
+  //2.6.17.	确认组件注册
+message ConfirmRegisterComponentRequest{
+  string componentID=1;
+  string componentType=2;
+  //以yaml的str形式传递对应的config
+  string componentInfo=3;
+}
+message ConfirmRegisterComponentResponse{
+  string response=1;
+}
+
+  //2.6.2.	获取指定组件信息：
+message GetComponentInfoRequest{
+  string componentID=1;
+}
+message GetComponentInfoResponse{
+  string componentID=1;
+  string componentType=2;
+  //以yaml的str形式传递对应的config
+  string componentInfo=3;
+  }
+
+
+  //2.6.3.	组件注册监听回调：
+message AddListenerOnRegisterComponentRequest{
+  string request=1;
+}
+message AddListenerOnRegisterComponentResponse{
+  string componentId=1;
+  string componentType=2;
+  //以yaml的str形式传递对应的config
+  string componentInfo=3;
+}
+
+  //2.6.4.	修改组件配置信息：
+message UpdateComponentInfoRequest{
+  string componentID=1;
+  //以yaml的str形式传递对应的config
+  string componentInfo=2;
+}
+message UpdateComponentInfoResponse{
+  string response=1;
+}
+
+  //2.6.5.	监听组件组件配置信息更新回调：
+message AddListenerOnUpdateComponentInfoRequest{
+  string request=1;
+  string componentId=2;
+}
+message AddListenerOnUpdateComponentInfoResponse{
+  string componentID=1;
+  //以yaml的str形式传递对应的config
+  string componentInfo=2;
+}
+
+  //2.6.6.	组件注销
+message UnregisterComponentRequest{
+  string request=1;
+}
+message UnregisterComponentResponse{
+  string response=1;
+}
+
+  //2.6.7.	组件注销监听
+message ComponentUnregisteredListenerRequest{
+  string request=1;
+}
+message ComponentUnregisteredListenerResponse{
+  string componentID=1;
+  string componentType=2;
+  //以yaml的str形式传递对应的config
+  string componentInfo=3;
+}
+
+ //2.6.8.  获取所有组件信息
+message GetAllComponentRequest{
+  string request=1;
+}
+message GetAllComponentResponse{
+  repeated string componentID=1;
+}
+
+  //2.6.9.	组件注销确认
+message ConfirmComponentUnregisterRequest{
+  string request=1;
+}
+message ConfirmComponentUnregisterResponse{
+  string response=1;
+}
+
+//2.6.10.	获取组件状态
+message GetComponentStateRequest{
+  string componentID=1;
+}
+message GetComponentStateResponse{
+  string componentState=1;
+}
+//这个需要讨论一下
+message AddListenerOnUpdateComponentStateRequest{
+  string componentID=1;
+}
+message AddListenerOnUpdateComponentStateResponse{
+  string componentID=1;
+  string componentState=2;
+}
+//2.6.11.	更新组件状态
+message UpdateComponentStateRequest{
+  string componentID=1;
+  string componentStatus=2;
+}
+message UpdateComponentStateResponse{
+  string response=1;
+}
+
+//2.6.12.	取消监听组件注销更新回调：
+message CancelAddListenerOnUnregisterComponentRequest{
+  string componentId=1;
+}
+message CancelAddListenerOnUnregisterComponentResponse{
+  string response=1;
+}
+
+//2.6.13.	取消监听组件配置信息更新回调：
+message CancelAddListenerOnUpdateComponentInfoRequest{
+  string componentId=1;
+}
+message CancelAddListenerOnUpdateComponentInfoResponse{
+  string response=1;
+}
+//2.6.14.	取消监听组件注册更新回调：
+message CancelAddListenerOnRegisterComponentRequest{
+  string componentId=1;
+}
+message CancelAddListenerOnRegisterComponentResponse{
+  string response=1;
+}
+//2.6.15.	取消监听组件状态更新回调：
+message CancelAddListenerOnUpdateComponentStateRequest{
+  string componentId=1;
+}
+message CancelAddListenerOnUpdateComponentStateResponse{
+  string response=1;
+}

@@ -1,0 +1,729 @@
+2024-08-12 09:49:31.955 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 09:49:31.972 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 数据接收任务取消
+2024-08-12 09:49:31.973 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 09:49:31.974 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 09:49:31.976 - algorithmLogger - BusinessManager.shutdown - INFO - 业务管理器已关闭
+2024-08-12 09:49:31.977 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经正常关闭当前状态为READY
+2024-08-12 09:49:31.977 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为READY
+2024-08-12 09:58:57.472 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 09:58:57.472 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 09:58:57.481 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 09:59:00.207 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 09:59:00.208 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 09:59:00.208 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 09:59:00.210 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 09:59:00.211 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 09:59:00.211 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 10:01:54.904 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 10:01:54.904 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 10:01:54.907 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 10:01:55.398 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 10:01:55.399 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 10:01:55.399 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 10:01:55.401 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 10:01:55.402 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 10:01:55.402 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 10:02:02.117 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 10:02:02.118 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x00000285978E6DD0>}
+2024-08-12 10:02:02.118 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 10:02:02.118 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 10:02:02.482 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 10:02:02.486 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 10:21:26.989 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 10:21:26.991 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 数据接收任务取消
+2024-08-12 10:21:26.992 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 10:21:26.992 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 10:21:26.992 - algorithmLogger - BusinessManager.shutdown - INFO - 业务管理器已关闭
+2024-08-12 10:21:26.993 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经正常关闭当前状态为READY
+2024-08-12 10:21:26.993 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为READY
+2024-08-12 10:22:12.142 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 10:22:12.142 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 10:22:12.145 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 10:22:12.777 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 10:22:12.777 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 10:22:12.777 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 10:22:12.780 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 10:22:12.780 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 10:22:12.780 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 10:22:17.629 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 10:22:17.630 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x00000192FFB96DD0>}
+2024-08-12 10:22:17.630 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 10:22:17.630 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 10:22:17.766 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 10:22:17.770 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 10:29:47.678 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 10:29:47.679 - algorithmLogger - MethodManager.shutdown - INFO - 等待算法结束
+2024-08-12 10:29:47.679 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 10:29:57.087 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 10:29:57.087 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为STOPPING
+2024-08-12 10:35:06.178 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 10:35:06.178 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 10:35:06.180 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 10:35:06.825 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 10:35:06.825 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 10:35:06.825 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 10:35:06.828 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 10:35:06.829 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 10:35:06.829 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 10:35:10.410 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 10:35:10.410 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x0000017E69CF6DD0>}
+2024-08-12 10:35:10.411 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 10:35:10.411 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 10:35:10.468 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 10:35:10.471 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 12:26:10.158 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 12:26:10.174 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 12:26:10.177 - algorithmLogger - MethodManager.shutdown - INFO - 等待算法结束
+2024-08-12 12:26:12.922 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 12:26:12.924 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为STOPPING
+2024-08-12 12:28:14.764 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 12:28:14.764 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 12:28:14.767 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 12:28:15.429 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 12:28:15.429 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 12:28:15.429 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 12:28:15.432 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 12:28:15.432 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 12:28:15.432 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 12:28:48.530 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 12:28:48.530 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x000002E52F7C96F0>}
+2024-08-12 12:28:48.530 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 12:28:48.530 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 12:28:48.675 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 12:28:48.678 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 12:32:10.225 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 12:32:10.225 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 数据接收任务取消
+2024-08-12 12:32:10.225 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 12:32:10.225 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 12:32:10.225 - algorithmLogger - BusinessManager.shutdown - INFO - 业务管理器已关闭
+2024-08-12 12:32:10.226 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经正常关闭当前状态为READY
+2024-08-12 12:32:10.226 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为READY
+2024-08-12 12:33:50.418 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 12:33:50.418 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 12:33:50.420 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 12:33:50.865 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 12:33:50.865 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 12:33:50.865 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 12:33:50.867 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 12:33:50.868 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 12:33:50.868 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 12:33:53.258 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 12:33:53.259 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x000001A2BA5F7070>}
+2024-08-12 12:33:53.259 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 12:33:53.259 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 12:33:53.381 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 12:33:53.384 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 12:47:25.494 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 12:47:25.495 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 数据接收任务取消
+2024-08-12 12:47:25.495 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 12:47:25.495 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 12:47:25.495 - algorithmLogger - BusinessManager.shutdown - INFO - 业务管理器已关闭
+2024-08-12 12:47:25.495 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经正常关闭当前状态为READY
+2024-08-12 12:47:25.495 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为READY
+2024-08-12 12:48:08.539 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 12:48:08.540 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 12:48:08.542 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 12:48:09.034 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 12:48:09.034 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 12:48:09.034 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 12:48:09.037 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 12:48:09.037 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 12:48:09.037 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 12:48:10.848 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 12:48:10.848 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x000001DC9D640CD0>}
+2024-08-12 12:48:10.848 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 12:48:10.848 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 12:48:10.950 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 12:48:10.953 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 12:54:18.043 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 12:54:18.043 - algorithmLogger - MethodManager.shutdown - INFO - 等待算法结束
+2024-08-12 12:54:18.052 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 12:54:19.150 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 12:54:19.161 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为STOPPING
+2024-08-12 12:55:06.850 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 12:55:06.850 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 12:55:06.852 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 12:55:07.322 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 12:55:07.323 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 12:55:07.323 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 12:55:07.326 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 12:55:07.326 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 12:55:07.326 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 12:55:09.075 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 12:55:09.075 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x000001C4E38C0CD0>}
+2024-08-12 12:55:09.075 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 12:55:09.075 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 12:55:09.188 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 12:55:09.191 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 13:00:58.008 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 13:00:58.008 - algorithmLogger - MethodManager.shutdown - INFO - 等待算法结束
+2024-08-12 13:00:58.018 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 13:00:59.943 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 13:00:59.955 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为STOPPING
+2024-08-12 13:01:28.602 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 13:01:28.603 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 13:01:28.605 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 13:01:29.070 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 13:01:29.070 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 13:01:29.071 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 13:01:29.073 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 13:01:29.073 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 13:01:29.074 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 13:01:31.262 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 13:01:31.263 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x00000260955F0CD0>}
+2024-08-12 13:01:31.263 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 13:01:31.263 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 13:01:31.379 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 13:01:31.382 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 13:03:59.438 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 13:03:59.439 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 数据接收任务取消
+2024-08-12 13:03:59.439 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 13:03:59.439 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 13:03:59.439 - algorithmLogger - BusinessManager.shutdown - INFO - 业务管理器已关闭
+2024-08-12 13:03:59.439 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经正常关闭当前状态为READY
+2024-08-12 13:03:59.439 - algorithmLogger - AlgorithmRPCDataConnectServer.__stop_receiver_process - INFO - 数据接收任务已正常结束
+2024-08-12 13:03:59.439 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为READY
+2024-08-12 13:04:59.916 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 13:04:59.916 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 13:04:59.918 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 13:05:00.377 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 13:05:00.377 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 13:05:00.377 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 13:05:00.379 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 13:05:00.380 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 13:05:00.380 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 13:05:02.441 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 13:05:02.442 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x0000018266C10CD0>}
+2024-08-12 13:05:02.442 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 13:05:02.442 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 13:05:02.560 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 13:05:02.564 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 13:06:53.707 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 13:06:53.707 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 数据接收任务取消
+2024-08-12 13:06:53.707 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 13:06:53.707 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 13:06:53.707 - algorithmLogger - BusinessManager.shutdown - INFO - 业务管理器已关闭
+2024-08-12 13:06:53.707 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经正常关闭当前状态为READY
+2024-08-12 13:06:53.708 - algorithmLogger - AlgorithmRPCDataConnectServer.__stop_receiver_process - INFO - 数据接收任务已正常结束
+2024-08-12 13:06:53.708 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为READY
+2024-08-12 13:21:34.099 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 13:21:34.099 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 13:21:34.101 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 13:21:35.024 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 13:21:35.025 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 13:21:35.025 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 13:21:35.027 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 13:21:35.028 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 13:21:35.028 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 13:21:37.570 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 13:21:37.570 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x0000022024540CD0>}
+2024-08-12 13:21:37.570 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 13:21:37.571 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 13:21:37.693 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 13:21:37.696 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 13:22:50.175 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 13:22:50.175 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 数据接收任务取消
+2024-08-12 13:22:50.176 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 13:22:50.176 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 13:22:50.176 - algorithmLogger - BusinessManager.shutdown - INFO - 业务管理器已关闭
+2024-08-12 13:22:50.176 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经正常关闭当前状态为READY
+2024-08-12 13:22:50.176 - algorithmLogger - AlgorithmRPCDataConnectServer.__stop_receiver_process - INFO - 数据接收任务已正常结束
+2024-08-12 13:22:50.177 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为READY
+2024-08-12 13:24:32.287 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 13:24:32.287 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 13:24:32.290 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 13:24:32.754 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 13:24:32.754 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 13:24:32.754 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 13:24:32.757 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 13:24:32.757 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 13:24:32.757 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 13:24:34.650 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 13:24:34.651 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x000002BBF4E212D0>}
+2024-08-12 13:24:34.651 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 13:24:34.651 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 13:24:34.777 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 13:24:34.780 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 13:32:07.534 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 13:32:07.535 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 13:32:07.535 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 数据接收任务取消
+2024-08-12 13:32:07.535 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 13:32:07.535 - algorithmLogger - BusinessManager.shutdown - INFO - 业务管理器已关闭
+2024-08-12 13:32:07.535 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经正常关闭当前状态为READY
+2024-08-12 13:32:07.536 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为READY
+2024-08-12 13:32:07.536 - algorithmLogger - AlgorithmRPCDataConnectServer.__stop_receiver_process - INFO - 数据接收任务已正常结束
+2024-08-12 13:33:15.752 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 13:33:15.752 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 13:33:15.754 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 13:33:16.259 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 13:33:16.260 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 13:33:16.260 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 13:33:16.262 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 13:33:16.262 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 13:33:16.262 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 13:33:18.961 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 13:33:18.962 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x0000021D183412D0>}
+2024-08-12 13:33:18.962 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 13:33:18.962 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 13:33:19.352 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 13:33:19.356 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 13:38:27.867 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 13:38:27.867 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 数据接收任务取消
+2024-08-12 13:38:27.867 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 13:38:27.867 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 13:38:27.868 - algorithmLogger - BusinessManager.shutdown - INFO - 业务管理器已关闭
+2024-08-12 13:38:27.868 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经正常关闭当前状态为READY
+2024-08-12 13:38:27.868 - algorithmLogger - AlgorithmRPCDataConnectServer.__stop_receiver_process - INFO - 数据接收任务已正常结束
+2024-08-12 13:38:27.868 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为READY
+2024-08-12 13:40:30.658 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 13:40:30.659 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 13:40:30.661 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 13:40:31.113 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 13:40:31.113 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 13:40:31.113 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 13:40:31.116 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 13:40:31.116 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 13:40:31.116 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 13:40:33.947 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 13:40:33.947 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x00000163F2EE0CD0>}
+2024-08-12 13:40:33.947 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 13:40:33.947 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 13:40:34.064 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 13:40:34.067 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 13:45:10.377 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 13:45:10.378 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 数据接收任务取消
+2024-08-12 13:45:10.378 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 13:45:10.378 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 13:45:10.378 - algorithmLogger - BusinessManager.shutdown - INFO - 业务管理器已关闭
+2024-08-12 13:45:10.378 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经正常关闭当前状态为READY
+2024-08-12 13:45:10.378 - algorithmLogger - AlgorithmRPCDataConnectServer.__stop_receiver_process - INFO - 数据接收任务已正常结束
+2024-08-12 13:45:10.379 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为READY
+2024-08-12 13:46:29.779 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 13:46:29.779 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 13:46:29.781 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 13:46:30.242 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 13:46:30.242 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 13:46:30.242 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 13:46:30.245 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 13:46:30.245 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 13:46:30.245 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 13:46:32.878 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 13:46:32.878 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x000002487F890CD0>}
+2024-08-12 13:46:32.878 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 13:46:32.878 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 13:46:32.988 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 13:46:32.991 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 14:11:33.098 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 14:11:33.098 - algorithmLogger - MethodManager.shutdown - INFO - 等待算法结束
+2024-08-12 14:11:33.107 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 14:11:34.315 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 14:11:34.326 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为STOPPING
+2024-08-12 14:12:56.923 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 14:12:56.923 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 14:12:56.925 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 14:12:57.377 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 14:12:57.377 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 14:12:57.377 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 14:12:57.380 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 14:12:57.380 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 14:12:57.380 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 14:13:01.888 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 14:13:01.888 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x0000024EBDAB12D0>}
+2024-08-12 14:13:01.888 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 14:13:01.889 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 14:13:01.995 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 14:13:01.998 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 14:23:07.873 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 14:23:07.874 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 数据接收任务取消
+2024-08-12 14:23:07.874 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 14:23:07.874 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 14:23:07.875 - algorithmLogger - BusinessManager.shutdown - INFO - 业务管理器已关闭
+2024-08-12 14:23:07.875 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经正常关闭当前状态为READY
+2024-08-12 14:23:07.875 - algorithmLogger - AlgorithmRPCDataConnectServer.__stop_receiver_process - INFO - 数据接收任务已正常结束
+2024-08-12 14:23:07.875 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为READY
+2024-08-12 14:27:01.759 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 14:27:01.759 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 14:27:01.761 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 14:27:02.244 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 14:27:02.244 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 14:27:02.244 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 14:27:02.247 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 14:27:02.247 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 14:27:02.247 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 14:27:04.179 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 14:27:04.179 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x000001DF414A0CD0>}
+2024-08-12 14:27:04.179 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 14:27:04.179 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 14:27:04.289 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 14:27:04.292 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 14:34:00.415 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 14:34:00.415 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 数据接收任务取消
+2024-08-12 14:34:00.415 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 14:34:00.416 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 14:34:00.416 - algorithmLogger - BusinessManager.shutdown - INFO - 业务管理器已关闭
+2024-08-12 14:34:00.416 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经正常关闭当前状态为READY
+2024-08-12 14:34:00.416 - algorithmLogger - AlgorithmRPCDataConnectServer.__stop_receiver_process - INFO - 数据接收任务已正常结束
+2024-08-12 14:34:00.416 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为READY
+2024-08-12 14:34:57.775 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 14:34:57.775 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 14:34:57.777 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 14:34:58.272 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 14:34:58.272 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 14:34:58.272 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 14:34:58.275 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 14:34:58.275 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 14:34:58.275 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 14:35:00.310 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 14:35:00.310 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x0000022D5F3B12D0>}
+2024-08-12 14:35:00.310 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 14:35:00.311 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 14:35:00.451 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 14:35:00.454 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 14:42:38.556 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 14:42:38.556 - algorithmLogger - MethodManager.shutdown - INFO - 等待算法结束
+2024-08-12 14:42:38.571 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 14:42:40.075 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 14:42:40.087 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为STOPPING
+2024-08-12 15:10:50.216 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 15:10:50.216 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 15:10:50.224 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 15:10:52.721 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 15:10:52.721 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 15:10:52.721 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 15:10:52.724 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 15:10:52.725 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 15:10:52.725 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 15:10:56.127 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 15:10:56.127 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x000002473AE712D0>}
+2024-08-12 15:10:56.127 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 15:10:56.128 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 15:10:56.466 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 15:10:56.469 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 15:37:06.399 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 15:37:06.415 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 数据接收任务取消
+2024-08-12 15:37:06.415 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 15:37:06.418 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 15:37:06.422 - algorithmLogger - BusinessManager.shutdown - INFO - 业务管理器已关闭
+2024-08-12 15:37:06.422 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经正常关闭当前状态为READY
+2024-08-12 15:37:06.422 - algorithmLogger - AlgorithmRPCDataConnectServer.__stop_receiver_process - INFO - 数据接收任务已正常结束
+2024-08-12 15:37:06.422 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为READY
+2024-08-12 15:40:25.770 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 15:40:25.770 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 15:40:25.772 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 15:40:26.836 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 15:40:26.836 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 15:40:26.836 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 15:40:26.839 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 15:40:26.839 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 15:40:26.839 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 15:40:30.544 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 15:40:30.545 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x00000233C0C912D0>}
+2024-08-12 15:40:30.545 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 15:40:30.545 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 15:40:31.119 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 15:40:31.125 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 16:17:31.723 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 16:17:31.738 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 数据接收任务取消
+2024-08-12 16:17:31.738 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 16:17:31.754 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 16:17:31.754 - algorithmLogger - BusinessManager.shutdown - INFO - 业务管理器已关闭
+2024-08-12 16:17:31.754 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经正常关闭当前状态为READY
+2024-08-12 16:17:31.754 - algorithmLogger - AlgorithmRPCDataConnectServer.__stop_receiver_process - INFO - 数据接收任务已正常结束
+2024-08-12 16:17:31.754 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为READY
+2024-08-12 16:26:46.709 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 16:26:46.709 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 16:26:46.712 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 16:26:47.195 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 16:26:47.195 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 16:26:47.197 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 16:26:47.198 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 16:26:47.198 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 16:26:47.198 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 16:26:53.041 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 16:26:53.041 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x000002485C270CD0>}
+2024-08-12 16:26:53.041 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 16:26:53.041 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 16:26:53.231 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 16:26:53.235 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 16:38:57.767 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 16:38:57.767 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 数据接收任务取消
+2024-08-12 16:38:57.767 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 16:38:57.767 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 16:38:57.768 - algorithmLogger - BusinessManager.shutdown - INFO - 业务管理器已关闭
+2024-08-12 16:38:57.768 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经正常关闭当前状态为READY
+2024-08-12 16:38:57.768 - algorithmLogger - AlgorithmRPCDataConnectServer.__stop_receiver_process - INFO - 数据接收任务已正常结束
+2024-08-12 16:38:57.768 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为READY
+2024-08-12 16:44:43.570 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 16:44:43.570 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 16:44:43.572 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 16:44:44.030 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 16:44:44.031 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 16:44:44.031 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 16:44:44.033 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 16:44:44.033 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 16:44:44.033 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 16:44:50.942 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 16:44:50.943 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x000001529C200CD0>}
+2024-08-12 16:44:50.943 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 16:44:50.943 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 16:44:51.241 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 16:44:51.244 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 19:58:17.115 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 19:58:17.115 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 19:58:17.123 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 19:58:19.680 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 19:58:19.680 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 19:58:19.680 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 19:58:19.683 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 19:58:19.683 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 19:58:19.683 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 20:07:04.528 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 20:07:04.528 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 20:07:04.530 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 20:07:05.004 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 20:07:05.004 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 20:07:05.004 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 20:07:05.006 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 20:07:05.007 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 20:07:05.007 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 20:07:09.441 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 20:07:09.442 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x00000251824A4CD0>}
+2024-08-12 20:07:09.442 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 20:07:09.442 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 20:07:09.771 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 20:07:09.774 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 20:16:29.417 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 20:16:29.417 - algorithmLogger - MethodManager.shutdown - INFO - 等待算法结束
+2024-08-12 20:16:29.426 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 20:16:30.972 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 20:16:30.984 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为STOPPING
+2024-08-12 20:18:45.501 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 20:18:45.501 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 20:18:45.503 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 20:18:46.021 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 20:18:46.021 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 20:18:46.021 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 20:18:46.024 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 20:18:46.025 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 20:18:46.025 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 20:18:49.047 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 20:18:49.047 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x000002D18A2A12D0>}
+2024-08-12 20:18:49.047 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 20:18:49.047 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 20:18:49.356 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 20:18:49.359 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 20:28:06.021 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 20:28:06.021 - algorithmLogger - MethodManager.shutdown - INFO - 等待算法结束
+2024-08-12 20:28:06.030 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 20:28:33.714 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 20:28:33.726 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为STOPPING
+2024-08-12 20:31:03.888 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 20:31:03.888 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 20:31:03.890 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 20:31:04.388 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 20:31:04.388 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 20:31:04.388 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 20:31:04.391 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 20:31:04.391 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 20:31:04.392 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 20:31:07.112 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 20:31:07.113 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x0000028A67760CD0>}
+2024-08-12 20:31:07.113 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 20:31:07.113 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 20:31:07.262 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 20:31:07.265 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 20:39:11.984 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 20:39:11.984 - algorithmLogger - MethodManager.shutdown - INFO - 等待算法结束
+2024-08-12 20:39:11.993 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 20:39:14.521 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 20:39:14.532 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为STOPPING
+2024-08-12 20:46:44.952 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 20:46:44.952 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 20:46:44.954 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 20:46:45.446 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 20:46:45.446 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 20:46:45.447 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 20:46:45.449 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 20:46:45.449 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 20:46:45.449 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 20:46:49.222 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 20:46:49.222 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x000001AEC21D0CD0>}
+2024-08-12 20:46:49.222 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 20:46:49.222 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 20:46:49.535 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 20:46:49.538 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 20:55:08.612 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 20:55:08.612 - algorithmLogger - MethodManager.shutdown - INFO - 等待算法结束
+2024-08-12 20:55:08.621 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 20:55:12.200 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 20:55:12.211 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为STOPPING
+2024-08-12 21:18:37.737 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 21:18:37.737 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 21:18:37.740 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 21:18:40.090 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 21:18:40.090 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 21:18:40.090 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 21:18:40.094 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 21:18:40.094 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 21:18:40.094 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 21:18:48.036 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 21:18:48.037 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x00000286A0330CD0>}
+2024-08-12 21:18:48.037 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 21:18:48.037 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 21:18:48.394 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 21:18:48.397 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 21:23:55.153 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 21:23:55.154 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 数据接收任务取消
+2024-08-12 21:23:55.154 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 21:23:55.154 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 21:23:55.154 - algorithmLogger - BusinessManager.shutdown - INFO - 业务管理器已关闭
+2024-08-12 21:23:55.154 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经正常关闭当前状态为READY
+2024-08-12 21:23:55.154 - algorithmLogger - AlgorithmRPCDataConnectServer.__stop_receiver_process - INFO - 数据接收任务已正常结束
+2024-08-12 21:23:55.155 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为READY
+2024-08-12 21:26:19.643 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 21:26:19.643 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 21:26:19.645 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 21:26:20.147 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 21:26:20.148 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 21:26:20.148 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 21:26:20.151 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 21:26:20.151 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 21:26:20.151 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 21:26:34.002 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 21:26:34.002 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x0000019E918D0CD0>}
+2024-08-12 21:26:34.002 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 21:26:34.002 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 21:26:34.302 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 21:26:34.305 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 21:32:46.574 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 21:32:46.574 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 21:32:46.574 - algorithmLogger - MethodManager.shutdown - INFO - 等待算法结束
+2024-08-12 21:33:08.365 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 21:33:08.377 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为STOPPING
+2024-08-12 21:35:05.246 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 21:35:05.246 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 21:35:05.248 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 21:35:05.691 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 21:35:05.691 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 21:35:05.691 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 21:35:05.693 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 21:35:05.693 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 21:35:05.693 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 21:35:07.969 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 21:35:07.970 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x000002A6A84F4CD0>}
+2024-08-12 21:35:07.970 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 21:35:07.970 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 21:35:08.265 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 21:35:08.268 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 21:37:25.289 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 21:37:25.289 - algorithmLogger - MethodManager.shutdown - INFO - 等待算法结束
+2024-08-12 21:37:25.300 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 21:37:28.327 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 21:37:28.338 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为STOPPING
+2024-08-12 21:38:53.916 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 21:38:53.916 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 21:38:53.918 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 21:38:54.388 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 21:38:54.388 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 21:38:54.388 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 21:38:54.391 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 21:38:54.391 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 21:38:54.391 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 21:39:00.596 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 21:39:00.596 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x000001D57FA64CD0>}
+2024-08-12 21:39:00.596 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 21:39:00.597 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 21:39:00.720 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 21:39:00.723 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 21:42:27.086 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 21:42:27.086 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 数据接收任务取消
+2024-08-12 21:42:27.086 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 21:42:27.086 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 21:42:27.087 - algorithmLogger - BusinessManager.shutdown - INFO - 业务管理器已关闭
+2024-08-12 21:42:27.087 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经正常关闭当前状态为READY
+2024-08-12 21:42:27.087 - algorithmLogger - AlgorithmRPCDataConnectServer.__stop_receiver_process - INFO - 数据接收任务已正常结束
+2024-08-12 21:42:27.087 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为READY
+2024-08-12 21:48:34.647 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 21:48:34.647 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 21:48:34.649 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 21:48:35.137 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 21:48:35.137 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 21:48:35.137 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 21:48:35.141 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 21:48:35.141 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 21:48:35.141 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 21:48:38.602 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 21:48:38.602 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x000001F71F940D00>}
+2024-08-12 21:48:38.602 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 21:48:38.602 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 21:48:38.715 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 21:48:38.718 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 21:54:29.528 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 21:54:29.528 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 数据接收任务取消
+2024-08-12 21:54:29.529 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 21:54:29.529 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 21:54:29.529 - algorithmLogger - BusinessManager.shutdown - INFO - 业务管理器已关闭
+2024-08-12 21:54:29.529 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经正常关闭当前状态为READY
+2024-08-12 21:54:29.529 - algorithmLogger - AlgorithmRPCDataConnectServer.__stop_receiver_process - INFO - 数据接收任务已正常结束
+2024-08-12 21:54:29.529 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为READY
+2024-08-12 21:56:15.327 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 21:56:15.327 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 21:56:15.329 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 21:56:15.776 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 21:56:15.776 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 21:56:15.776 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 21:56:15.779 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 21:56:15.780 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 21:56:15.780 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 21:56:19.505 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 21:56:19.505 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x000002BCFD450D00>}
+2024-08-12 21:56:19.505 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 21:56:19.505 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 21:56:19.634 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 21:56:19.637 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 22:02:28.056 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 22:02:28.056 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 数据接收任务取消
+2024-08-12 22:02:28.056 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 22:02:28.056 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 22:02:28.057 - algorithmLogger - BusinessManager.shutdown - INFO - 业务管理器已关闭
+2024-08-12 22:02:28.057 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经正常关闭当前状态为READY
+2024-08-12 22:02:28.057 - algorithmLogger - AlgorithmRPCDataConnectServer.__stop_receiver_process - INFO - 数据接收任务已正常结束
+2024-08-12 22:02:28.057 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为READY
+2024-08-12 22:06:44.309 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 22:06:44.309 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 22:06:44.311 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 22:06:44.807 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 22:06:44.807 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 22:06:44.807 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 22:06:44.810 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 22:06:44.810 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 22:06:44.810 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 22:06:50.606 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 22:06:50.606 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x00000249AD1A0D00>}
+2024-08-12 22:06:50.606 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 22:06:50.606 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 22:06:50.962 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 22:06:50.966 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}
+2024-08-12 22:11:41.891 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 收到数据连接取消异常，尝试关闭连接
+2024-08-12 22:11:41.891 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 数据接收任务取消
+2024-08-12 22:11:41.892 - algorithmLogger - AlgorithmRPCDataConnectServer.__receive_data_function - INFO - 接收数据连接结束，发送结束信号事件RPC_DATA_INPUT_CONNECT_FINISHED
+2024-08-12 22:11:41.892 - algorithmLogger - MethodManager.__run_algorithm_method - INFO - 算法执行结束
+2024-08-12 22:11:41.892 - algorithmLogger - BusinessManager.shutdown - INFO - 业务管理器已关闭
+2024-08-12 22:11:41.892 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经正常关闭当前状态为READY
+2024-08-12 22:11:41.892 - algorithmLogger - AlgorithmRPCDataConnectServer.__stop_receiver_process - INFO - 数据接收任务已正常结束
+2024-08-12 22:11:41.892 - algorithmLogger - CoreController.shutdown - INFO - CoreController已经非运行状态，无需再次关闭，当前状态为READY
+2024-08-12 22:13:38.029 - algorithmLogger - CoreController.initial_system - INFO - core_manager初始化系统
+2024-08-12 22:13:38.029 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动
+2024-08-12 22:13:38.031 - algorithmLogger - ConfigManager.initial_system - INFO - config_manager启动系统初始化{'connection': {'rpc_address': '[::]:9981'}, 'method': {'method_class_file': 'Algorithm/method/impl/AlgorithmImplement.py', 'method_class_name': 'AlgorithmImplement'}, 'sources': {'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}, 'source_receiver_handlers': {'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}}
+2024-08-12 22:13:38.521 - algorithmLogger - BusinessManager.initial_system - INFO - 已经加载数据源处理器{'continuous_data_source_receiver': {'receiver_class_file': 'Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py', 'receiver_class_name': 'ContinuousDataSourceReceiver'}}
+2024-08-12 22:13:38.521 - algorithmLogger - BusinessManager.initial_system - INFO - 已缓存源配置信息{'eeg_1': {'source_receiver': {'handler': 'continuous_data_source_receiver', 'configuration': {'chunk_size': 40}}}}
+2024-08-12 22:13:38.521 - algorithmLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-08-12 22:13:38.524 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:9981
+2024-08-12 22:13:38.524 - algorithmLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-08-12 22:13:38.524 - algorithmLogger - RPCController.startup - INFO - RPCController已启动
+2024-08-12 22:13:41.788 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 接收到数据连接，抛出数据连接事件
+2024-08-12 22:13:41.788 - algorithmLogger - BusinessManager.startup - INFO - 已经初始化数据源接收器{'eeg_1': <ContinuousDataSourceReceiver.ContinuousDataSourceReceiver object at 0x000001FDFC9252D0>}
+2024-08-12 22:13:41.789 - algorithmLogger - MethodManager.startup - INFO - 算法已启动
+2024-08-12 22:13:41.789 - algorithmLogger - AlgorithmRPCDataConnectServer.connect - INFO - 启动数据接收任务
+2024-08-12 22:13:41.936 - algorithmLogger - AlgorithmRPCServiceControlServer.sendConfig - INFO - 接收到配置信息{'triggers': {1: 8, 2: 9, 3: 10, 4: 11, 5: 12, 6: 13, 7: 14, 8: 15, 9: 8.2, 10: 9.2, 11: 10.2, 12: 11.2, 13: 12.2, 14: 13.2, 15: 14.2, 16: 15.2, 17: 8.4, 18: 9.4, 19: 10.4, 20: 11.4, 21: 12.4, 22: 13.4, 23: 14.4, 24: 15.4, 25: 8.6, 26: 9.6, 27: 10.6, 28: 11.6, 29: 12.6, 30: 13.6, 31: 14.6, 32: 15.6, 33: 8.8, 34: 9.8, 35: 10.8, 36: 11.8, 37: 12.8, 38: 13.8, 39: 14.8, 40: 15.8}}
+2024-08-12 22:13:41.939 - algorithmLogger - AlgorithmRPCServiceControlServer.getConfig - INFO - 发送配置信息{'sources': {'eeg_1': None}}

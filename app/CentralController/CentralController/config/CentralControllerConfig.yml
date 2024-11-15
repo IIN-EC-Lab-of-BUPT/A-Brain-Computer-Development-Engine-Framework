@@ -1,0 +1,458 @@
+groups:
+  group_base:
+    group_base:
+      group_info: {}
+      message_key_topic_dict: {}
+  group_1:
+    group_info: {}
+    message_key_topic_dict: {}
+  group_2:
+    group_info: {}
+    message_key_topic_dict: {}
+  group_3:
+    group_info: {}
+    message_key_topic_dict: {}
+components:
+  team_0.group_1:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_1
+    message_key_topic_dict:
+      report: team_0.group_1.report
+      eeg_1: group_1.data
+      command_control: team_0.group_1.command_control
+  team_1.group_1:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_1
+    message_key_topic_dict:
+      report: team_1.group_1.report
+      eeg_1: group_1.data
+      command_control: team_1.group_1.command_control
+  team_2.group_1:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_1
+    message_key_topic_dict:
+      report: team_2.group_1.report
+      eeg_1: group_1.data
+      command_control: team_2.group_1.command_control
+  team_3.group_1:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_1
+    message_key_topic_dict:
+      report: team_3.group_1.report
+      eeg_1: group_1.data
+      command_control: team_3.group_1.command_control
+  team_4.group_1:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_1
+    message_key_topic_dict:
+      report: team_4.group_1.report
+      eeg_1: group_1.data
+      command_control: team_4.group_1.command_control
+  team_5.group_1:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_1
+    message_key_topic_dict:
+      report: team_5.group_1.report
+      eeg_1: group_1.data
+      command_control: team_5.group_1.command_control
+  team_6.group_1:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_1
+    message_key_topic_dict:
+      report: team_6.group_1.report
+      eeg_1: group_1.data
+      command_control: team_6.group_1.command_control
+  team_7.group_1:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_1
+    message_key_topic_dict:
+      report: team_7.group_1.report
+      eeg_1: group_1.data
+      command_control: team_7.group_1.command_control
+  team_8.group_1:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_1
+    message_key_topic_dict:
+      report: team_8.group_1.report
+      eeg_1: group_1.data
+      command_control: team_8.group_1.command_control
+  team_9.group_1:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_1
+    message_key_topic_dict:
+      report: team_9.group_1.report
+      eeg_1: group_1.data
+      command_control: team_9.group_1.command_control
+  team_10.group_1:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_1
+    message_key_topic_dict:
+      report: team_10.group_1.report
+      eeg_1: group_1.data
+      command_control: team_10.group_1.command_control
+  collector_group_1:
+    component_type: COLLECTOR
+    component_info: {}
+    component_group_id: group_1
+    message_key_topic_dict:
+      send_data: group_1.data
+      command_control: collector_group_1.command_control
+      external_trigger: collector_group_1.external_trigger
+      virtual_receiver_custom_control: collector_group_1.virtual_receiver_custom_control
+  stimulator_group_1:
+    component_type: STIMULATOR
+    component_info:
+      external_trigger_address: 127.0.0.1:8972
+    component_group_id: group_1
+    message_key_topic_dict:
+      command_control: stimulator_group_1.command_control
+      feedback_control: team_0.group_1.report
+      information: group_1.data
+      random_number_seeds: stimulator_group_1.random_number_seeds
+      virtual_receiver_custom_control: collector_group_1.virtual_receiver_custom_control
+  team_0.group_2:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_2
+    message_key_topic_dict:
+      report: team_0.group_2.report
+      eeg_1: group_2.data
+      command_control: team_0.group_2.command_control
+  team_1.group_2:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_2
+    message_key_topic_dict:
+      report: team_1.group_2.report
+      eeg_1: group_2.data
+      command_control: team_1.group_2.command_control
+  team_2.group_2:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_2
+    message_key_topic_dict:
+      report: team_2.group_2.report
+      eeg_1: group_2.data
+      command_control: team_2.group_2.command_control
+  team_3.group_2:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_2
+    message_key_topic_dict:
+      report: team_3.group_2.report
+      eeg_1: group_2.data
+      command_control: team_3.group_2.command_control
+  team_4.group_2:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_2
+    message_key_topic_dict:
+      report: team_4.group_2.report
+      eeg_1: group_2.data
+      command_control: team_4.group_2.command_control
+  team_5.group_2:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_2
+    message_key_topic_dict:
+      report: team_5.group_2.report
+      eeg_1: group_2.data
+      command_control: team_5.group_2.command_control
+  team_6.group_2:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_2
+    message_key_topic_dict:
+      report: team_6.group_2.report
+      eeg_1: group_2.data
+      command_control: team_6.group_2.command_control
+  team_7.group_2:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_2
+    message_key_topic_dict:
+      report: team_7.group_2.report
+      eeg_1: group_2.data
+      command_control: team_7.group_2.command_control
+  team_8.group_2:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_2
+    message_key_topic_dict:
+      report: team_8.group_2.report
+      eeg_1: group_2.data
+      command_control: team_8.group_2.command_control
+  team_9.group_2:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_2
+    message_key_topic_dict:
+      report: team_9.group_2.report
+      eeg_1: group_2.data
+      command_control: team_9.group_2.command_control
+  team_10.group_2:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_2
+    message_key_topic_dict:
+      report: team_10.group_2.report
+      eeg_1: group_2.data
+      command_control: team_10.group_2.command_control
+  collector_group_2:
+    component_type: COLLECTOR
+    component_info: {}
+    component_group_id: group_2
+    message_key_topic_dict:
+      send_data: group_2.data
+      command_control: collector_group_2.command_control
+      external_trigger: collector_group_2.external_trigger
+      virtual_receiver_custom_control: collector_group_2.virtual_receiver_custom_control
+  stimulator_group_2:
+    component_type: STIMULATOR
+    component_info:
+      external_trigger_address: 127.0.0.1:8972
+    component_group_id: group_2
+    message_key_topic_dict:
+      command_control: stimulator_group_2.command_control
+      feedback_control: team_0.group_2.report
+      information: group_2.data
+      random_number_seeds: stimulator_group_2.random_number_seeds
+      virtual_receiver_custom_control: collector_group_2.virtual_receiver_custom_control
+  team_0.group_3:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_3
+    message_key_topic_dict:
+      report: team_0.group_3.report
+      eeg_1: group_3.data
+      command_control: team_0.group_3.command_control
+  team_1.group_3:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_3
+    message_key_topic_dict:
+      report: team_1.group_3.report
+      eeg_1: group_3.data
+      command_control: team_1.group_3.command_control
+  team_2.group_3:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_3
+    message_key_topic_dict:
+      report: team_2.group_3.report
+      eeg_1: group_3.data
+      command_control: team_2.group_3.command_control
+  team_3.group_3:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_3
+    message_key_topic_dict:
+      report: team_3.group_3.report
+      eeg_1: group_3.data
+      command_control: team_3.group_3.command_control
+  team_4.group_3:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_3
+    message_key_topic_dict:
+      report: team_4.group_3.report
+      eeg_1: group_3.data
+      command_control: team_4.group_3.command_control
+  team_5.group_3:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_3
+    message_key_topic_dict:
+      report: team_5.group_3.report
+      eeg_1: group_3.data
+      command_control: team_5.group_3.command_control
+  team_6.group_3:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_3
+    message_key_topic_dict:
+      report: team_6.group_3.report
+      eeg_1: group_3.data
+      command_control: team_6.group_3.command_control
+  team_7.group_3:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_3
+    message_key_topic_dict:
+      report: team_7.group_3.report
+      eeg_1: group_3.data
+      command_control: team_7.group_3.command_control
+  team_8.group_3:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_3
+    message_key_topic_dict:
+      report: team_8.group_3.report
+      eeg_1: group_3.data
+      command_control: team_8.group_3.command_control
+  team_9.group_3:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_3
+    message_key_topic_dict:
+      report: team_9.group_3.report
+      eeg_1: group_3.data
+      command_control: team_9.group_3.command_control
+  team_10.group_3:
+    component_type: PROCESSOR
+    component_info:
+      algorithm_connection:
+        address: localhost:9981
+    component_group_id: group_3
+    message_key_topic_dict:
+      report: team_10.group_3.report
+      eeg_1: group_3.data
+      command_control: team_10.group_3.command_control
+  collector_group_3:
+    component_type: COLLECTOR
+    component_info: {}
+    component_group_id: group_3
+    message_key_topic_dict:
+      send_data: group_3.data
+      command_control: collector_group_3.command_control
+      external_trigger: collector_group_3.external_trigger
+      virtual_receiver_custom_control: collector_group_3.virtual_receiver_custom_control
+  stimulator_group_3:
+    component_type: STIMULATOR
+    component_info:
+      external_trigger_address: 127.0.0.1:8972
+    component_group_id: group_3
+    message_key_topic_dict:
+      command_control: stimulator_group_3.command_control
+      feedback_control: team_0.group_3.report
+      information: group_3.data
+      random_number_seeds: stimulator_group_3.random_number_seeds
+      virtual_receiver_custom_control: collector_group_3.virtual_receiver_custom_control
+  data_storage:
+    component_type: DATASTORAGE
+    component_info:
+      message:
+        group_1.data: null
+      stimulator_components:
+        stimulator_group_1: null
+    component_group_id: group_base
+    message_key_topic_dict:
+      command_control: data_storage.command_control
+      group_1.data: group_1.data
+  database:
+    component_type: DATABASE
+    component_info:
+      message:
+        group_1.data: null
+      process_components:
+        team_0.group_1: team_0.group_1.report
+      stimulator_components:
+        stimulator_group_1: null
+    component_group_id: group_base
+    message_key_topic_dict:
+      command_control: database.command_control
+      group_1.data: group_1.data
+      team_0.group_1.report: team_0.group_1.report
+  central_controller:
+    component_type: CONTROLLER
+    component_info:
+      message:
+        collector_group_1.command_control: null
+        stimulator_group_1.command_control: null
+        stimulator_group_1.random_number_seeds: null
+        collector_group_2.command_control: null
+        stimulator_group_2.command_control: null
+        stimulator_group_2.random_number_seeds: null
+        collector_group_3.command_control: null
+        stimulator_group_3.command_control: null
+        stimulator_group_3.random_number_seeds: null
+        data_storage.command_control: null
+        database.command_control: null
+    component_group_id: group_base
+    message_key_topic_dict:
+      collector_group_1.command_control: collector_group_1.command_control
+      stimulator_group_1.command_control: stimulator_group_1.command_control
+      stimulator_group_1.random_number_seeds: stimulator_group_1.random_number_seeds
+      collector_group_2.command_control: collector_group_2.command_control
+      stimulator_group_2.command_control: stimulator_group_2.command_control
+      stimulator_group_2.random_number_seeds: stimulator_group_2.random_number_seeds
+      collector_group_3.command_control: collector_group_3.command_control
+      stimulator_group_3.command_control: stimulator_group_3.command_control
+      stimulator_group_3.random_number_seeds: stimulator_group_3.random_number_seeds
+      data_storage.command_control: data_storage.command_control
+      database.command_control: database.command_control

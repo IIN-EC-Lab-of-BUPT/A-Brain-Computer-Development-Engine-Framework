@@ -1,0 +1,26 @@
+2024-08-10 17:30:12.643 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统开始初始化
+2024-08-10 17:30:12.648 - stimulatorLogger - BusinessManager.initial - DEBUG - BusinessManager初始化完成
+2024-08-10 17:30:12.648 - stimulatorLogger - ConfigManager.initial - DEBUG - ConfigManager初始化完成
+2024-08-10 17:30:12.648 - stimulatorLogger - ParadigmManager.initial - DEBUG - ParadigmManager初始化完成
+2024-08-10 17:30:12.648 - stimulatorLogger - TriggerManager.initial - DEBUG - TriggerManager初始化完成
+2024-08-10 17:30:12.649 - stimulatorLogger - CommandController.initial - DEBUG - CommandController初始化完成
+2024-08-10 17:30:12.649 - stimulatorLogger - FeedbackConntroller.initial - DEBUG - FeedbackController初始化完成
+2024-08-10 17:30:12.649 - stimulatorLogger - RandomNumberSeedsController.initial - DEBUG - RandomNumberSeedsController初始化完成
+2024-08-10 17:30:12.649 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统初始化完成
+2024-08-10 17:30:12.827 - stimulatorLogger - ApplicationImplement.run - INFO - 系统开始启动
+2024-08-10 17:30:19.986 - stimulatorLogger - ParadigmManager.startup - DEBUG - 当前选择的paradigm为:SSVEP
+2024-08-10 17:30:21.840 - stimulatorLogger - ParadigmManager.startup - DEBUG - ParadigmManager启动完成
+2024-08-10 17:30:21.841 - stimulatorLogger - TriggerManager.startup - DEBUG - 当前选择的trigger send mode为:NeuracleTriggerSystemImplement
+2024-08-10 17:30:21.846 - stimulatorLogger - TriggerManager.startup - DEBUG - TriggerManager启动完成
+2024-08-10 17:30:21.846 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前paradigm已获取
+2024-08-10 17:30:21.846 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前trigger send已获取
+2024-08-10 17:30:23.560 - stimulatorLogger - BusinessManager.choice_start_block - DEBUG - 本次实验的被试者id为1+起始block为1
+2024-08-10 17:30:23.766 - stimulatorLogger - BusinessManager.startup - DEBUG - BusinessManager启动完成
+2024-08-10 17:30:23.768 - stimulatorLogger - ConfigManager.startup - DEBUG - ConfigManager启动已完成
+2024-08-10 17:30:24.002 - stimulatorLogger - RandomNumberSeedsController.startup - DEBUG - RandomNumberSeedsController启动完成
+2024-08-10 17:30:24.118 - stimulatorLogger - FeedbackConntroller.startup - DEBUG - FeedbackController启动完成
+2024-08-10 17:30:24.320 - stimulatorLogger - CommandController.startup - DEBUG - CommandController启动完成
+2024-08-10 17:30:24.320 - stimulatorLogger - ApplicationImplement.run - INFO - 系统启动完成
+2024-08-10 17:36:09.746 - stimulatorLogger - RandomNumberSeedsController.receive_message - INFO - 收到random_number_seeds: RandomNumberSeedsModel(seeds=0.7258655428886414)
+2024-08-10 17:36:10.734 - stimulatorLogger - CommandController.receive_message - INFO - 收到命令控制消息: StartStimulationControlModel()
+2024-08-10 17:36:28.457 - stimulatorLogger - BusinessManager.send_information - DEBUG - 发送information package:DataMessageModel(package=InformationPackageModel(subject_id='1', block_id='1'))

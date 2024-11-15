@@ -1,0 +1,29 @@
+syntax = "proto3";
+option java_multiple_files = true;
+option java_package = "com.coreplantform.ResultPersistence.api.out";
+option java_outer_classname = "ResultPersistenceControl";
+package ResultPersistence.api.protobuf;
+
+//开始接受结果指令
+message StartReceiveResultControlMessage {
+
+}
+//停止接收结果指令
+message StopReceiveResultControlMessage {
+
+}
+
+//应用退出指令
+message ResultPersistenceExitControlMessage {
+
+}
+
+
+
+message ResultPersistenceControlMessage {
+  oneof package {
+    StartReceiveResultControlMessage startReceiveResultControlMessage = 1;
+    StopReceiveResultControlMessage stopReceiveResultControlMessage = 2;
+    ResultPersistenceExitControlMessage resultPersistenceExitControlMessage = 3;
+  }
+}

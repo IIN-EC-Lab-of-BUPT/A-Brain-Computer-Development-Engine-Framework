@@ -1,0 +1,95 @@
+2024-08-13 20:45:51.671 - componentLogger - Launcher.startup - ERROR - 组件注册运行发生异常:'NoneType' object has no attribute 'flushInput'
+Traceback (most recent call last):
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\ApplicationFramework\launcher\Launcher.py", line 89, in startup
+    await self.__application_task
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator/application\ApplicationImplement.py", line 147, in run
+    await self.__business_manager.startup()
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator\service\BusinessManager.py", line 104, in startup
+    await self.__current_paradigm.initial(self.__config_dict)
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator/Paradigm/ssvep\ssvep.py", line 112, in initial
+    await self._trigger_send.open()
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator/facade/TriggerSend/Neuracle\NeuracleTriggerSystemImplement.py", line 64, in open
+    self.serialTrigger = TriggerBox(self.port)
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator\facade\TriggerSend\Neuracle\triggerBox.py", line 98, in __init__
+    self.get_device_name()
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator\facade\TriggerSend\Neuracle\triggerBox.py", line 127, in get_device_name
+    self.send(cmd)
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator\facade\TriggerSend\Neuracle\triggerBox.py", line 330, in send
+    self._device_comport_handle.flushInput()
+AttributeError: 'NoneType' object has no attribute 'flushInput'
+2024-08-13 20:49:58.721 - componentLogger - Launcher.startup - ERROR - 组件注册运行发生异常:'NoneType' object has no attribute 'flushInput'
+Traceback (most recent call last):
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\ApplicationFramework\launcher\Launcher.py", line 89, in startup
+    await self.__application_task
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator/application\ApplicationImplement.py", line 147, in run
+    await self.__business_manager.startup()
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator\service\BusinessManager.py", line 104, in startup
+    await self.__current_paradigm.initial(self.__config_dict)
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator/Paradigm/ssvep\ssvep.py", line 112, in initial
+    await self._trigger_send.open()
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator/facade/TriggerSend/Neuracle\NeuracleTriggerSystemImplement.py", line 64, in open
+    self.serialTrigger = TriggerBox(self.port)
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator\facade\TriggerSend\Neuracle\triggerBox.py", line 98, in __init__
+    self.get_device_name()
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator\facade\TriggerSend\Neuracle\triggerBox.py", line 127, in get_device_name
+    self.send(cmd)
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator\facade\TriggerSend\Neuracle\triggerBox.py", line 330, in send
+    self._device_comport_handle.flushInput()
+AttributeError: 'NoneType' object has no attribute 'flushInput'
+2024-08-13 20:52:52.767 - componentLogger - Launcher.startup - ERROR - 组件注册运行发生异常:'NoneType' object has no attribute 'flushInput'
+Traceback (most recent call last):
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\ApplicationFramework\launcher\Launcher.py", line 89, in startup
+    await self.__application_task
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator/application\ApplicationImplement.py", line 147, in run
+    await self.__business_manager.startup()
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator\service\BusinessManager.py", line 104, in startup
+    await self.__current_paradigm.initial(self.__config_dict)
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator/Paradigm/ssvep\ssvep.py", line 112, in initial
+    await self._trigger_send.open()
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator/facade/TriggerSend/Neuracle\NeuracleTriggerSystemImplement.py", line 64, in open
+    self.serialTrigger = TriggerBox(self.port)
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator\facade\TriggerSend\Neuracle\triggerBox.py", line 98, in __init__
+    self.get_device_name()
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator\facade\TriggerSend\Neuracle\triggerBox.py", line 127, in get_device_name
+    self.send(cmd)
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator\facade\TriggerSend\Neuracle\triggerBox.py", line 330, in send
+    self._device_comport_handle.flushInput()
+AttributeError: 'NoneType' object has no attribute 'flushInput'
+2024-08-13 20:54:00.580 - componentLogger - Launcher.startup - ERROR - 组件注册运行发生异常:'NoneType' object has no attribute 'flushInput'
+Traceback (most recent call last):
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\ApplicationFramework\launcher\Launcher.py", line 89, in startup
+    await self.__application_task
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator/application\ApplicationImplement.py", line 147, in run
+    await self.__business_manager.startup()
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator\service\BusinessManager.py", line 104, in startup
+    await self.__current_paradigm.initial(self.__config_dict)
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator/Paradigm/ssvep\ssvep.py", line 112, in initial
+    await self._trigger_send.open()
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator/facade/TriggerSend/Neuracle\NeuracleTriggerSystemImplement.py", line 64, in open
+    self.serialTrigger = TriggerBox(self.port)
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator\facade\TriggerSend\Neuracle\triggerBox.py", line 98, in __init__
+    self.get_device_name()
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator\facade\TriggerSend\Neuracle\triggerBox.py", line 127, in get_device_name
+    self.send(cmd)
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator\facade\TriggerSend\Neuracle\triggerBox.py", line 330, in send
+    self._device_comport_handle.flushInput()
+AttributeError: 'NoneType' object has no attribute 'flushInput'
+2024-08-13 20:55:03.692 - componentLogger - Launcher.startup - ERROR - 组件注册运行发生异常:'NoneType' object has no attribute 'flushInput'
+Traceback (most recent call last):
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\ApplicationFramework\launcher\Launcher.py", line 89, in startup
+    await self.__application_task
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator/application\ApplicationImplement.py", line 147, in run
+    await self.__business_manager.startup()
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator\service\BusinessManager.py", line 104, in startup
+    await self.__current_paradigm.initial(self.__config_dict)
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator/Paradigm/ssvep\ssvep.py", line 112, in initial
+    await self._trigger_send.open()
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator/facade/TriggerSend/Neuracle\NeuracleTriggerSystemImplement.py", line 64, in open
+    self.serialTrigger = TriggerBox(self.port)
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator\facade\TriggerSend\Neuracle\triggerBox.py", line 98, in __init__
+    self.get_device_name()
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator\facade\TriggerSend\Neuracle\triggerBox.py", line 127, in get_device_name
+    self.send(cmd)
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\Stimulator\facade\TriggerSend\Neuracle\triggerBox.py", line 330, in send
+    self._device_comport_handle.flushInput()
+AttributeError: 'NoneType' object has no attribute 'flushInput'

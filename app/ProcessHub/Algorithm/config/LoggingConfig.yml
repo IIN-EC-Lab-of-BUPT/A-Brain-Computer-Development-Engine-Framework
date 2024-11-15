@@ -1,0 +1,33 @@
+version: 1
+disable_existing_loggers: False
+
+formatters:
+  simple:
+    format: "%(asctime)s.%(msecs)03d - %(name)s - %(module)s.%(funcName)s - %(levelname)s - %(message)s"
+    datefmt: "%Y-%m-%d %H:%M:%S"
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: DEBUG
+    formatter: simple
+    stream: ext://sys.stdout
+
+  algorithm_log_file:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: DEBUG
+    formatter: simple
+    filename: Algorithm/log/algorithm.log
+    when: midnight  # 每天午夜滚动
+    interval: 1
+    encoding: 'utf-8'
+
+loggers:
+  algorithmLogger:
+    level: INFO
+    handlers: [algorithm_log_file, console]
+    propagate: no
+
+root:
+  level: DEBUG
+  handlers: []  # 如果不想在root级别记录日志，可以留空

@@ -1,0 +1,273 @@
+2024-08-13 10:12:32.187 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统开始初始化
+2024-08-13 10:12:32.191 - stimulatorLogger - BusinessManager.initial - DEBUG - BusinessManager初始化完成
+2024-08-13 10:12:32.191 - stimulatorLogger - ConfigManager.initial - DEBUG - ConfigManager初始化完成
+2024-08-13 10:12:32.191 - stimulatorLogger - ParadigmManager.initial - DEBUG - ParadigmManager初始化完成
+2024-08-13 10:12:32.191 - stimulatorLogger - TriggerManager.initial - DEBUG - TriggerManager初始化完成
+2024-08-13 10:12:32.191 - stimulatorLogger - CommandController.initial - DEBUG - CommandController初始化完成
+2024-08-13 10:12:32.191 - stimulatorLogger - FeedbackConntroller.initial - DEBUG - FeedbackController初始化完成
+2024-08-13 10:12:32.191 - stimulatorLogger - RandomNumberSeedsController.initial - DEBUG - RandomNumberSeedsController初始化完成
+2024-08-13 10:12:32.192 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统初始化完成
+2024-08-13 10:12:42.324 - stimulatorLogger - ApplicationImplement.run - INFO - 系统开始启动
+2024-08-13 10:12:47.640 - stimulatorLogger - ParadigmManager.startup - DEBUG - 当前选择的paradigm为:SSVEP
+2024-08-13 10:12:50.298 - stimulatorLogger - ParadigmManager.startup - DEBUG - ParadigmManager启动完成
+2024-08-13 10:12:50.299 - stimulatorLogger - TriggerManager.startup - DEBUG - 当前选择的trigger send mode为:ExternalTriggerSend
+2024-08-13 10:12:50.312 - stimulatorLogger - TriggerManager.startup - DEBUG - TriggerManager启动完成
+2024-08-13 10:12:50.312 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前paradigm已获取
+2024-08-13 10:12:50.312 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前trigger send已获取
+2024-08-13 10:12:51.376 - stimulatorLogger - BusinessManager.choice_start_block - DEBUG - 本次实验的被试者id为1+起始block为1
+2024-08-13 10:12:51.710 - stimulatorLogger - BusinessManager.startup - DEBUG - BusinessManager启动完成
+2024-08-13 10:12:51.716 - stimulatorLogger - ConfigManager.startup - DEBUG - ConfigManager启动已完成
+2024-08-13 10:12:51.980 - stimulatorLogger - RandomNumberSeedsController.startup - DEBUG - RandomNumberSeedsController启动完成
+2024-08-13 10:12:52.075 - stimulatorLogger - FeedbackConntroller.startup - DEBUG - FeedbackController启动完成
+2024-08-13 10:12:52.267 - stimulatorLogger - CommandController.startup - DEBUG - CommandController启动完成
+2024-08-13 10:12:52.280 - stimulatorLogger - ApplicationImplement.run - INFO - 系统启动完成
+2024-08-13 10:13:07.785 - stimulatorLogger - RandomNumberSeedsController.receive_message - INFO - 收到random_number_seeds: RandomNumberSeedsModel(seeds=0.3941744565963745)
+2024-08-13 10:13:08.802 - stimulatorLogger - CommandController.receive_message - INFO - 收到命令控制消息: StartStimulationControlModel()
+2024-08-13 10:13:18.248 - stimulatorLogger - BusinessManager.send_information - DEBUG - 发送information package:DataMessageModel(package=InformationPackageModel(subject_id='1', block_id='1'))
+2024-08-13 10:16:32.108 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统开始初始化
+2024-08-13 10:16:32.111 - stimulatorLogger - BusinessManager.initial - DEBUG - BusinessManager初始化完成
+2024-08-13 10:16:32.111 - stimulatorLogger - ConfigManager.initial - DEBUG - ConfigManager初始化完成
+2024-08-13 10:16:32.111 - stimulatorLogger - ParadigmManager.initial - DEBUG - ParadigmManager初始化完成
+2024-08-13 10:16:32.112 - stimulatorLogger - TriggerManager.initial - DEBUG - TriggerManager初始化完成
+2024-08-13 10:16:32.112 - stimulatorLogger - CommandController.initial - DEBUG - CommandController初始化完成
+2024-08-13 10:16:32.112 - stimulatorLogger - FeedbackConntroller.initial - DEBUG - FeedbackController初始化完成
+2024-08-13 10:16:32.112 - stimulatorLogger - RandomNumberSeedsController.initial - DEBUG - RandomNumberSeedsController初始化完成
+2024-08-13 10:16:32.112 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统初始化完成
+2024-08-13 10:16:32.216 - stimulatorLogger - ApplicationImplement.run - INFO - 系统开始启动
+2024-08-13 10:16:36.501 - stimulatorLogger - ParadigmManager.startup - DEBUG - 当前选择的paradigm为:SSVEP
+2024-08-13 10:16:37.472 - stimulatorLogger - ParadigmManager.startup - DEBUG - ParadigmManager启动完成
+2024-08-13 10:16:37.472 - stimulatorLogger - TriggerManager.startup - DEBUG - 当前选择的trigger send mode为:ExternalTriggerSend
+2024-08-13 10:16:37.478 - stimulatorLogger - TriggerManager.startup - DEBUG - TriggerManager启动完成
+2024-08-13 10:16:37.479 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前paradigm已获取
+2024-08-13 10:16:37.479 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前trigger send已获取
+2024-08-13 10:16:38.216 - stimulatorLogger - BusinessManager.choice_start_block - DEBUG - 本次实验的被试者id为1+起始block为1
+2024-08-13 10:16:38.343 - stimulatorLogger - BusinessManager.startup - DEBUG - BusinessManager启动完成
+2024-08-13 10:16:38.344 - stimulatorLogger - ConfigManager.startup - DEBUG - ConfigManager启动已完成
+2024-08-13 10:16:38.534 - stimulatorLogger - RandomNumberSeedsController.startup - DEBUG - RandomNumberSeedsController启动完成
+2024-08-13 10:16:38.620 - stimulatorLogger - FeedbackConntroller.startup - DEBUG - FeedbackController启动完成
+2024-08-13 10:16:38.815 - stimulatorLogger - CommandController.startup - DEBUG - CommandController启动完成
+2024-08-13 10:16:38.828 - stimulatorLogger - ApplicationImplement.run - INFO - 系统启动完成
+2024-08-13 10:16:43.435 - stimulatorLogger - RandomNumberSeedsController.receive_message - INFO - 收到random_number_seeds: RandomNumberSeedsModel(seeds=0.5658133029937744)
+2024-08-13 10:16:44.453 - stimulatorLogger - CommandController.receive_message - INFO - 收到命令控制消息: StartStimulationControlModel()
+2024-08-13 10:16:54.012 - stimulatorLogger - BusinessManager.send_information - DEBUG - 发送information package:DataMessageModel(package=InformationPackageModel(subject_id='1', block_id='1'))
+2024-08-13 10:30:39.929 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统开始初始化
+2024-08-13 10:30:39.933 - stimulatorLogger - BusinessManager.initial - DEBUG - BusinessManager初始化完成
+2024-08-13 10:30:39.933 - stimulatorLogger - ConfigManager.initial - DEBUG - ConfigManager初始化完成
+2024-08-13 10:30:39.933 - stimulatorLogger - ParadigmManager.initial - DEBUG - ParadigmManager初始化完成
+2024-08-13 10:30:39.933 - stimulatorLogger - TriggerManager.initial - DEBUG - TriggerManager初始化完成
+2024-08-13 10:30:39.933 - stimulatorLogger - CommandController.initial - DEBUG - CommandController初始化完成
+2024-08-13 10:30:39.933 - stimulatorLogger - FeedbackConntroller.initial - DEBUG - FeedbackController初始化完成
+2024-08-13 10:30:39.934 - stimulatorLogger - RandomNumberSeedsController.initial - DEBUG - RandomNumberSeedsController初始化完成
+2024-08-13 10:30:39.934 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统初始化完成
+2024-08-13 10:30:40.061 - stimulatorLogger - ApplicationImplement.run - INFO - 系统开始启动
+2024-08-13 10:30:41.128 - stimulatorLogger - ParadigmManager.startup - DEBUG - 当前选择的paradigm为:SSVEP
+2024-08-13 10:30:42.144 - stimulatorLogger - ParadigmManager.startup - DEBUG - ParadigmManager启动完成
+2024-08-13 10:30:42.145 - stimulatorLogger - TriggerManager.startup - DEBUG - 当前选择的trigger send mode为:NeuracleTriggerSystemImplement
+2024-08-13 10:30:42.148 - stimulatorLogger - TriggerManager.startup - DEBUG - TriggerManager启动完成
+2024-08-13 10:30:42.149 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前paradigm已获取
+2024-08-13 10:30:42.149 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前trigger send已获取
+2024-08-13 10:30:42.680 - stimulatorLogger - BusinessManager.choice_start_block - DEBUG - 本次实验的被试者id为1+起始block为1
+2024-08-13 10:30:42.883 - stimulatorLogger - BusinessManager.startup - DEBUG - BusinessManager启动完成
+2024-08-13 10:30:42.884 - stimulatorLogger - ConfigManager.startup - DEBUG - ConfigManager启动已完成
+2024-08-13 10:30:43.101 - stimulatorLogger - RandomNumberSeedsController.startup - DEBUG - RandomNumberSeedsController启动完成
+2024-08-13 10:30:43.207 - stimulatorLogger - FeedbackConntroller.startup - DEBUG - FeedbackController启动完成
+2024-08-13 10:30:43.416 - stimulatorLogger - CommandController.startup - DEBUG - CommandController启动完成
+2024-08-13 10:30:43.428 - stimulatorLogger - ApplicationImplement.run - INFO - 系统启动完成
+2024-08-13 10:30:46.781 - stimulatorLogger - RandomNumberSeedsController.receive_message - INFO - 收到random_number_seeds: RandomNumberSeedsModel(seeds=0.9878547787666321)
+2024-08-13 10:30:47.788 - stimulatorLogger - CommandController.receive_message - INFO - 收到命令控制消息: StartStimulationControlModel()
+2024-08-13 10:30:57.232 - stimulatorLogger - BusinessManager.send_information - DEBUG - 发送information package:DataMessageModel(package=InformationPackageModel(subject_id='1', block_id='1'))
+2024-08-13 10:34:32.968 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统开始初始化
+2024-08-13 10:34:32.971 - stimulatorLogger - BusinessManager.initial - DEBUG - BusinessManager初始化完成
+2024-08-13 10:34:32.971 - stimulatorLogger - ConfigManager.initial - DEBUG - ConfigManager初始化完成
+2024-08-13 10:34:32.971 - stimulatorLogger - ParadigmManager.initial - DEBUG - ParadigmManager初始化完成
+2024-08-13 10:34:32.971 - stimulatorLogger - TriggerManager.initial - DEBUG - TriggerManager初始化完成
+2024-08-13 10:34:32.971 - stimulatorLogger - CommandController.initial - DEBUG - CommandController初始化完成
+2024-08-13 10:34:32.971 - stimulatorLogger - FeedbackConntroller.initial - DEBUG - FeedbackController初始化完成
+2024-08-13 10:34:32.971 - stimulatorLogger - RandomNumberSeedsController.initial - DEBUG - RandomNumberSeedsController初始化完成
+2024-08-13 10:34:32.971 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统初始化完成
+2024-08-13 10:34:33.067 - stimulatorLogger - ApplicationImplement.run - INFO - 系统开始启动
+2024-08-13 10:34:33.954 - stimulatorLogger - ParadigmManager.startup - DEBUG - 当前选择的paradigm为:SSVEP
+2024-08-13 10:34:34.874 - stimulatorLogger - ParadigmManager.startup - DEBUG - ParadigmManager启动完成
+2024-08-13 10:34:34.875 - stimulatorLogger - TriggerManager.startup - DEBUG - 当前选择的trigger send mode为:NeuracleTriggerSystemImplement
+2024-08-13 10:34:34.878 - stimulatorLogger - TriggerManager.startup - DEBUG - TriggerManager启动完成
+2024-08-13 10:34:34.878 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前paradigm已获取
+2024-08-13 10:34:34.879 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前trigger send已获取
+2024-08-13 10:34:35.514 - stimulatorLogger - BusinessManager.choice_start_block - DEBUG - 本次实验的被试者id为1+起始block为1
+2024-08-13 10:34:35.672 - stimulatorLogger - BusinessManager.startup - DEBUG - BusinessManager启动完成
+2024-08-13 10:34:35.673 - stimulatorLogger - ConfigManager.startup - DEBUG - ConfigManager启动已完成
+2024-08-13 10:34:35.898 - stimulatorLogger - RandomNumberSeedsController.startup - DEBUG - RandomNumberSeedsController启动完成
+2024-08-13 10:34:35.995 - stimulatorLogger - FeedbackConntroller.startup - DEBUG - FeedbackController启动完成
+2024-08-13 10:34:36.258 - stimulatorLogger - CommandController.startup - DEBUG - CommandController启动完成
+2024-08-13 10:34:36.271 - stimulatorLogger - ApplicationImplement.run - INFO - 系统启动完成
+2024-08-13 10:34:39.634 - stimulatorLogger - RandomNumberSeedsController.receive_message - INFO - 收到random_number_seeds: RandomNumberSeedsModel(seeds=0.7090785503387451)
+2024-08-13 10:34:40.629 - stimulatorLogger - CommandController.receive_message - INFO - 收到命令控制消息: StartStimulationControlModel()
+2024-08-13 10:34:50.345 - stimulatorLogger - BusinessManager.send_information - DEBUG - 发送information package:DataMessageModel(package=InformationPackageModel(subject_id='1', block_id='1'))
+2024-08-13 10:34:58.599 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='11', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=19080.0)]))
+2024-08-13 10:34:58.600 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ScorePackageModel(show_text='11', score=0.0, trial_time=3.0239999294281006, trial_id='1', block_id='1', subject_id='1'))
+2024-08-13 10:35:07.859 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='11', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=28320.0)]))
+2024-08-13 10:35:07.861 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ScorePackageModel(show_text='11', score=0.0, trial_time=6.045000076293945, trial_id='2', block_id='1', subject_id='1'))
+2024-08-13 10:35:17.118 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='11', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=37600.0)]))
+2024-08-13 10:35:17.119 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ScorePackageModel(show_text='11', score=0.0, trial_time=9.071000099182129, trial_id='3', block_id='1', subject_id='1'))
+2024-08-13 20:45:45.852 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统开始初始化
+2024-08-13 20:45:45.855 - stimulatorLogger - BusinessManager.initial - DEBUG - BusinessManager初始化完成
+2024-08-13 20:45:45.855 - stimulatorLogger - ConfigManager.initial - DEBUG - ConfigManager初始化完成
+2024-08-13 20:45:45.855 - stimulatorLogger - ParadigmManager.initial - DEBUG - ParadigmManager初始化完成
+2024-08-13 20:45:45.856 - stimulatorLogger - TriggerManager.initial - DEBUG - TriggerManager初始化完成
+2024-08-13 20:45:45.856 - stimulatorLogger - CommandController.initial - DEBUG - CommandController初始化完成
+2024-08-13 20:45:45.856 - stimulatorLogger - FeedbackConntroller.initial - DEBUG - FeedbackController初始化完成
+2024-08-13 20:45:45.856 - stimulatorLogger - RandomNumberSeedsController.initial - DEBUG - RandomNumberSeedsController初始化完成
+2024-08-13 20:45:45.856 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统初始化完成
+2024-08-13 20:45:46.004 - stimulatorLogger - ApplicationImplement.run - INFO - 系统开始启动
+2024-08-13 20:45:48.874 - stimulatorLogger - ParadigmManager.startup - DEBUG - 当前选择的paradigm为:SSVEP
+2024-08-13 20:45:50.453 - stimulatorLogger - ParadigmManager.startup - DEBUG - ParadigmManager启动完成
+2024-08-13 20:45:50.453 - stimulatorLogger - TriggerManager.startup - DEBUG - 当前选择的trigger send mode为:NeuracleTriggerSystemImplement
+2024-08-13 20:45:50.458 - stimulatorLogger - TriggerManager.startup - DEBUG - TriggerManager启动完成
+2024-08-13 20:45:50.458 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前paradigm已获取
+2024-08-13 20:45:50.458 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前trigger send已获取
+2024-08-13 20:45:51.656 - stimulatorLogger - BusinessManager.choice_start_block - DEBUG - 本次实验的被试者id为1+起始block为1
+2024-08-13 20:49:53.647 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统开始初始化
+2024-08-13 20:49:53.650 - stimulatorLogger - BusinessManager.initial - DEBUG - BusinessManager初始化完成
+2024-08-13 20:49:53.650 - stimulatorLogger - ConfigManager.initial - DEBUG - ConfigManager初始化完成
+2024-08-13 20:49:53.650 - stimulatorLogger - ParadigmManager.initial - DEBUG - ParadigmManager初始化完成
+2024-08-13 20:49:53.650 - stimulatorLogger - TriggerManager.initial - DEBUG - TriggerManager初始化完成
+2024-08-13 20:49:53.650 - stimulatorLogger - CommandController.initial - DEBUG - CommandController初始化完成
+2024-08-13 20:49:53.650 - stimulatorLogger - FeedbackConntroller.initial - DEBUG - FeedbackController初始化完成
+2024-08-13 20:49:53.650 - stimulatorLogger - RandomNumberSeedsController.initial - DEBUG - RandomNumberSeedsController初始化完成
+2024-08-13 20:49:53.650 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统初始化完成
+2024-08-13 20:49:53.803 - stimulatorLogger - ApplicationImplement.run - INFO - 系统开始启动
+2024-08-13 20:49:56.655 - stimulatorLogger - ParadigmManager.startup - DEBUG - 当前选择的paradigm为:SSVEP
+2024-08-13 20:49:57.599 - stimulatorLogger - ParadigmManager.startup - DEBUG - ParadigmManager启动完成
+2024-08-13 20:49:57.599 - stimulatorLogger - TriggerManager.startup - DEBUG - 当前选择的trigger send mode为:NeuracleTriggerSystemImplement
+2024-08-13 20:49:57.603 - stimulatorLogger - TriggerManager.startup - DEBUG - TriggerManager启动完成
+2024-08-13 20:49:57.603 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前paradigm已获取
+2024-08-13 20:49:57.603 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前trigger send已获取
+2024-08-13 20:49:58.714 - stimulatorLogger - BusinessManager.choice_start_block - DEBUG - 本次实验的被试者id为1+起始block为1
+2024-08-13 20:52:48.462 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统开始初始化
+2024-08-13 20:52:48.465 - stimulatorLogger - BusinessManager.initial - DEBUG - BusinessManager初始化完成
+2024-08-13 20:52:48.465 - stimulatorLogger - ConfigManager.initial - DEBUG - ConfigManager初始化完成
+2024-08-13 20:52:48.466 - stimulatorLogger - ParadigmManager.initial - DEBUG - ParadigmManager初始化完成
+2024-08-13 20:52:48.466 - stimulatorLogger - TriggerManager.initial - DEBUG - TriggerManager初始化完成
+2024-08-13 20:52:48.466 - stimulatorLogger - CommandController.initial - DEBUG - CommandController初始化完成
+2024-08-13 20:52:48.466 - stimulatorLogger - FeedbackConntroller.initial - DEBUG - FeedbackController初始化完成
+2024-08-13 20:52:48.466 - stimulatorLogger - RandomNumberSeedsController.initial - DEBUG - RandomNumberSeedsController初始化完成
+2024-08-13 20:52:48.466 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统初始化完成
+2024-08-13 20:52:48.631 - stimulatorLogger - ApplicationImplement.run - INFO - 系统开始启动
+2024-08-13 20:52:50.772 - stimulatorLogger - ParadigmManager.startup - DEBUG - 当前选择的paradigm为:SSVEP
+2024-08-13 20:52:51.736 - stimulatorLogger - ParadigmManager.startup - DEBUG - ParadigmManager启动完成
+2024-08-13 20:52:51.737 - stimulatorLogger - TriggerManager.startup - DEBUG - 当前选择的trigger send mode为:NeuracleTriggerSystemImplement
+2024-08-13 20:52:51.740 - stimulatorLogger - TriggerManager.startup - DEBUG - TriggerManager启动完成
+2024-08-13 20:52:51.741 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前paradigm已获取
+2024-08-13 20:52:51.741 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前trigger send已获取
+2024-08-13 20:52:52.759 - stimulatorLogger - BusinessManager.choice_start_block - DEBUG - 本次实验的被试者id为1+起始block为1
+2024-08-13 20:53:57.469 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统开始初始化
+2024-08-13 20:53:57.473 - stimulatorLogger - BusinessManager.initial - DEBUG - BusinessManager初始化完成
+2024-08-13 20:53:57.473 - stimulatorLogger - ConfigManager.initial - DEBUG - ConfigManager初始化完成
+2024-08-13 20:53:57.473 - stimulatorLogger - ParadigmManager.initial - DEBUG - ParadigmManager初始化完成
+2024-08-13 20:53:57.473 - stimulatorLogger - TriggerManager.initial - DEBUG - TriggerManager初始化完成
+2024-08-13 20:53:57.473 - stimulatorLogger - CommandController.initial - DEBUG - CommandController初始化完成
+2024-08-13 20:53:57.473 - stimulatorLogger - FeedbackConntroller.initial - DEBUG - FeedbackController初始化完成
+2024-08-13 20:53:57.473 - stimulatorLogger - RandomNumberSeedsController.initial - DEBUG - RandomNumberSeedsController初始化完成
+2024-08-13 20:53:57.473 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统初始化完成
+2024-08-13 20:53:57.622 - stimulatorLogger - ApplicationImplement.run - INFO - 系统开始启动
+2024-08-13 20:53:58.948 - stimulatorLogger - ParadigmManager.startup - DEBUG - 当前选择的paradigm为:SSVEP
+2024-08-13 20:53:59.935 - stimulatorLogger - ParadigmManager.startup - DEBUG - ParadigmManager启动完成
+2024-08-13 20:53:59.936 - stimulatorLogger - TriggerManager.startup - DEBUG - 当前选择的trigger send mode为:NeuracleTriggerSystemImplement
+2024-08-13 20:53:59.939 - stimulatorLogger - TriggerManager.startup - DEBUG - TriggerManager启动完成
+2024-08-13 20:53:59.939 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前paradigm已获取
+2024-08-13 20:53:59.940 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前trigger send已获取
+2024-08-13 20:54:00.569 - stimulatorLogger - BusinessManager.choice_start_block - DEBUG - 本次实验的被试者id为1+起始block为1
+2024-08-13 20:55:00.506 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统开始初始化
+2024-08-13 20:55:00.509 - stimulatorLogger - BusinessManager.initial - DEBUG - BusinessManager初始化完成
+2024-08-13 20:55:00.509 - stimulatorLogger - ConfigManager.initial - DEBUG - ConfigManager初始化完成
+2024-08-13 20:55:00.509 - stimulatorLogger - ParadigmManager.initial - DEBUG - ParadigmManager初始化完成
+2024-08-13 20:55:00.509 - stimulatorLogger - TriggerManager.initial - DEBUG - TriggerManager初始化完成
+2024-08-13 20:55:00.510 - stimulatorLogger - CommandController.initial - DEBUG - CommandController初始化完成
+2024-08-13 20:55:00.510 - stimulatorLogger - FeedbackConntroller.initial - DEBUG - FeedbackController初始化完成
+2024-08-13 20:55:00.510 - stimulatorLogger - RandomNumberSeedsController.initial - DEBUG - RandomNumberSeedsController初始化完成
+2024-08-13 20:55:00.510 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统初始化完成
+2024-08-13 20:55:00.614 - stimulatorLogger - ApplicationImplement.run - INFO - 系统开始启动
+2024-08-13 20:55:02.224 - stimulatorLogger - ParadigmManager.startup - DEBUG - 当前选择的paradigm为:SSVEP
+2024-08-13 20:55:03.192 - stimulatorLogger - ParadigmManager.startup - DEBUG - ParadigmManager启动完成
+2024-08-13 20:55:03.193 - stimulatorLogger - TriggerManager.startup - DEBUG - 当前选择的trigger send mode为:NeuracleTriggerSystemImplement
+2024-08-13 20:55:03.196 - stimulatorLogger - TriggerManager.startup - DEBUG - TriggerManager启动完成
+2024-08-13 20:55:03.196 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前paradigm已获取
+2024-08-13 20:55:03.197 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前trigger send已获取
+2024-08-13 20:55:03.686 - stimulatorLogger - BusinessManager.choice_start_block - DEBUG - 本次实验的被试者id为1+起始block为1
+2024-08-13 20:57:52.266 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统开始初始化
+2024-08-13 20:57:52.269 - stimulatorLogger - BusinessManager.initial - DEBUG - BusinessManager初始化完成
+2024-08-13 20:57:52.269 - stimulatorLogger - ConfigManager.initial - DEBUG - ConfigManager初始化完成
+2024-08-13 20:57:52.269 - stimulatorLogger - ParadigmManager.initial - DEBUG - ParadigmManager初始化完成
+2024-08-13 20:57:52.270 - stimulatorLogger - TriggerManager.initial - DEBUG - TriggerManager初始化完成
+2024-08-13 20:57:52.270 - stimulatorLogger - CommandController.initial - DEBUG - CommandController初始化完成
+2024-08-13 20:57:52.270 - stimulatorLogger - FeedbackConntroller.initial - DEBUG - FeedbackController初始化完成
+2024-08-13 20:57:52.270 - stimulatorLogger - RandomNumberSeedsController.initial - DEBUG - RandomNumberSeedsController初始化完成
+2024-08-13 20:57:52.270 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统初始化完成
+2024-08-13 20:57:52.628 - stimulatorLogger - ApplicationImplement.run - INFO - 系统开始启动
+2024-08-13 20:57:53.737 - stimulatorLogger - ParadigmManager.startup - DEBUG - 当前选择的paradigm为:SSVEP
+2024-08-13 20:57:54.699 - stimulatorLogger - ParadigmManager.startup - DEBUG - ParadigmManager启动完成
+2024-08-13 20:57:54.700 - stimulatorLogger - TriggerManager.startup - DEBUG - 当前选择的trigger send mode为:NeuracleTriggerSystemImplement
+2024-08-13 20:57:54.703 - stimulatorLogger - TriggerManager.startup - DEBUG - TriggerManager启动完成
+2024-08-13 20:57:54.703 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前paradigm已获取
+2024-08-13 20:57:54.704 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前trigger send已获取
+2024-08-13 20:57:55.362 - stimulatorLogger - BusinessManager.choice_start_block - DEBUG - 本次实验的被试者id为1+起始block为1
+2024-08-13 20:57:55.705 - stimulatorLogger - BusinessManager.startup - DEBUG - BusinessManager启动完成
+2024-08-13 20:57:55.706 - stimulatorLogger - ConfigManager.startup - DEBUG - ConfigManager启动已完成
+2024-08-13 20:57:55.912 - stimulatorLogger - RandomNumberSeedsController.startup - DEBUG - RandomNumberSeedsController启动完成
+2024-08-13 20:57:56.010 - stimulatorLogger - FeedbackConntroller.startup - DEBUG - FeedbackController启动完成
+2024-08-13 20:57:56.217 - stimulatorLogger - CommandController.startup - DEBUG - CommandController启动完成
+2024-08-13 20:57:56.230 - stimulatorLogger - ApplicationImplement.run - INFO - 系统启动完成
+2024-08-13 21:06:26.530 - stimulatorLogger - RandomNumberSeedsController.receive_message - INFO - 收到random_number_seeds: RandomNumberSeedsModel(seeds=0.48827800154685974)
+2024-08-13 21:06:27.539 - stimulatorLogger - CommandController.receive_message - INFO - 收到命令控制消息: StartStimulationControlModel()
+2024-08-13 21:06:37.691 - stimulatorLogger - BusinessManager.send_information - DEBUG - 发送information package:DataMessageModel(package=InformationPackageModel(subject_id='1', block_id='1'))
+2024-08-13 21:06:46.023 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ScorePackageModel(show_text='5', score=0.0, trial_time=3.0179998874664307, trial_id='1', block_id='1', subject_id='1'))
+2024-08-13 21:06:46.024 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='5', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=17840.0)]))
+2024-08-13 21:06:55.237 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='1', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=27120.0)]))
+2024-08-13 21:06:55.238 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ScorePackageModel(show_text='1', score=0.0, trial_time=6.057000160217285, trial_id='2', block_id='1', subject_id='1'))
+2024-08-13 21:07:04.477 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='4', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=36360.0)]))
+2024-08-13 21:07:04.478 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ScorePackageModel(show_text='4', score=0.0, trial_time=9.093000411987305, trial_id='3', block_id='1', subject_id='1'))
+2024-08-13 21:07:19.311 - stimulatorLogger - BusinessManager.send_information - DEBUG - 发送information package:DataMessageModel(package=InformationPackageModel(subject_id='1', block_id='2'))
+2024-08-13 21:07:27.575 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='5', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=59440.0)]))
+2024-08-13 21:07:27.575 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ScorePackageModel(show_text='5', score=0.0, trial_time=3.0260000228881836, trial_id='1', block_id='2', subject_id='1'))
+2024-08-13 21:07:36.798 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='24', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=68680.0)]))
+2024-08-13 21:07:36.800 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ScorePackageModel(show_text='24', score=0.0, trial_time=6.065999984741211, trial_id='2', block_id='2', subject_id='1'))
+2024-08-13 21:07:46.038 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='27', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=77920.0)]))
+2024-08-13 21:07:46.039 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ScorePackageModel(show_text='27', score=0.0, trial_time=9.102999687194824, trial_id='3', block_id='2', subject_id='1'))
+2024-08-13 21:19:48.509 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统开始初始化
+2024-08-13 21:19:48.512 - stimulatorLogger - BusinessManager.initial - DEBUG - BusinessManager初始化完成
+2024-08-13 21:19:48.512 - stimulatorLogger - ConfigManager.initial - DEBUG - ConfigManager初始化完成
+2024-08-13 21:19:48.513 - stimulatorLogger - ParadigmManager.initial - DEBUG - ParadigmManager初始化完成
+2024-08-13 21:19:48.513 - stimulatorLogger - TriggerManager.initial - DEBUG - TriggerManager初始化完成
+2024-08-13 21:19:48.513 - stimulatorLogger - CommandController.initial - DEBUG - CommandController初始化完成
+2024-08-13 21:19:48.513 - stimulatorLogger - FeedbackConntroller.initial - DEBUG - FeedbackController初始化完成
+2024-08-13 21:19:48.513 - stimulatorLogger - RandomNumberSeedsController.initial - DEBUG - RandomNumberSeedsController初始化完成
+2024-08-13 21:19:48.513 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统初始化完成
+2024-08-13 21:19:48.649 - stimulatorLogger - ApplicationImplement.run - INFO - 系统开始启动
+2024-08-13 21:19:53.825 - stimulatorLogger - ParadigmManager.startup - DEBUG - 当前选择的paradigm为:SSVEP
+2024-08-13 21:19:55.202 - stimulatorLogger - ParadigmManager.startup - DEBUG - ParadigmManager启动完成
+2024-08-13 21:19:55.202 - stimulatorLogger - TriggerManager.startup - DEBUG - 当前选择的trigger send mode为:NeuracleTriggerSystemImplement
+2024-08-13 21:19:55.206 - stimulatorLogger - TriggerManager.startup - DEBUG - TriggerManager启动完成
+2024-08-13 21:19:55.207 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前paradigm已获取
+2024-08-13 21:19:55.207 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前trigger send已获取
+2024-08-13 21:19:59.296 - stimulatorLogger - BusinessManager.choice_start_block - DEBUG - 本次实验的被试者id为1+起始block为1
+2024-08-13 21:19:59.459 - stimulatorLogger - BusinessManager.startup - DEBUG - BusinessManager启动完成
+2024-08-13 21:19:59.460 - stimulatorLogger - ConfigManager.startup - DEBUG - ConfigManager启动已完成
+2024-08-13 21:19:59.664 - stimulatorLogger - RandomNumberSeedsController.startup - DEBUG - RandomNumberSeedsController启动完成
+2024-08-13 21:19:59.767 - stimulatorLogger - FeedbackConntroller.startup - DEBUG - FeedbackController启动完成
+2024-08-13 21:19:59.976 - stimulatorLogger - CommandController.startup - DEBUG - CommandController启动完成
+2024-08-13 21:19:59.989 - stimulatorLogger - ApplicationImplement.run - INFO - 系统启动完成
+2024-08-13 21:20:11.803 - stimulatorLogger - RandomNumberSeedsController.receive_message - INFO - 收到random_number_seeds: RandomNumberSeedsModel(seeds=0.6319477558135986)
+2024-08-13 21:20:12.816 - stimulatorLogger - CommandController.receive_message - INFO - 收到命令控制消息: StartStimulationControlModel()
+2024-08-13 21:20:22.859 - stimulatorLogger - BusinessManager.send_information - DEBUG - 发送information package:DataMessageModel(package=InformationPackageModel(subject_id='1', block_id='1'))
+2024-08-13 21:20:31.165 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ScorePackageModel(show_text='8', score=0.0, trial_time=3.006999969482422, trial_id='1', block_id='1', subject_id='1'))
+2024-08-13 21:20:31.167 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='8', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=19400.0)]))
+2024-08-13 21:20:40.442 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='7', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=28680.0)]))
+2024-08-13 21:20:40.443 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ScorePackageModel(show_text='7', score=0.0, trial_time=6.017000198364258, trial_id='2', block_id='1', subject_id='1'))
+2024-08-13 21:20:49.718 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='5', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=37960.0)]))
+2024-08-13 21:20:49.719 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ScorePackageModel(show_text='5', score=0.0, trial_time=9.031999588012695, trial_id='3', block_id='1', subject_id='1'))
+2024-08-13 21:21:39.534 - stimulatorLogger - BusinessManager.send_information - DEBUG - 发送information package:DataMessageModel(package=InformationPackageModel(subject_id='1', block_id='2'))
+2024-08-13 21:21:47.858 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='21', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=96120.0)]))
+2024-08-13 21:21:47.860 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ScorePackageModel(show_text='21', score=0.0, trial_time=3.0329999923706055, trial_id='1', block_id='2', subject_id='1'))
+2024-08-13 21:21:57.132 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='28', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=105400.0)]))
+2024-08-13 21:21:57.134 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ScorePackageModel(show_text='28', score=0.0, trial_time=6.070000171661377, trial_id='2', block_id='2', subject_id='1'))
+2024-08-13 21:22:06.408 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='5', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=114640.0)]))
+2024-08-13 21:22:06.409 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ScorePackageModel(show_text='5', score=0.0, trial_time=9.071000099182129, trial_id='3', block_id='2', subject_id='1'))

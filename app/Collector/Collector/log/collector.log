@@ -1,0 +1,53 @@
+2024-11-15 10:52:00.627 - collectorLogger - NeuracleReceiverImplement.startup - INFO - 启动127.0.0.1:8712放大器连接，最长等待时间5秒...
+2024-11-15 10:52:05.741 - collectorLogger - ApplicationImplement.run - ERROR - 127.0.0.1:8712放大器连接超时，请检查放大器是否正常运行
+Traceback (most recent call last):
+  File "C:\Users\lyh\Desktop\eegSystem\app\Collector\Collector/receiver/neuracle\NeuracleReceiverImplement.py", line 84, in startup
+    self.__amplifier_reader, self.__amplifier_writer = await asyncio.open_connection(host, port)
+  File "C:\Users\lyh\Desktop\eegSystem\Python310\lib\asyncio\streams.py", line 47, in open_connection
+    transport, _ = await loop.create_connection(
+  File "C:\Users\lyh\Desktop\eegSystem\Python310\lib\asyncio\base_events.py", line 1055, in create_connection
+    raise exceptions[0]
+  File "C:\Users\lyh\Desktop\eegSystem\Python310\lib\asyncio\base_events.py", line 1040, in create_connection
+    sock = await self._connect_sock(
+  File "C:\Users\lyh\Desktop\eegSystem\Python310\lib\asyncio\base_events.py", line 954, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Users\lyh\Desktop\eegSystem\Python310\lib\asyncio\proactor_events.py", line 704, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "C:\Users\lyh\Desktop\eegSystem\Python310\lib\asyncio\windows_events.py", line 812, in _poll
+    value = callback(transferred, key, ov)
+  File "C:\Users\lyh\Desktop\eegSystem\Python310\lib\asyncio\windows_events.py", line 599, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\lyh\Desktop\eegSystem\app\Collector\Collector/application\ApplicationImplement.py", line 156, in run
+    await self.__business_manager.startup()
+  File "C:\Users\lyh\Desktop\eegSystem\app\Collector\Collector\service\BusinessManager.py", line 100, in startup
+    await self.__current_receiver.startup()
+  File "C:\Users\lyh\Desktop\eegSystem\app\Collector\Collector/receiver/neuracle\NeuracleReceiverImplement.py", line 88, in startup
+    raise ReceiverConnectionException(
+Collector.receiver.exception.ReceiverException.ReceiverConnectionException: 127.0.0.1:8712放大器连接超时，请检查放大器是否正常运行
+2024-11-15 11:17:22.585 - collectorLogger - GrpcServer.startup - INFO - Starting GRPC Server
+2024-11-15 11:17:22.601 - collectorLogger - GrpcServer.startup - DEBUG - GRPC Server add servicer <Collector.control.ExternalTriggerServer.ExternalTriggerServer object at 0x00000288FF8E4B50>
+2024-11-15 11:17:22.604 - collectorLogger - GrpcServer.startup - INFO - GRPC Server listening on [::]:8972
+2024-11-15 11:17:22.604 - collectorLogger - GrpcServer.startup - INFO - GRPC Server started
+2024-11-15 11:17:22.604 - collectorLogger - RPCController.startup - INFO - RPCController已启动
+2024-11-15 11:17:27.458 - collectorLogger - CommandController.receive_message - INFO - 收到命令控制消息: CollectorControlModel(package=SendDeviceInfoControlModel())
+2024-11-15 11:17:28.405 - collectorLogger - CommandController.receive_message - INFO - 收到命令控制消息: CollectorControlModel(package=StartDataSendingControlModel())
+2024-11-15 11:17:28.406 - collectorLogger - VirtualReceiverImplement.__read_data - INFO - 开始读取C:\Users\lyh\Desktop\eegSystem\app\Collector\Collector/receiver/virtual_receiver/data/S1/data1/data1.dat数据
+2024-11-15 11:17:36.679 - collectorLogger - ExternalTriggerServer.trigger - DEBUG - received external trigger message ExternalTriggerModel(timestamp=1731640704.0, trigger='250')
+2024-11-15 11:17:41.175 - collectorLogger - ExternalTriggerServer.trigger - DEBUG - received external trigger message ExternalTriggerModel(timestamp=1731640704.0, trigger='242')
+2024-11-15 11:17:42.211 - collectorLogger - ExternalTriggerServer.trigger - DEBUG - received external trigger message ExternalTriggerModel(timestamp=1731640704.0, trigger='245')
+2024-11-15 11:17:43.456 - collectorLogger - VirtualReceiverImplement.__read_data - INFO - C:\Users\lyh\Desktop\eegSystem\app\Collector\Collector/receiver/virtual_receiver/data/S1/data1/data1.dat数据读取完毕
+2024-11-15 11:17:43.456 - collectorLogger - VirtualReceiverImplement.__read_data - INFO - 开始读取C:\Users\lyh\Desktop\eegSystem\app\Collector\Collector/receiver/virtual_receiver/data/S1/data2/data2.dat数据
+2024-11-15 11:17:44.324 - collectorLogger - ExternalTriggerServer.trigger - DEBUG - received external trigger message ExternalTriggerModel(timestamp=1731640704.0, trigger='32')
+2024-11-15 11:17:45.678 - collectorLogger - ExternalTriggerServer.trigger - DEBUG - received external trigger message ExternalTriggerModel(timestamp=1731640704.0, trigger='241')
+2024-11-15 11:17:48.744 - collectorLogger - ExternalTriggerServer.trigger - DEBUG - received external trigger message ExternalTriggerModel(timestamp=1731640704.0, trigger='245')
+2024-11-15 11:17:50.845 - collectorLogger - ExternalTriggerServer.trigger - DEBUG - received external trigger message ExternalTriggerModel(timestamp=1731640704.0, trigger='18')
+2024-11-15 11:17:52.192 - collectorLogger - ExternalTriggerServer.trigger - DEBUG - received external trigger message ExternalTriggerModel(timestamp=1731640704.0, trigger='241')
+2024-11-15 11:17:54.392 - collectorLogger - VirtualReceiverImplement.__read_data - INFO - C:\Users\lyh\Desktop\eegSystem\app\Collector\Collector/receiver/virtual_receiver/data/S1/data2/data2.dat数据读取完毕
+2024-11-15 11:17:55.247 - collectorLogger - ExternalTriggerServer.trigger - DEBUG - received external trigger message ExternalTriggerModel(timestamp=1731640704.0, trigger='245')
+2024-11-15 11:17:57.321 - collectorLogger - ExternalTriggerServer.trigger - DEBUG - received external trigger message ExternalTriggerModel(timestamp=1731640704.0, trigger='24')
+2024-11-15 11:17:58.681 - collectorLogger - ExternalTriggerServer.trigger - DEBUG - received external trigger message ExternalTriggerModel(timestamp=1731640704.0, trigger='241')

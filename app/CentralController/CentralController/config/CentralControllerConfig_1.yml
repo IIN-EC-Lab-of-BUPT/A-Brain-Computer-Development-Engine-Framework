@@ -1,0 +1,83 @@
+version: 1
+
+static_groups:  # 组件组数量，一个刺激、一个采集、任意数量处理可列入一个组件组
+  group_base:
+    group_info:
+      null
+    message_key_topic_dict:
+      null
+  group_0:
+    group_info:
+      null
+    message_key_topic_dict:
+      eeg_1: group_0_data
+      collector_control: group_0_collector_command_control
+      stimulator_control: group_0_stimulator_command_control
+
+  group_1:
+    group_info:
+      null
+    message_key_topic_dict:
+      eeg_1: group_1_data
+      collector_control: group_1_collector_command_control
+      stimulator_control: group_1_stimulator_command_control
+  group_2:
+    group_info:
+      null
+    message_key_topic_dict:
+      eeg_1: group_2_data
+      collector_control: group_2_collector_command_control
+      stimulator_control: group_2_stimulator_command_control
+
+static_components:
+  central_controller:
+    component_info: null
+    component_group_id: group_base
+    message_key_topic_dict:
+      collector_control: group_0_data
+
+  stimulator_0:
+    component_info:
+      external_trigger_address: '127.0.0.1:8972'
+    component_group_id: group_0
+    message_key_topic_dict:
+      command_control: group_0_stimulator_command_control
+
+  stimulator_1:
+    component_info:
+      external_trigger_address: '127.0.0.1:8972'
+    component_group_id: group_1
+    message_key_topic_dict:
+      command_control: group_1_stimulator_command_control
+
+  stimulator_2:
+    component_info:
+      external_trigger_address: '127.0.0.1:8972'
+    component_group_id: group_2
+    message_key_topic_dict:
+      command_control: group_2_stimulator_command_control
+
+  collector_0:
+    component_info: null
+    component_group_id: group_0
+    message_key_topic_dict:
+      send_data: group_0_data
+      command_control: group_0_collector_command_control
+      external_trigger: collector_0_external_trigger
+
+
+  collector_1:
+    component_info: null
+    component_group_id: group_1
+    message_key_topic_dict:
+      send_data: group_1_data
+      command_control: group_1_collector_command_control
+      external_trigger: collector_1_external_trigger
+
+  collector_2:
+    component_info: null
+    component_group_id: group_2
+    message_key_topic_dict:
+      send_data: group_2_data
+      command_control: group_2_collector_command_control
+      external_trigger: collector_2_external_trigger

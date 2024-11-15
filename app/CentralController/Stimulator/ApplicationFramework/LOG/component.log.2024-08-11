@@ -1,0 +1,46 @@
+2024-08-11 13:19:37.126 - componentLogger - Launcher.startup - ERROR - 组件注册运行发生异常:<AioRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNAVAILABLE: ipv4:127.0.0.1:9003: Connection refused"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNAVAILABLE: ipv4:127.0.0.1:9003: Connection refused", grpc_status:14, created_time:"2024-08-11T05:19:37.1239082+00:00"}"
+>
+Traceback (most recent call last):
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\ApplicationFramework\launcher\Launcher.py", line 86, in startup
+    await self.__component_framework.register_component(component_model)
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\ApplicationFramework\facade\ComponentFrameworkImplement.py", line 93, in register_component
+    registered_component: ComponentModel_CCM = await self.__component_manager.component_register(
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\componentframework\control\ComponentManagerInterfaceImpl.py", line 44, in component_register
+    self.component_register_result = await self.__component_forwarder.component_register(component_model)
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\componentframework\service\ComponentManagerService.py", line 48, in component_register
+    self.component_register_result = await self.__component_forwarder.component_register(component_model)
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\componentframework\facadeImpl\ComponentManagerFacadeImpl.py", line 57, in component_register
+    response = await self.stub.RegisterComponent(request)
+  File "C:\Users\st1\AppData\Local\Programs\Python\Python310\lib\site-packages\grpc\aio\_call.py", line 318, in __await__
+    raise _create_rpc_error(
+grpc.aio._call.AioRpcError: <AioRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNAVAILABLE: ipv4:127.0.0.1:9003: Connection refused"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNAVAILABLE: ipv4:127.0.0.1:9003: Connection refused", grpc_status:14, created_time:"2024-08-11T05:19:37.1239082+00:00"}"
+>
+2024-08-11 13:19:37.133 - componentLogger - Launcher.shutdown - ERROR - 组件注销发生异常:<AioRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNAVAILABLE: ipv4:127.0.0.1:9003: Connection refused"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2024-08-11T05:19:37.1305813+00:00", grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNAVAILABLE: ipv4:127.0.0.1:9003: Connection refused"}"
+>
+Traceback (most recent call last):
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\ApplicationFramework\launcher\Launcher.py", line 97, in shutdown
+    await self.__component_framework.unregister_component()
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\ApplicationFramework\facade\ComponentFrameworkImplement.py", line 105, in unregister_component
+    await self.__component_manager.unregister_component()
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\componentframework\control\ComponentManagerInterfaceImpl.py", line 129, in unregister_component
+    self.unregister_component_result = await self.__component_forwarder.unregister_component()
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\componentframework\service\ComponentManagerService.py", line 133, in unregister_component
+    self.unregister_component_result = await self.__component_forwarder.unregister_component()
+  File "C:\Users\st1\Desktop\新建文件夹 (2)\2024bci\Stimulator\componentframework\facadeImpl\ComponentManagerFacadeImpl.py", line 145, in unregister_component
+    response = await self.stub.UnregisterComponent(request)
+  File "C:\Users\st1\AppData\Local\Programs\Python\Python310\lib\site-packages\grpc\aio\_call.py", line 318, in __await__
+    raise _create_rpc_error(
+grpc.aio._call.AioRpcError: <AioRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNAVAILABLE: ipv4:127.0.0.1:9003: Connection refused"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2024-08-11T05:19:37.1305813+00:00", grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNAVAILABLE: ipv4:127.0.0.1:9003: Connection refused"}"
+>

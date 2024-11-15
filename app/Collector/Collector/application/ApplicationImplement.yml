@@ -1,0 +1,28 @@
+# 初始化配置信息
+component:
+  # 组件ID遵循如下规则：
+  # 1.如果在配置文件中写入，则优先使用配置文件定义的ID
+  # 2.如果配置文件中未写入，则检查环境变量中COMPONENT_ID字段，如果存在则使用环境变量中定义的ID
+  # 3.如果环境变量中未找到COMPONENT_ID字段，则根据component_type字段自动生成component_type+随机uuid作为component_id
+  component_id: collector_group_1
+  component_type: COLLECTOR # 可自定义，比赛中限制为 PROCESSOR/STIMULATOR/COLLECTOR/MONITOR/CONTROLLER/DATASTORAGE/DATABASE
+  component_info:
+    external_trigger_rpc_address: '[::]:8972'
+    data_sender:
+      data_sender_class_file: Collector/datasender/FinalModeDataSender.py
+      data_sender_class_name: FinalModeDataSender
+#      data_sender_class_file: Collector/datasender/HardwareCompetitionDataSender.py
+#      data_sender_class_name: HardwareCompetitionDataSender
+#      data_sender_class_file: Collector/datasender/TimingDataSender.py
+#      data_sender_class_name: TimingDataSender
+    receiver:
+  #    receiver_class_file: Test/test_collector/NeuracleReceiverImplement_1.py
+#      receiver_class_file: Collector/receiver/neuracle/NeuracleReceiverImplement.py
+#      receiver_class_name: NeuracleReceiverImplement
+      receiver_class_file: Collector/receiver/virtual_receiver/VirtualReceiverImplement.py
+      receiver_class_name: VirtualReceiverImplement
+    message:
+      # 默认使用message_key:topic形式，如果topic为空，则由中控服务器分配
+      external_trigger: null
+      command_control: null
+      send_data: null

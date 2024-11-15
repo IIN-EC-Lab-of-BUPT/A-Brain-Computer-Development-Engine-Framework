@@ -1,0 +1,18 @@
+2024-08-20 23:47:30.232 - centralControllerLogger - ApplicationImplement.on_register_component - DEBUG - 收到组件注册请求，central_controller组件注册
+2024-08-20 23:47:30.345 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的collector_group_1.command_control消息
+2024-08-20 23:47:30.345 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='collector_group_1.command_control', topic='collector_group_1.command_control')
+2024-08-20 23:47:30.514 - centralControllerLogger - ApplicationImplement.on_unregister_component - DEBUG - 收到组件注销请求，central_controller组件注销
+2024-08-20 23:47:30.515 - centralControllerLogger - ServiceCoordinator.on_unregister_component - INFO - central_controller组件注销成功
+2024-08-20 23:50:32.445 - centralControllerLogger - ApplicationImplement.on_register_component - DEBUG - 收到组件注册请求，central_controller组件注册
+2024-08-20 23:50:32.588 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的collector_group_1.command_control消息
+2024-08-20 23:50:32.588 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='collector_group_1.command_control', topic='collector_group_1.command_control')
+2024-08-20 23:50:32.730 - centralControllerLogger - ApplicationImplement.on_unregister_component - DEBUG - 收到组件注销请求，central_controller组件注销
+2024-08-20 23:50:32.730 - centralControllerLogger - ServiceCoordinator.on_unregister_component - INFO - central_controller组件注销成功
+2024-08-20 23:55:08.147 - centralControllerLogger - ApplicationImplement.on_register_component - DEBUG - 收到组件注册请求，central_controller组件注册
+2024-08-20 23:55:08.273 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的collector_group_1.command_control消息
+2024-08-20 23:55:08.273 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='collector_group_1.command_control', topic='collector_group_1.command_control')
+2024-08-20 23:55:08.390 - centralControllerLogger - ApplicationImplement.on_unregister_component - DEBUG - 收到组件注销请求，central_controller组件注销
+2024-08-20 23:55:08.390 - centralControllerLogger - ServiceCoordinator.on_unregister_component - INFO - central_controller组件注销成功
+2024-08-20 23:57:06.828 - centralControllerLogger - ApplicationImplement.on_register_component - DEBUG - 收到组件注册请求，central_controller组件注册
+2024-08-20 23:57:06.973 - centralControllerLogger - ApplicationImplement.on_bind_message - DEBUG - 收到消息绑定请求，来自central_controller组件的collector_group_1.command_control消息
+2024-08-20 23:57:06.973 - centralControllerLogger - ServiceCoordinator.on_bind_message - INFO - 绑定消息成功:MessageBindingModel(component_id='central_controller', message_key='collector_group_1.command_control', topic='collector_group_1.command_control')

@@ -1,0 +1,38 @@
+connection:
+  rpc_address: '[::]:9981'
+
+method:
+  method_class_file: Algorithm/method/impl/AlgorithmImplement.py
+  method_class_name: AlgorithmImplement
+
+
+sources:  # 算法端数据源配置
+  eeg_1:  # 数据源名称,（可修改，需保证唯一）, 新增数据源需要保证配置信息包含以下主节点
+    source_receiver: # 定义源接收器配置
+      handler: continuous_data_source_receiver  # 指定算法端接收数据源业务对象类型，可选配不同数据源分发类型，必须与算法端已有数据源业务对象类型一致
+      configuration:  # 源接收器配置信息
+        chunk_size: 40
+
+
+
+source_receiver_handlers:
+   # 源接收器定义, 请保证配置信息包含以下主节点
+  continuous_data_source_receiver: # 数据源接收器名称需要注意不要与其他数据源接收器名称重复
+    # 连续数据源，用于订阅单通道或多通道连续数据如EEG、MEG等
+    # 连续数据源可支持配置项说明:
+    # configuration: 数据源配置信息
+    #   chunk_size: 默认为40，即40个数据点为一帧数据
+    receiver_class_file: Algorithm/service/SourceReceiver/ContinuousDataSourceReceiver.py
+    receiver_class_name: ContinuousDataSourceReceiver # 数据源接收器类型，需要注意不要与命名空间中已有类型名重复
+
+#  image_data_source_receiver:
+#    receiver_class_file: null
+#    receiver_class_name: null
+#
+#  command_data_source_receiver:
+#    receiver_class_file: null
+#    receiver_class_name: null
+
+  # 可在此处定义其他数据源接收器，需包含以下主节点
+  # receiver_class_file
+  # receiver_class_name

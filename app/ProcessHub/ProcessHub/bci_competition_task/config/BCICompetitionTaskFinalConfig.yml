@@ -1,0 +1,9 @@
+version: 1
+challenge:
+  challenge_class_file: ProcessHub/challenge/SSVEP/ChallengeSSVEP.py
+  challenge_class_name: ChallengeSSVEP
+
+# 所有预定义message,message_key
+message_key_topic_dict:
+  # 结果报告(对应于MessageKeyEnum.REPROT.value): 默认topic
+  report: null

@@ -1,0 +1,12 @@
+python -m grpc_tools.protoc -I . --python_out=.\out --grpc_python_out=.\out .\CommonMessage.proto
+python -m grpc_tools.protoc -I . --python_out=.\out --grpc_python_out=.\out .\AlgorithmRPCService.proto
+
+
+修改内容
+AlgorithmRPCService_pb2.py
+import Common.protobuf.out.CommonMessage_pb2 as CommonMessage__pb2
+import Common.protobuf.out.BaseDataClassMessage_pb2 as BaseDataClassMessage__pb2
+
+AlgorithmRPCService_pb2_grpc.py
+import Common.protobuf.out.AlgorithmRPCService_pb2 as AlgorithmRPCService__pb2
+import Common.protobuf.out.BaseDataClassMessage_pb2 as BaseDataClassMessage__pb2

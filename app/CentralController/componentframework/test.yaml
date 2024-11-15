@@ -1,0 +1,22 @@
+# 个人信息
+name: Alice Smith
+age: 30
+job: Engineer
+
+# 联系方式
+contact:
+  email: alice@example.com
+  phone: 123-456-7890
+
+# 兴趣爱好
+interests:
+  - Reading
+  - Hiking
+  - Photography
+
+# 地址信息
+address:
+  street: 123 Main Street
+  city: Any-town
+  zip: 12345
+  country: USA

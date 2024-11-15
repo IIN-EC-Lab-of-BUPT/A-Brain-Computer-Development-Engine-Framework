@@ -1,0 +1,60 @@
+// example.proto
+syntax = "proto3";
+
+//java_multiple_files 是一个用于指定生成的 Java 代码是否应该放在单个文件中的选项。
+option java_multiple_files = true;
+option java_package = "com.coreplantform.daemonproceed.controller.grpc";
+option java_outer_classname = "ConfigManagerProto";
+
+package com.coreplantform.daemonproceed.controller.grpc;
+
+service ConfigManagerService{
+//  2.2.1.	全局配置读取
+  rpc ReadGlobalConfig(ReadGlobalConfigRequest) returns (ReadGlobalConfigResponse);
+//  2.2.2.	全局参数配置更新回调注册
+  rpc RegisterGlobalConfigUpdateCallback(RegisterGlobalConfigUpdateCallbackRequest) returns(stream RegisterGlobalConfigUpdateCallbackResponse);
+//  2.2.3.	手动更新全局配置
+  rpc UpdateGlobalConfig(UpdateGlobalConfigRequest) returns(UpdateGlobalConfigResponse);
+  //  2.2.3.取消全局参数配置更新回调注册
+  rpc CancelAddListenerOnGlobalConfig(CancelAddListenerOnGlobalConfigRequest) returns(CancelAddListenerOnGlobalConfigResponse);
+}
+
+
+//  2.2.1.	全局配置读取
+message ReadGlobalConfigRequest{
+  string request=1;
+}
+message ReadGlobalConfigResponse{
+//以yaml的str形式传递对应的config
+  string response=1;
+}
+
+
+
+//  2.2.2.	全局参数配置更新回调注册
+message RegisterGlobalConfigUpdateCallbackRequest{
+    string request=1;
+}
+message RegisterGlobalConfigUpdateCallbackResponse{
+  //以yaml的str形式传递对应的config
+  string callback=1;
+}
+
+
+
+//  2.2.3.	手动更新全局配置
+message UpdateGlobalConfigRequest{
+//以yaml的str形式传递对应的config
+  string request=1;
+}
+message UpdateGlobalConfigResponse{
+  string response=1;
+}
+
+message CancelAddListenerOnGlobalConfigRequest{
+  string request=1;
+}
+message CancelAddListenerOnGlobalConfigResponse{
+  string response=1;
+}
+//cancel_add_listener_on_global_config

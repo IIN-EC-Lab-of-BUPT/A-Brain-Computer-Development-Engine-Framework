@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Task.api.protobuf;
+
+
+
+message ApplicationExitControlMessage {
+
+}
+
+message ProcessHubControlMessage {
+  oneof package {
+    ApplicationExitControlMessage applicationExitControlMessage = 1;
+  }
+}

@@ -1,0 +1,3 @@
+<config>
+  <implementation>control.test_impl.MyImplementation</implementation>
+</config>

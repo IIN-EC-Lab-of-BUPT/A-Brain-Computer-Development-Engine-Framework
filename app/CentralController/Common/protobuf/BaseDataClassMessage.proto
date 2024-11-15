@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+package Common.protobuf;
+
+
+// 定义空消息类型
+message EmptyMessage {
+}
+
+// 定义布尔消息类型，包含一个布尔字段 `data`
+message BooleanMessage {
+  bool data = 1;
+}
+
+// 定义字符串消息类型，包含一个字符串字段 `data`
+message StringMessage {
+  string data = 1;
+}
+
+// 定义二进制消息类型，包含一个字节串字段 `data`
+message BinaryMessage {
+  bytes data = 1;
+}
+
+// 定义浮点数列表消息类型，包含一个浮点列表字段 `data`
+message FloatListMessage{
+  repeated float data = 1;
+}
+
+// 定义双精度浮点类型，包含一个浮点列表字段 `data`
+message DoubleListMessage{
+  repeated double data = 1;
+}
+
+// 定义int32数据类型，包含一个整型列表字段 `data`
+message Int32ListMessage{
+  repeated int32 data = 1;
+}
+
+// 定义int64类型，包含一个整型列表字段 `data`
+message Int64ListMessage{
+  repeated int64 data = 1;
+}
+
+// 定义字符串列表类型，包含一个字符串列表字段 `data`
+message StringListMessage{
+  repeated string data = 1;
+}

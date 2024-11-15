@@ -1,0 +1,18 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+package Collector.api.protobuf;
+
+
+// 定义数据消息类型，包含数据源标识、时间戳和数据包
+message ExternalTriggerMessage {
+  float timestamp = 1;
+  string trigger = 2;
+
+}
+
+// 定义数据连接服务，支持双向流式传输数据消息和报告消息
+service ExternalTriggerService{
+  // 建立连接，接收流式数据消息并返回流式报告消息
+  rpc connect(google.protobuf.Empty) returns (google.protobuf.Empty);
+  rpc trigger(ExternalTriggerMessage) returns (google.protobuf.Empty);
+}

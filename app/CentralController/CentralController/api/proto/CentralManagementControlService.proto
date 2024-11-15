@@ -1,0 +1,38 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+package CentralControl.control.protobuf;
+
+
+// 定义数据消息类型，包含数据源标识、时间戳和数据包
+message GroupMessage {
+  string groupId = 1;
+  string groupInfo = 2;
+}
+
+message GroupListMessage {
+  repeated GroupMessage groupList = 1;
+}
+
+message ComponentGroupStatusMessage {
+  string componentId = 1;
+  string componentType = 2;
+  string componentInfo = 3;
+  string componentGroupId = 4;
+  string componentStatus = 5;
+}
+
+message ComponentGroupStatusListMessage{
+  repeated ComponentGroupStatusMessage componentGroupStatusList = 1;
+}
+
+// 定义数据连接服务，支持双向流式传输数据消息和报告消息
+service CentralManagementControlService{
+
+  rpc prepare_system(google.protobuf.Empty) returns (google.protobuf.Empty);
+  rpc start_group(GroupMessage) returns (google.protobuf.Empty);
+  rpc reset_group(GroupMessage) returns (google.protobuf.Empty);
+  rpc close_system(google.protobuf.Empty) returns (google.protobuf.Empty);
+  rpc get_components_status_list(google.protobuf.Empty) returns (ComponentGroupStatusListMessage);
+  rpc get_groups_model_list(google.protobuf.Empty) returns (GroupListMessage);
+
+}

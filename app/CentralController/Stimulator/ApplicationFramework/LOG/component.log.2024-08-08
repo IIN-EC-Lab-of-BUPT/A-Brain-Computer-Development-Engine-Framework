@@ -1,0 +1,64 @@
+2024-08-08 20:13:51.303 - componentLogger - Launcher.startup - ERROR - 组件注册运行发生异常:No module named 'ssvep'
+Traceback (most recent call last):
+  File "C:\Users\sti3\Desktop\2024bci\Stimulator\ApplicationFramework\launcher\Launcher.py", line 89, in startup
+    await self.__application_task
+  File "C:\Users\sti3\Desktop\2024bci\Stimulator\Stimulator/application\ApplicationImplement.py", line 145, in run
+    await asyncio.gather(self.__paradigm_manager.startup(), self.__trigger_manager.startup())
+  File "C:\Users\sti3\Desktop\2024bci\Stimulator\Stimulator\service\ParadigmManager.py", line 41, in startup
+    instance: ParadigmInterface = self.__create_instance(class_file, class_name)
+  File "C:\Users\sti3\Desktop\2024bci\Stimulator\Stimulator\service\ParadigmManager.py", line 61, in __create_instance
+    module = importlib.import_module(module_name)
+  File "C:\Users\sti3\AppData\Local\Programs\Python\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'ssvep'
+2024-08-08 20:21:20.608 - componentLogger - Launcher.startup - ERROR - 组件注册运行发生异常:No module named 'ssvep'
+Traceback (most recent call last):
+  File "C:\Users\sti3\Desktop\2024bci\Stimulator\ApplicationFramework\launcher\Launcher.py", line 89, in startup
+    await self.__application_task
+  File "C:\Users\sti3\Desktop\2024bci\Stimulator\Stimulator/application\ApplicationImplement.py", line 145, in run
+    await asyncio.gather(self.__paradigm_manager.startup(), self.__trigger_manager.startup())
+  File "C:\Users\sti3\Desktop\2024bci\Stimulator\Stimulator\service\ParadigmManager.py", line 41, in startup
+    instance: ParadigmInterface = self.__create_instance(class_file, class_name)
+  File "C:\Users\sti3\Desktop\2024bci\Stimulator\Stimulator\service\ParadigmManager.py", line 61, in __create_instance
+    module = importlib.import_module(module_name)
+  File "C:\Users\sti3\AppData\Local\Programs\Python\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'ssvep'
+2024-08-08 20:28:04.291 - componentLogger - Launcher.startup - ERROR - 组件注册运行发生异常:No module named 'ssvep'
+Traceback (most recent call last):
+  File "C:\Users\sti3\Desktop\2024bci\Stimulator\ApplicationFramework\launcher\Launcher.py", line 89, in startup
+    await self.__application_task
+  File "C:\Users\sti3\Desktop\2024bci\Stimulator\Stimulator/application\ApplicationImplement.py", line 145, in run
+    await asyncio.gather(self.__paradigm_manager.startup(), self.__trigger_manager.startup())
+  File "C:\Users\sti3\Desktop\2024bci\Stimulator\Stimulator\service\ParadigmManager.py", line 41, in startup
+    instance: ParadigmInterface = self.__create_instance(class_file, class_name)
+  File "C:\Users\sti3\Desktop\2024bci\Stimulator\Stimulator\service\ParadigmManager.py", line 61, in __create_instance
+    module = importlib.import_module(module_name)
+  File "C:\Users\sti3\AppData\Local\Programs\Python\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'ssvep'
+2024-08-08 20:33:16.590 - componentLogger - Launcher.startup - ERROR - 组件注册运行发生异常:No module named 'NeuracleTriggerSystemImplement'
+Traceback (most recent call last):
+  File "C:\Users\sti3\Desktop\2024bci\Stimulator\ApplicationFramework\launcher\Launcher.py", line 89, in startup
+    await self.__application_task
+  File "C:\Users\sti3\Desktop\2024bci\Stimulator\Stimulator/application\ApplicationImplement.py", line 145, in run
+    await asyncio.gather(self.__paradigm_manager.startup(), self.__trigger_manager.startup())
+  File "C:\Users\sti3\Desktop\2024bci\Stimulator\Stimulator\service\TriggerManager.py", line 44, in startup
+    instance = self.__create_instance(class_file, class_name)
+  File "C:\Users\sti3\Desktop\2024bci\Stimulator\Stimulator\service\TriggerManager.py", line 63, in __create_instance
+    module = importlib.import_module(module_name)
+  File "C:\Users\sti3\AppData\Local\Programs\Python\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'NeuracleTriggerSystemImplement'

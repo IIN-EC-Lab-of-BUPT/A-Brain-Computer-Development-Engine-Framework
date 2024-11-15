@@ -1,0 +1,10 @@
+syntax = "proto3";
+package BCICompetitionFramework.StimulationSystem.api.protobuf;
+
+
+message RandomNumberSeedsMessage {
+    float seeds = 1;
+}
+
+
+
