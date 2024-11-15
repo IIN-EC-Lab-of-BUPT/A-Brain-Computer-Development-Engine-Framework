@@ -1,0 +1,22 @@
+Experiment:
+    enable: IOHUB_BOOL
+    name:
+        IOHUB_STRING:
+            min_length: 1
+            max_length: 32
+            first_char_alpha: True    
+    save_events: IOHUB_BOOL
+    stream_events: True
+    auto_report_events: True    
+    event_buffer_length:
+        IOHUB_INT:
+            min: 1
+            max: 2048    
+    monitor_event_types:
+        IOHUB_LIST: 
+            valid_values: [ MessageEvent, LogEvent ]
+            min_length: 1
+            max_length: 2
+    device_number: 0
+    model_name: PsychoPy3
+    manufacturer_name: Open Science Tools

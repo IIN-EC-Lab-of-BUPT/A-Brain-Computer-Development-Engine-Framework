@@ -1,0 +1,39 @@
+ Keyboard:
+    enable: IOHUB_BOOL
+    name:
+        IOHUB_STRING:
+            min_length: 1
+            max_length: 32
+            first_char_alpha: True    
+    save_events: IOHUB_BOOL
+    stream_events: IOHUB_BOOL
+    auto_report_events: IOHUB_BOOL
+    log_events_for_testing: IOHUB_BOOL
+    report_auto_repeat_press_events: IOHUB_BOOL    
+    report_system_wide_events: IOHUB_BOOL    
+    event_buffer_length:
+        IOHUB_INT:
+            min: 1
+            max: 2048    
+    monitor_event_types:
+        IOHUB_LIST: 
+            valid_values: [ KeyboardPressEvent, KeyboardReleaseEvent]
+            min_length: 0
+            max_length: 3
+    use_keymap:
+        IOHUB_LIST:
+            valid_values: [psychopy, legacy]
+            min_length: 0
+            max_length: 1
+    device_number:
+        IOHUB_INT:
+            min: 0
+            max: 32
+    model_name:
+        IOHUB_STRING:
+            min_length: 1
+            max_length: 32
+    manufacturer_name:
+        IOHUB_STRING:
+            min_length: 1
+            max_length: 64    

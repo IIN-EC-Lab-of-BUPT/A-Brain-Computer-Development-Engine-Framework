@@ -1,0 +1,69 @@
+# pylint can flag things that might (and only *might*) warrant extra scrutiny.
+# Many issues it finds do not pose a problem, and it's best not to change them.
+
+# This rc file is an attempt to be explicit about what coding practices are
+# followed across the psychopy project, and what is worth changing. In general,
+# for new code, try to avoid the pylint score going lower than it already is.
+
+# To use pylint effectively, first get a baseline of the file you plan to work on:
+# $ pylint microphone.py
+
+# Make your code edits to that file. Then run pylint again to see the differences:
+# $ pylint microphone.py
+
+# Changing cosmetic issues is NOT worth doing because it can make it more
+# difficult to debug other issues (when using git-blame). Best not to "fix"
+# those merely to make the pylint score higher.
+
+# That said, please do fix these 3 issues in existing code: wildcard imports,
+#     bare excepts (when possible), dangerous default values
+# Some files deliberately have unused imports, e.g., psychopy.misc, and so Rule
+# W0611 is disabled within that file.
+# Try to avoid introducing issues in new code, but don't fix such issues in existing code.
+
+[MASTER]
+ignore=.git,freetype_bf,daq,pyglet_input,labjack,contrib,demos,tests,iohub
+
+[BASIC]
+good-names=i,j,k,x,y,__,so,se
+additional-builtins=_translate
+
+[TYPECHECK]
+ignored-modules=numpy
+ignored-classes=numpy
+
+[DESIGN]
+max-args=20
+max-locals=50
+# "public" means without leading _
+min-public-methods=0
+max-public-methods=50
+max-branches=36
+max-statements=150
+
+[FORMAT]
+indent-string='    '
+single-line-if-stmt=no
+max-line-length=79
+
+[MESSAGES CONTROL]
+# Disable the following PyLint messages:
+# C0103: invalid * name; otherwise camelCase gets flagged
+# C0111: Missing %s docstring; 
+# E1101: %s %r has no %r member; otherwise numpy triggers this all the time
+
+# Some other possible messages:
+# C0301: line too long
+# C0302: too many lines in module (1000)
+# C0303: Trailing whitespace
+# C0326: %s space %s %s %s\n%s
+# C1001: Old-style class defined.
+# W0142: Used * or ** magic
+# W0201: Attribute %r defined outside __init__
+# W0613: Unused argument %r
+# W0122: use of exec
+# W0212: Access to a protected member %s of a client class
+# R0902: Too many instance attributes (%s/%s)
+# E0602: Undefined variable %r
+
+disable=C0103,C0111,E1101

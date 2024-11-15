@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: pypi-search
+Version: 2.0
+Summary: Get Information on Python Packages From PyPI
+Home-page: https://github.com/asadmoosvi/pypi-search
+Author: Asad Moosvi
+Author-email: moosvi.asad@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4 >=4.9.2
+Requires-Dist: html2text >=2020.1.16
+Requires-Dist: requests >=2.22.0
+
+# pypi-search
+[![Downloads](https://pepy.tech/badge/pypi-search)](https://pepy.tech/project/pypi-search)
+
+pypi-search allows you to quickly query packages on PyPI.
+It fetches the following information:
+- Version Information
+- Project Links
+- Github Stats if any
+- Meta Information (author, maintainer)
+- Description
+
+It allows you to know what a package is all about without having to open up the PyPI website.
+
+# installation
+
+To get the latest stable release from PyPI:
+- `pip install pypi-search`
+
+To get the latest dev release, go into the root of this project and run:
+- `pip install .`
+
+# usage
+
+[![asciicast](https://asciinema.org/a/JTlNXr0PrfDT9exEDkGQeklGz.svg)](https://asciinema.org/a/JTlNXr0PrfDT9exEDkGQeklGz)
+
+get information on a package called `foo`:
+---
+`pypisearch foo`
+
+get information on a package called `foo` along with its description:
+---
+`pypisearch -d foo`
+
+## help menu
+
+```
+usage: pypisearch [-h] [-d] search
+
+Search for PyPi packages
+
+positional arguments:
+  search             Package to show information on
+
+optional arguments:
+  -h, --help         show this help message and exit
+  -d, --description  Show package description
+```
+
+
+# todo
+
+- [x] Create python package.

@@ -1,0 +1,15 @@
+DeviceClass:
+    enable: True
+    name: device
+    device_number: 0
+    save_events: True
+    stream_events: True
+    auto_report_events: False    
+    # IMPORTANT: device_timer **must** only be present in the config file if the device
+    # implementation uses polling to check for new native device events.
+    device_timer:
+        interval: 0.001
+    event_buffer_length: 256
+    monitor_event_types: [ DeviceEvent, ]
+    model_name: unknown
+    manufacturer_name: unknown

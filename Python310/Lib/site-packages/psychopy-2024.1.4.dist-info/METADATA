@@ -1,0 +1,154 @@
+Metadata-Version: 2.1
+Name: psychopy
+Version: 2024.1.4
+Summary: PsychoPy provides easy, precise, flexible experiments in behavioural sciences
+Author-Email: Open Science Tools Ltd <support@opensciencetools.org>
+Maintainer-Email: Open Science Tools Ltd <support@opensciencetools.org>
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Project-URL: Homepage, https://www.psychopy.org/
+Project-URL: Download, https://github.com/psychopy/psychopy/releases/
+Requires-Python: <3.11,>=3.8
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: pyglet==1.4.11; platform_system == "Windows"
+Requires-Dist: pyglet==1.5.27; platform_system != "Windows"
+Requires-Dist: pillow>=9.4.0
+Requires-Dist: pyqt6
+Requires-Dist: pandas>=1.5.3
+Requires-Dist: questplus>=2023.1
+Requires-Dist: openpyxl
+Requires-Dist: xmlschema
+Requires-Dist: soundfile
+Requires-Dist: imageio
+Requires-Dist: imageio-ffmpeg
+Requires-Dist: psychtoolbox
+Requires-Dist: pywinhook; platform_system == "Windows"
+Requires-Dist: gevent
+Requires-Dist: psutil
+Requires-Dist: pyzmq>=22.2.1
+Requires-Dist: ujson
+Requires-Dist: msgpack
+Requires-Dist: msgpack-numpy
+Requires-Dist: pyyaml
+Requires-Dist: freetype-py
+Requires-Dist: python-bidi
+Requires-Dist: arabic-reshaper
+Requires-Dist: javascripthon
+Requires-Dist: websockets
+Requires-Dist: wxPython>=4.1.1
+Requires-Dist: markdown-it-py
+Requires-Dist: requests
+Requires-Dist: future
+Requires-Dist: pypi-search>=1.2.1
+Requires-Dist: setuptools<=66.1.1
+Requires-Dist: python-gitlab
+Requires-Dist: gitpython
+Requires-Dist: cryptography
+Requires-Dist: javascripthon>=0.12
+Requires-Dist: astunparse
+Requires-Dist: esprima
+Requires-Dist: jedi>=0.16
+Requires-Dist: pyserial
+Requires-Dist: pyparallel; platform_system != "Darwin"
+Requires-Dist: ffpyplayer
+Requires-Dist: opencv-python
+Requires-Dist: python-vlc==3.0.11115; platform_system == "Windows"
+Requires-Dist: python-vlc>=3.0.12118; platform_system != "Windows"
+Requires-Dist: pypiwin32; platform_system == "Windows"
+Requires-Dist: pyobjc-core; platform_system == "Darwin"
+Requires-Dist: pyobjc-framework-Quartz<8.0; platform_system == "Darwin"
+Requires-Dist: pyobjc; platform_system == "Darwin"
+Requires-Dist: zeroconf; platform_system == "Darwin"
+Requires-Dist: python-xlib; platform_system == "Linux"
+Requires-Dist: tables<3.9; python_version < "3.9"
+Requires-Dist: tables; python_version >= "3.9"
+Requires-Dist: blosc2<2.2.8; python_version < "3.9"
+Requires-Dist: pytest>=6.2.5; extra == "tests"
+Requires-Dist: pytest-codecov; extra == "tests"
+Requires-Dist: pytest-cov; extra == "tests"
+Requires-Dist: pytest-asyncio; extra == "tests"
+Requires-Dist: flake8; extra == "tests"
+Requires-Dist: xmlschema; extra == "tests"
+Requires-Dist: bdist-mpkg>=0.5.0; platform_system == "Darwin" and extra == "building"
+Requires-Dist: py2app; platform_system == "Darwin" and extra == "building"
+Requires-Dist: dmgbuild; platform_system == "Darwin" and extra == "building"
+Requires-Dist: pylsl>=1.16.1; extra == "suggested"
+Requires-Dist: xlwt; extra == "suggested"
+Requires-Dist: h5py; extra == "suggested"
+Requires-Dist: google-api-python-client; extra == "suggested"
+Requires-Dist: pygaze>=1.1.2; extra == "suggested"
+Requires-Dist: tobii_research; extra == "suggested"
+Requires-Dist: badapted>=0.0.3; extra == "suggested"
+Requires-Dist: egi-pynetstation>=0.0.0rc1; extra == "suggested"
+Requires-Dist: pyxid2>=1.0.5; extra == "suggested"
+Requires-Dist: Phidget22; extra == "suggested"
+Requires-Dist: pyo>=1.0.3; extra == "legacy"
+Requires-Dist: pyglfw; extra == "legacy"
+Requires-Dist: moviepy; extra == "legacy"
+Requires-Dist: pygame; extra == "legacy"
+Provides-Extra: tests
+Provides-Extra: building
+Provides-Extra: suggested
+Provides-Extra: legacy
+Description-Content-Type: text/markdown
+
+# PsychoPy
+
+[![PyPI version](https://img.shields.io/pypi/v/psychopy.svg)](https://pypi.python.org/pypi/PsychoPy)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md)  
+
+---
+
+**Announcement!!**
+
+We are excited to announce that PsychoPy will be hosting a 3-day in-person code-sprint at the University of Nottingham from 15-17 April 2024. The code sprint will be an opportunity for us to get together in person and improve PsychoPy/JS. Anyone who would like to attend will need to fill out the [online application](https://run.pavlovia.org/pavlovia/survey/?surveyId=171ed328-d5ea-4819-83dc-9ba00ef5683b) by 31 January 2024. Those selected will be notified by the end of February.
+
+---
+
+PsychoPy is an open-source package for creating experiments in behavioral science. It aims to provide a single package that is:
+
+* precise enough for psychophysics
+* easy enough for teaching
+* flexible enough for everything else
+* able to run experiments in a local Python script or online in JavaScript
+
+To meet these goals PsychoPy provides a choice of interface - you can use a
+simple graphical user interface called Builder, or write your experiments in
+Python code. The entire application and library are written in Python and is
+platform independent.
+
+There is a range of documentation at:
+
+* [PsychoPy Homepage](https://www.psychopy.org)
+* [Youtube](https://www.youtube.com/playlist?list=PLFB5A1BE51964D587)
+* The textbook, [Building Experiments in PsychoPy](https://uk.sagepub.com/en-gb/eur/building-experiments-in-psychopy/book253480)
+* [The discourse user forum](https://discourse.psychopy.org)
+
+## Contributions
+
+To contribute, please fork the repository, hack in a feature branch, and send a
+pull request.  For more, see [CONTRIBUTING.md](CONTRIBUTING.md)
+and the developers documentation at [https://www.psychopy.org/developers](https://psychopy.org/developers)
+
+## Code Status
+
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/psychopy/psychopy.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/psychopy/psychopy/context:python)  
+Dev branch tests: [![GH tests](https://github.com/psychopy/psychopy/actions/workflows/pytests.yaml/badge.svg?branch=dev)](https://github.com/psychopy/psychopy/actions/workflows/pytests.yaml?query=branch%3Adev)  
+Release tests: [![GH tests](https://github.com/psychopy/psychopy/actions/workflows/pytests.yaml/badge.svg?branch=release)](https://github.com/psychopy/psychopy/actions/workflows/pytests.yaml?query=branch%3Arelease)
+
+## More information
+
+* Homepage: https://www.psychopy.org
+* Forum: https://discourse.psychopy.org
+* Issue tracker: https://github.com/psychopy/psychopy/issues
+* Changelog: https://www.psychopy.org/changelog.html
