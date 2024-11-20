@@ -1,2 +1,2 @@
 set "originalPath=%CD%"
-start cmd /k "cd .\app\CentralController && %originalPath%\Python310\python.exe -m CentralControllerView.ViewMain"
+start cmd /k "cd .\app\CentralController && python -m CentralControllerView.ViewMain"
