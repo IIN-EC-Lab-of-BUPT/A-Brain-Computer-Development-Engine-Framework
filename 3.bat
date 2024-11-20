@@ -1,6 +1,4 @@
 set "originalPath=%CD%"
-@REM start cmd /k "cd .\proceed\database && java -jar database.jar"
-@REM cd /d "%originalPath%"
 start cmd /k "cd .\proceed\collector && java -jar collector.jar"
 cd /d "%originalPath%"
 start cmd /k "cd .\proceed\stimulator && java -jar stimulator.jar"
