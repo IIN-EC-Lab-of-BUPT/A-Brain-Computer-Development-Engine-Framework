@@ -13,7 +13,7 @@
 
 ## 2、快速开始
 
-&emsp;&emsp;我们提供了一个完整的SSVEP刺激范式的示例，首先需要通过链接下载各组件的守护进程：https://pan.baidu.com/s/1KLm859mtxRWjxw9uOnKkUg?pwd=o1sq ，将下载到的proceed文件夹放在与app文件夹同级目录下，项目需要使用到jdk8与python3.10，请下载并配置环境变量，python需要自行下载相关依赖包，通过requirements.txt文件可以看到所有需要下载的依赖包。可以通过pip install -r requirements.txt快速下载requirements中的所有依赖包。环境准备好之后，启动neoracle采集软件，eegSystem文件夹下有1至4的执行脚本，需要依次点击，其中脚本1会启动中控模块的守护进程。脚本2会启动中控模块。并弹出中控的ui界面。脚本3会启动其它模块的守护进程，包括处理模块、采集模块、刺激模块。脚本4则会启动其它模块。全部启动之后，在刺激模块弹出选择被试id与起始block的ui界面后选择确定，接着在中控的ui界面中点击start即可开始实验。
+&emsp;&emsp;我们提供了一个完整的SSVEP刺激范式的示例，首先需要通过链接下载各组件的守护进程：https://pan.baidu.com/s/1BFMg2BFRk6SeGKWQ64IgPw?pwd=vxnu ，将下载到的proceed文件夹放在与app文件夹同级目录下，项目需要使用到jdk8与python3.10，请下载并配置环境变量，python需要自行下载相关依赖包，通过requirements.txt文件可以看到所有需要下载的依赖包。可以通过pip install -r requirements.txt快速下载requirements中的所有依赖包。环境准备好之后，启动neoracle采集软件，eegSystem文件夹下有1至4的执行脚本，需要依次点击，其中脚本1会启动中控模块的守护进程。脚本2会启动中控模块。并弹出中控的ui界面。脚本3会启动其它模块的守护进程，包括处理模块、采集模块、刺激模块。脚本4则会启动其它模块。全部启动之后，在刺激模块弹出选择被试id与起始block的ui界面后选择确定，接着在中控的ui界面中点击start即可开始实验。
 
 **注意事项**：
 
