@@ -58,7 +58,7 @@ class NeuracleReceiverImplement(EEGReceiverInterface):
         send_config_dict = self.__config_dict.get("send_config", dict())
         self.__send_package_points = send_config_dict.get("send_package_points", 0)
 
-        device_info_dict = self.__config_dict.get("device_info", dict())
+        device_info_dict = self.__config_dict.get("device_info", dict())        #Neuroscan这里用requestInfo获取配置信息 包括导联信息 写在startup里吧，这里还没连socket
         self.__device_transfer_model = DeviceTransferModel(
             data_type=TransferDataTypeEnum.EEG,
             channel_number=device_info_dict.get("channel_number", None),
@@ -142,7 +142,7 @@ class NeuracleReceiverImplement(EEGReceiverInterface):
         if self.__downsampling_factor is not None and self.__downsampling_factor != 1:
             data_array = self.__downsample(data_array, self.__downsampling_factor)
 
-        new_data_array = np.delete(data_array, -1, axis=0)
+        new_data_array = np.delete(data_array, -1, axis=0)  # 删除trigger通道，并将其单独存储
         trigger_array = data_array[-1, :]
         receiver_transfer_model_list = list[ReceiverTransferModel]()
         # 寻找Event位置，提取data_array最后一行元素并寻找非0元素

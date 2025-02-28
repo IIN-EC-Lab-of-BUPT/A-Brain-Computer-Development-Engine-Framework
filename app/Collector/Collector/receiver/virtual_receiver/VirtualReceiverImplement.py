@@ -83,6 +83,7 @@ class VirtualReceiverImplement(EEGReceiverInterface):
             channel_label=list(device_info_dict.get("channel_label", dict()).keys()),
             other_information=device_info_dict.get("other_information", dict())
         )
+        # 获取虚拟数据并创建实例
         data_files_dict = self.__config_dict.get("data_files", dict())
         self.__data_files_model_list = [
             DataFileModel(subject_id, file_path)
@@ -165,7 +166,7 @@ class VirtualReceiverImplement(EEGReceiverInterface):
             index = index + 1
 
     async def __read_data(self) -> None:
-        # 等待数据发送事件置位
+        # 等待数据发送事件置位，self.__send_flag_event.set()
         await self.__send_flag_event.wait()
         workspace_path = os.getcwd()
         for data_file_model in self.__data_files_model_list[self.__current_data_file_model_index:]:
@@ -183,7 +184,7 @@ class VirtualReceiverImplement(EEGReceiverInterface):
             self.__logger.info(f"开始读取{data_file_path}数据")
             file = await aiofiles.open(data_file_path, 'rb')
             try:
-                # 新文件先发送人员信息
+                # 新文件先发送人员信息 创建更新被试信息包
                 self.__subject_block_dict[subject_id] = self.__subject_block_dict.get(subject_id, 0) + 1
                 subject_block_information_message_model = ReceiverTransferModel(
                     package=InformationTransferModel(
@@ -191,6 +192,7 @@ class VirtualReceiverImplement(EEGReceiverInterface):
                         block_id=str(self.__subject_block_dict[subject_id])
                     )
                 )
+                # 把放大器接收数据类型转换为通用数据类型DataMessageModel，发送给相应接收方
                 await self._receiver_transponder.send_data(subject_block_information_message_model)
                 while not self.__shutdown_flag:
                     await asyncio.sleep(0)  # 允许切换协程到其他任务

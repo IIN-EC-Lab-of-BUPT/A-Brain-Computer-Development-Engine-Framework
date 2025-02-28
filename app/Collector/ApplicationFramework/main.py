@@ -6,7 +6,7 @@ from ApplicationFramework.launcher.Launcher import Launcher
 
 async def startup():
 
-    # 创建解析器
+    # 创建解析器，解析命令行参数
     parser = argparse.ArgumentParser(description="Script to connect a daemon at a specified IP and port.")
     parser.add_argument('--ip', type=str, default='127.0.0.1',
                         help="IP address to bind the daemon. Default is localhost (127.0.0.1).")

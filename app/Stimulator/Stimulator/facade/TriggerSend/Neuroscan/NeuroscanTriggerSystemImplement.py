@@ -1,11 +1,11 @@
-
+import ctypes
 import time
 import os
 import threading
 from ctypes import windll
 from typing import Union
 
-from Stimulator.facade.interface.TriggerSystemInterface import TriggerSendInterface
+from Stimulator.facade.interface.TriggerSystemInterface import TriggerSendInterface, TriggerSystemInterface
 
 
 class NeuroscanTriggerSystemImplement(TriggerSendInterface):
@@ -30,13 +30,20 @@ class NeuroscanTriggerSystemImplement(TriggerSendInterface):
         # dll路径
         currentPath = os.path.dirname(__file__)
         self.dllPath = os.path.join(os.path.dirname(currentPath), r'inpoutx64.dll')
-        self.parallelPort = windll.LoadLibrary(self.dllPath)
+        # 加载dll
+        try:
+            self.parallelPort = windll.LoadLibrary(self.dllPath)
+            print('DLL loaded successfully')
+        except Exception as e:
+            print(f"Failed to load DLL: {e}")
+
+
 
     async def initial(self, config_dict: dict[str, Union[str, dict]] = None) -> None:
         if config_dict is None:
             return
         self.__config_dict.update(config_dict)
-        self.port = self.__config_dict.get('port', 16376)
+        self.port = self.__config_dict.get('port', 20472)
 
     async def update(self, config_dict: dict[str, Union[str, dict]] = None) -> None:
         if config_dict is None:
@@ -44,25 +51,35 @@ class NeuroscanTriggerSystemImplement(TriggerSendInterface):
         self.__config_dict.update(config_dict)
 
 
-    def open(self):
+    async def open(self):
         if self.parallelPort.IsInpOutDriverOpen():
             print('InpOut driver is opened successfully')
+        else:
+            print('Failed to open InpOut driver')
+            return
         self.parallelPort.DlPortWritePortUchar(self.port, self.initialOutCode)
-        time.sleep(0.02)
+        time.sleep(0.001)
         self.timer.start()
 
-    def send(self, event):
+
+    async def send(self, event):
         """
         :param event: 输入想要输出的trigger值，trigger值应为1~255之间的整数
         :return: None
         """
+
         try:
+            # 拉高电平
             self.parallelPort.DlPortWritePortUchar(self.port, event)
             self.event.set()
+            # 短暂延迟，确保信号被检测到
+            # time.sleep(0.0001)
+            # 拉低电平
+            self.parallelPort.DlPortWritePortUchar(self.port, self.initialOutCode)
         except Exception as e:
             print(e)
 
-    def close(self):
+    async def close(self):
         """
         关闭端口，停止线程
         :return: None
@@ -75,6 +92,6 @@ class NeuroscanTriggerSystemImplement(TriggerSendInterface):
             event.wait()
             if not self.runFlag:
                 break
-            time.sleep(0.02)
+            time.sleep(0.01)
             self.parallelPort.DlPortWritePortUchar(self.port, self.initialOutCode)
             event.clear()

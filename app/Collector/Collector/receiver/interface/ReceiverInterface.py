@@ -47,3 +47,4 @@ class EEGReceiverInterface(ReceiverInterface):
     @abstractmethod
     async def send_impedance(self) -> None:
         pass
+

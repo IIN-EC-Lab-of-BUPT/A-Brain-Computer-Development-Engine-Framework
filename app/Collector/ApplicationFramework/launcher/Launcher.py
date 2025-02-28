@@ -58,7 +58,7 @@ class Launcher:
         # 构建当前应用实例
         self.__application = self.__load_application(launcher_config_dict)
         self.__application.set_context_manager(self.__context_manager)
-        # 初始化应用实例
+        # 初始化应用实例  在这里进入的ApplicationImplement的initial
         await self.__application.initial()
 
     async def startup(self):
@@ -101,6 +101,7 @@ class Launcher:
             # 关闭组件框架
             await self.__component_framework.shutdown()
 
+    # 异步上下文管理器
     async def __aenter__(self):
         await self.initial()
         await self.startup()
@@ -142,3 +143,8 @@ class Launcher:
 
         self.__context_manager.bind_class(ComponentFrameworkApplicationInterface, ComponentFrameworkProvider())
         self.__context_manager.bind_class(ComponentFrameworkInterface, ComponentFrameworkProvider())
+'''
+将ComponentFrameworkApplicationInterface和ComponentFrameworkInterface这两个接口与ComponentFrameworkProvider绑定。
+这意味着以后，当请求这两个接口的实例时，__context_manager将会使用ComponentFrameworkProvider来提供实例，
+即ComponentFrameworkImplement的单例实例
+'''

@@ -9,8 +9,10 @@ component_info:
     paradigm_class_name: SSVEP
 
   trigger_sender:
-    trigger_sender_class_file: Stimulator/facade/ExternalTriggerSend.py
-    trigger_sender_class_name: ExternalTriggerSend
+    trigger_sender_class_file: Stimulator/facade/TriggerSend/Neuroscan/NeuroscanTriggerSystemImplement.py
+    trigger_sender_class_name: NeuroscanTriggerSystemImplement
+#    trigger_sender_class_file: Stimulator/facade/ExternalTriggerSend.py
+#    trigger_sender_class_name: ExternalTriggerSend
 #    trigger_sender_class_file: Stimulator/facade/TriggerSend/Neuracle/NeuracleTriggerSystemImplement.py
 #    trigger_sender_class_name: NeuracleTriggerSystemImplement
     #Neuracle需要配置triggerBoxHandle,port参数
@@ -19,8 +21,8 @@ component_info:
 
     #Neuroscan需要配置port,neuroscan并口端口号,如:16376
 
-    triggerBoxHandle: 'serial'
-    port: 'COM4'
+    triggerBoxHandle: 'parallel'
+    port: '20472'
 
 
   message:

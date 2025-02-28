@@ -16,11 +16,13 @@ component:
 #      data_sender_class_file: Collector/datasender/TimingDataSender.py
 #      data_sender_class_name: TimingDataSender
     receiver:
-  #    receiver_class_file: Test/test_collector/NeuracleReceiverImplement_1.py
+#      receiver_class_file: Test/test_collector/NeuracleReceiverImplement_1.py
 #      receiver_class_file: Collector/receiver/neuracle/NeuracleReceiverImplement.py
 #      receiver_class_name: NeuracleReceiverImplement
-      receiver_class_file: Collector/receiver/virtual_receiver/VirtualReceiverImplement.py
-      receiver_class_name: VirtualReceiverImplement
+#      receiver_class_file: Collector/receiver/virtual_receiver/VirtualReceiverImplement.py
+#      receiver_class_name: VirtualReceiverImplement
+      receiver_class_file: Collector/receiver/neuroscan/NeuroscanImplement.py
+      receiver_class_name: NeuroscanImplement
     message:
       # 默认使用message_key:topic形式，如果topic为空，则由中控服务器分配
       external_trigger: null

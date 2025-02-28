@@ -158,9 +158,9 @@ class SSVEP(ParadigmInterface):
         logger.info('当前block为: block{}'.format(self.start_block_id))
 
         # 发送数据开始记录trigger
-        await self._trigger_send.send(ExternalTriggerModel(time.time(), SSVEPConfig.RECORD_START_TRIGGER))
-        # await self._trigger_send.send(int(SSVEPConfig.RECORD_START_TRIGGER))
-        logger.info('发送数据开始记录trigger')
+        # await self._trigger_send.send(ExternalTriggerModel(time.time(), SSVEPConfig.RECORD_START_TRIGGER))
+        await self._trigger_send.send(int(SSVEPConfig.RECORD_START_TRIGGER))
+        logger.info('发送数据开始记录trigger-250')
 
         # 显示系统初始化完毕文本
         record_start_wait_time = SSVEPConfig.RECORD_START_WAIT_TIME
@@ -205,9 +205,9 @@ class SSVEP(ParadigmInterface):
         await asyncio.sleep(1)
         logger.info('进入block开始阶段')
         # 发送block开始trigger信号
-        await self._trigger_send.send(ExternalTriggerModel(time.time(), SSVEPConfig.BLOCK_START_TRIGGER))
-        # await self._trigger_send.send(int(SSVEPConfig.BLOCK_START_TRIGGER))
-        logger.info('发送block开始trigger')
+        # await self._trigger_send.send(ExternalTriggerModel(time.time(), SSVEPConfig.BLOCK_START_TRIGGER))
+        await self._trigger_send.send(int(SSVEPConfig.BLOCK_START_TRIGGER))
+        logger.info('发送block开始trigger-242')
 
         # 刺激事件，对应40个刺激目标
         self.stim_event_list: list = self.event_set[self.cur_block_num]
@@ -246,9 +246,9 @@ class SSVEP(ParadigmInterface):
         logger.info('进入trial开始阶段')
         self.feedback_message=Queue()
         # 发送trial开始trigger信号
-        await self._trigger_send.send(ExternalTriggerModel(time.time(), SSVEPConfig.TRIAL_START_TRIGGER))
-        # await self._trigger_send.send(int(SSVEPConfig.TRIAL_START_TRIGGER))
-        logger.info('发送trial开始trigger')
+        # await self._trigger_send.send(ExternalTriggerModel(time.time(), SSVEPConfig.TRIAL_START_TRIGGER))
+        await self._trigger_send.send(int(SSVEPConfig.TRIAL_START_TRIGGER))
+        logger.info('发送trial开始trigger-245')
 
         # trial计数加1与事件保持同步
         self.cur_trial_num = self.cur_trial_num + 1
@@ -294,8 +294,8 @@ class SSVEP(ParadigmInterface):
             init_frame.draw()
             self.__draw_target_tip(stim_target)
             self.window.flip()
-        await self._trigger_send.send(ExternalTriggerModel(time.time(), stim_trigger))
-        # await self._trigger_send.send(int(stim_trigger))
+        # await self._trigger_send.send(ExternalTriggerModel(time.time(), stim_trigger))
+        await self._trigger_send.send(int(stim_trigger))
         logger.info('试次启动标签确认,发送刺激试次trigger:{}'.format(stim_trigger))
 
         # 开始刺激的时间
@@ -314,8 +314,8 @@ class SSVEP(ParadigmInterface):
             self.__draw_target_tip(stim_target)
             self.window.flip()
             frame_num = frame_num + 1
-        await self._trigger_send.send(ExternalTriggerModel(time.time(), SSVEPConfig.TRIAL_END_TRIGGER))
-        # await self._trigger_send.send(int(SSVEPConfig.TRIAL_END_TRIGGER))
+        # await self._trigger_send.send(ExternalTriggerModel(time.time(), SSVEPConfig.TRIAL_END_TRIGGER))
+        await self._trigger_send.send(int(SSVEPConfig.TRIAL_END_TRIGGER))
         # 结束刺激的时间
         end_stim_time = core.getTime()
         logger.info('试次刺激结束,总刺激时间为{},'.format(end_stim_time - start_stim_time))
@@ -338,7 +338,7 @@ class SSVEP(ParadigmInterface):
         # 发送trial结束trigger
         # await self._trigger_send.send(ExternalTriggerModel(time.time(), SSVEPConfig.TRIAL_END_TRIGGER))
         # await self._trigger_send.send(int(SSVEPConfig.TRIAL_END_TRIGGER))
-        logger.info('发送trial结束trigger')
+        logger.info('发送trial结束trigger-241')
 
         # 获取刺激目标
         stim_event = self.stim_target_order[self.cur_trial_num - 1]
@@ -353,8 +353,10 @@ class SSVEP(ParadigmInterface):
         # logger.info('self.feedback_message为:{}'.format(self.feedback_message))
         if self.feedback_message.empty():
             self.window.flip()
+            logger.info('未收到判决结果')
             pass
         else:
+            logger.info('收到判决结果')
             current_message = self.feedback_message.get()
             if current_message == "timeout":
                 self.feedback_result = 0
@@ -383,9 +385,9 @@ class SSVEP(ParadigmInterface):
         """
         logger.info('进入block结束阶段')
         # 发送block结束trigger
-        await self._trigger_send.send(ExternalTriggerModel(time.time(), SSVEPConfig.BLOCK_END_TRIGGER))
-        # await self._trigger_send.send(int(SSVEPConfig.BLOCK_END_TRIGGER))
-        logger.info('发送block结束trigger')
+        # await self._trigger_send.send(ExternalTriggerModel(time.time(), SSVEPConfig.BLOCK_END_TRIGGER))
+        await self._trigger_send.send(int(SSVEPConfig.BLOCK_END_TRIGGER))
+        logger.info('发送block结束trigger-243')
 
         # 等待该block数据记录停止
         self.cur_block_num += 1
@@ -415,9 +417,9 @@ class SSVEP(ParadigmInterface):
                 countdown_txt.draw()
                 self.window.flip()
                 core.wait(1)
-            await self._trigger_send.send(ExternalTriggerModel(time.time(), SSVEPConfig.RECORD_END_TRIGGER))
-            # await self._trigger_send.send(int(SSVEPConfig.RECORD_END_TRIGGER))
-            logger.info('发送数据记录结束trigger')
+            # await self._trigger_send.send(ExternalTriggerModel(time.time(), SSVEPConfig.RECORD_END_TRIGGER))
+            await self._trigger_send.send(int(SSVEPConfig.RECORD_END_TRIGGER))
+            logger.info('发送数据记录结束trigger-251')
             # 关闭刺激
             await self.close()
 

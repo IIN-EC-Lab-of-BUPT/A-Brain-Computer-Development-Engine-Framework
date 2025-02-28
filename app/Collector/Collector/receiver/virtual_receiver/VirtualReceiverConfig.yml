@@ -16,8 +16,9 @@ device_info:
     O2: null
 data_files:
   S1:
-  - Collector/receiver/virtual_receiver/data/S1/data1/data1.dat
-  - Collector/receiver/virtual_receiver/data/S1/data2/data2.dat
-  S2:
-  - Collector/receiver/virtual_receiver/data/S2/data3/data3.dat
-  - Collector/receiver/virtual_receiver/data/S2/data4/data4.dat
+    - Collector/receiver/virtual_receiver/data/S1/data1/data1.yaml
+#  - Collector/receiver/virtual_receiver/data/S1/data1/data1.dat
+#  - Collector/receiver/virtual_receiver/data/S1/data2/data2.dat
+#  S2:
+#  - Collector/receiver/virtual_receiver/data/S2/data3/data3.dat
+#  - Collector/receiver/virtual_receiver/data/S2/data4/data4.dat

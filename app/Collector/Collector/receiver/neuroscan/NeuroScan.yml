@@ -1,0 +1,10 @@
+connection:
+  connect_address: "10.112.173.220:4455"
+  max_connection_timeout: 5 # 最长连接等待时间，如果设置为0，则表示不限制
+
+send_config:
+  send_package_points: 40 # 发送数据包点数 （硬件赛写死40ms一包）
+
+device_info:
+  n_chan: 8 # 导联数动态
+#  sample_rate: 250 # 采样率，硬件赛写死（250Hz）

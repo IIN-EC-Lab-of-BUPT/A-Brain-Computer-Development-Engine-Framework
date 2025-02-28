@@ -42,7 +42,8 @@ class GrpcServer:
         listen_addr = self.__rpc_listen_address
         self.__server.add_insecure_port(listen_addr)
         await self.__server.start()
-        self.__logger.info(f"GRPC Server listening on {listen_addr}")
+        # self.__logger.info(f"GRPC Server listening on {listen_addr}")
+        self.__logger.debug(f"GRPC Server listening on {listen_addr}")
         self.__logger.info("GRPC Server started")
 
     async def shutdown(self):

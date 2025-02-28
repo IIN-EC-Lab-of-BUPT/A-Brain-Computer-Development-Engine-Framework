@@ -1,6 +1,7 @@
 from typing import Union
 
 import numpy
+from loguru import logger
 
 from Collector.api.message.MessageKeyEnum import MessageKeyEnum
 from Collector.api.model.ExternalTriggerModel import ExternalTriggerModel
@@ -104,6 +105,8 @@ class FinalModeDataSender(DataSenderInterface):
         )
 
     async def __default_func(self, data_message_model: DataMessageModel):
+        # if type(data_message_model.package) is EventPackageModel:
+        #     logger.info(f"EventPackageModel is {data_message_model.package}*************************************")
         await self._component_framework.send_message(
             MessageKeyEnum.SEND_DATA.value,
             CommonMessageConverter.model_to_protobuf(data_message_model).SerializeToString()

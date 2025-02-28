@@ -38,7 +38,7 @@ class SSVEPConfig:
     RECORD_END_WAIT_TIME = 3
 
     # block开始时的等待时长
-    BLOCK_START_WAIT_TIME = 1
+    BLOCK_START_WAIT_TIME = 2
 
     # trial开始时的等待时长
     TRIAL_START_WAIT_TIME = 2
@@ -53,7 +53,7 @@ class SSVEPConfig:
     MAX_STIM_TIME = 4
 
     #等待结果时间
-    TRIAL_RESULT_WAIT_TIME = 1
+    TRIAL_RESULT_WAIT_TIME = 1.2
     # =============================================其他刺激定义=============================================
     # 预加载刺激帧数(240帧等于60hz刷新率下4s)
     PRELOAD_FRAME_NUM = 240

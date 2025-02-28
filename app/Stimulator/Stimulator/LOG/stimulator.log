@@ -1,61 +1,160 @@
-2024-11-15 10:52:02.778 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统开始初始化
-2024-11-15 10:52:02.785 - stimulatorLogger - BusinessManager.initial - DEBUG - BusinessManager初始化完成
-2024-11-15 10:52:02.785 - stimulatorLogger - ConfigManager.initial - DEBUG - ConfigManager初始化完成
-2024-11-15 10:52:02.785 - stimulatorLogger - ParadigmManager.initial - DEBUG - ParadigmManager初始化完成
-2024-11-15 10:52:02.785 - stimulatorLogger - TriggerManager.initial - DEBUG - TriggerManager初始化完成
-2024-11-15 10:52:02.785 - stimulatorLogger - CommandController.initial - DEBUG - CommandController初始化完成
-2024-11-15 10:52:02.785 - stimulatorLogger - FeedbackConntroller.initial - DEBUG - FeedbackController初始化完成
-2024-11-15 10:52:02.785 - stimulatorLogger - RandomNumberSeedsController.initial - DEBUG - RandomNumberSeedsController初始化完成
-2024-11-15 10:52:02.786 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统初始化完成
-2024-11-15 10:52:03.020 - stimulatorLogger - ApplicationImplement.run - INFO - 系统开始启动
-2024-11-15 10:52:03.048 - stimulatorLogger - ParadigmManager.startup - DEBUG - 当前选择的paradigm为:SSVEP
-2024-11-15 10:52:04.352 - stimulatorLogger - ParadigmManager.startup - DEBUG - ParadigmManager启动完成
-2024-11-15 10:52:04.353 - stimulatorLogger - TriggerManager.startup - DEBUG - 当前选择的trigger send mode为:ExternalTriggerSend
-2024-11-15 10:52:04.359 - stimulatorLogger - TriggerManager.startup - DEBUG - TriggerManager启动完成
-2024-11-15 10:52:04.359 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前paradigm已获取
-2024-11-15 10:52:04.359 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前trigger send已获取
-2024-11-15 10:52:05.126 - stimulatorLogger - BusinessManager.choice_start_block - DEBUG - 本次实验的被试者id为1+起始block为1
-2024-11-15 10:52:05.354 - stimulatorLogger - BusinessManager.startup - DEBUG - BusinessManager启动完成
-2024-11-15 10:52:05.362 - stimulatorLogger - ConfigManager.startup - DEBUG - ConfigManager启动已完成
-2024-11-15 10:52:05.522 - stimulatorLogger - RandomNumberSeedsController.startup - DEBUG - RandomNumberSeedsController启动完成
-2024-11-15 10:52:05.578 - stimulatorLogger - FeedbackConntroller.startup - DEBUG - FeedbackController启动完成
-2024-11-15 10:52:05.746 - stimulatorLogger - CommandController.startup - DEBUG - CommandController启动完成
-2024-11-15 10:52:05.754 - stimulatorLogger - ApplicationImplement.run - INFO - 系统启动完成
-2024-11-15 10:52:10.050 - stimulatorLogger - RandomNumberSeedsController.receive_message - INFO - 收到random_number_seeds: RandomNumberSeedsModel(seeds=0.5580688118934631)
-2024-11-15 10:52:11.008 - stimulatorLogger - CommandController.receive_message - INFO - 收到命令控制消息: StartStimulationControlModel()
-2024-11-15 11:17:22.640 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统开始初始化
-2024-11-15 11:17:22.643 - stimulatorLogger - BusinessManager.initial - DEBUG - BusinessManager初始化完成
-2024-11-15 11:17:22.644 - stimulatorLogger - ConfigManager.initial - DEBUG - ConfigManager初始化完成
-2024-11-15 11:17:22.644 - stimulatorLogger - ParadigmManager.initial - DEBUG - ParadigmManager初始化完成
-2024-11-15 11:17:22.644 - stimulatorLogger - TriggerManager.initial - DEBUG - TriggerManager初始化完成
-2024-11-15 11:17:22.644 - stimulatorLogger - CommandController.initial - DEBUG - CommandController初始化完成
-2024-11-15 11:17:22.644 - stimulatorLogger - FeedbackConntroller.initial - DEBUG - FeedbackController初始化完成
-2024-11-15 11:17:22.644 - stimulatorLogger - RandomNumberSeedsController.initial - DEBUG - RandomNumberSeedsController初始化完成
-2024-11-15 11:17:22.644 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统初始化完成
-2024-11-15 11:17:22.932 - stimulatorLogger - ApplicationImplement.run - INFO - 系统开始启动
-2024-11-15 11:17:22.952 - stimulatorLogger - ParadigmManager.startup - DEBUG - 当前选择的paradigm为:SSVEP
-2024-11-15 11:17:23.795 - stimulatorLogger - ParadigmManager.startup - DEBUG - ParadigmManager启动完成
-2024-11-15 11:17:23.796 - stimulatorLogger - TriggerManager.startup - DEBUG - 当前选择的trigger send mode为:ExternalTriggerSend
-2024-11-15 11:17:23.801 - stimulatorLogger - TriggerManager.startup - DEBUG - TriggerManager启动完成
-2024-11-15 11:17:23.801 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前paradigm已获取
-2024-11-15 11:17:23.802 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前trigger send已获取
-2024-11-15 11:17:24.460 - stimulatorLogger - BusinessManager.choice_start_block - DEBUG - 本次实验的被试者id为1+起始block为1
-2024-11-15 11:17:24.663 - stimulatorLogger - BusinessManager.startup - DEBUG - BusinessManager启动完成
-2024-11-15 11:17:24.664 - stimulatorLogger - ConfigManager.startup - DEBUG - ConfigManager启动已完成
-2024-11-15 11:17:24.827 - stimulatorLogger - RandomNumberSeedsController.startup - DEBUG - RandomNumberSeedsController启动完成
-2024-11-15 11:17:24.872 - stimulatorLogger - FeedbackConntroller.startup - DEBUG - FeedbackController启动完成
-2024-11-15 11:17:25.033 - stimulatorLogger - CommandController.startup - DEBUG - CommandController启动完成
-2024-11-15 11:17:25.040 - stimulatorLogger - ApplicationImplement.run - INFO - 系统启动完成
-2024-11-15 11:17:29.444 - stimulatorLogger - RandomNumberSeedsController.receive_message - INFO - 收到random_number_seeds: RandomNumberSeedsModel(seeds=0.8601256012916565)
-2024-11-15 11:17:30.458 - stimulatorLogger - CommandController.receive_message - INFO - 收到命令控制消息: StartStimulationControlModel()
-2024-11-15 11:17:40.166 - stimulatorLogger - BusinessManager.send_information - DEBUG - 发送information package:DataMessageModel(package=InformationPackageModel(subject_id='1', block_id='1'))
-2024-11-15 11:17:45.664 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='11', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=25280.0)]))
-2024-11-15 11:17:46.303 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='11', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=26800.0)]))
-2024-11-15 11:17:48.732 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='11', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=28400.0)]))
-2024-11-15 11:17:48.734 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='11', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=30040.0)]))
-2024-11-15 11:17:50.830 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='11', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=31640.0)]))
-2024-11-15 11:17:50.832 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='11', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=33280.0)]))
-2024-11-15 11:17:52.179 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='11', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=34920.0)]))
-2024-11-15 11:17:52.300 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='11', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=36520.0)]))
-2024-11-15 11:17:53.203 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='11', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=38120.0)]))
-2024-11-15 11:17:55.245 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='11', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=39760.0)]))
+2025-02-19 15:14:13.776 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统开始初始化
+2025-02-19 15:14:13.780 - stimulatorLogger - BusinessManager.initial - DEBUG - BusinessManager初始化完成
+2025-02-19 15:14:13.780 - stimulatorLogger - ConfigManager.initial - DEBUG - ConfigManager初始化完成
+2025-02-19 15:14:13.780 - stimulatorLogger - ParadigmManager.initial - DEBUG - ParadigmManager初始化完成
+2025-02-19 15:14:13.780 - stimulatorLogger - TriggerManager.initial - DEBUG - TriggerManager初始化完成
+2025-02-19 15:14:13.780 - stimulatorLogger - CommandController.initial - DEBUG - CommandController初始化完成
+2025-02-19 15:14:13.780 - stimulatorLogger - FeedbackConntroller.initial - DEBUG - FeedbackController初始化完成
+2025-02-19 15:14:13.781 - stimulatorLogger - RandomNumberSeedsController.initial - DEBUG - RandomNumberSeedsController初始化完成
+2025-02-19 15:14:13.781 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统初始化完成
+2025-02-19 15:14:14.454 - stimulatorLogger - ApplicationImplement.run - INFO - 系统开始启动
+2025-02-19 15:14:14.483 - stimulatorLogger - ParadigmManager.startup - DEBUG - 当前选择的paradigm为:SSVEP
+2025-02-19 15:14:18.490 - stimulatorLogger - ParadigmManager.startup - DEBUG - ParadigmManager启动完成
+2025-02-19 15:14:18.490 - stimulatorLogger - TriggerManager.startup - DEBUG - 当前选择的trigger send mode为:NeuroscanTriggerSystemImplement
+2025-02-19 15:14:18.653 - stimulatorLogger - TriggerManager.startup - DEBUG - TriggerManager启动完成
+2025-02-19 15:14:18.654 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前paradigm已获取
+2025-02-19 15:14:18.654 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前trigger send已获取
+2025-02-19 15:14:24.042 - stimulatorLogger - BusinessManager.choice_start_block - DEBUG - 本次实验的被试者id为1+起始block为1
+2025-02-19 15:14:24.797 - stimulatorLogger - BusinessManager.startup - DEBUG - BusinessManager启动完成
+2025-02-19 15:14:24.815 - stimulatorLogger - ConfigManager.startup - DEBUG - ConfigManager启动已完成
+2025-02-19 15:14:24.984 - stimulatorLogger - RandomNumberSeedsController.startup - DEBUG - RandomNumberSeedsController启动完成
+2025-02-19 15:14:25.087 - stimulatorLogger - FeedbackConntroller.startup - DEBUG - FeedbackController启动完成
+2025-02-19 15:14:25.270 - stimulatorLogger - CommandController.startup - DEBUG - CommandController启动完成
+2025-02-19 15:14:25.282 - stimulatorLogger - ApplicationImplement.run - INFO - 系统启动完成
+2025-02-19 15:14:30.414 - stimulatorLogger - RandomNumberSeedsController.receive_message - INFO - 收到random_number_seeds: RandomNumberSeedsModel(seeds=0.06297056376934052)
+2025-02-19 15:14:31.415 - stimulatorLogger - CommandController.receive_message - INFO - 收到命令控制消息: StartStimulationControlModel()
+2025-02-19 15:14:58.309 - stimulatorLogger - BusinessManager.send_information - DEBUG - 发送information package:DataMessageModel(package=InformationPackageModel(subject_id='1', block_id='1'))
+2025-02-19 15:15:09.708 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='31', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=9760.0)]))
+2025-02-19 15:15:18.970 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='32', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=12320.0)]))
+2025-02-19 15:15:27.974 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='33', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=14720.0)]))
+2025-02-19 15:15:37.985 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='18', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=17080.0)]))
+2025-02-19 15:15:48.060 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='36', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=19560.0)]))
+2025-02-19 15:15:57.970 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='34', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=22040.0)]))
+2025-02-19 15:16:07.026 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='34', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=24440.0)]))
+2025-02-19 15:16:16.986 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='34', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=26880.0)]))
+2025-02-19 15:16:27.028 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='33', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=29280.0)]))
+2025-02-19 15:16:35.998 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='31', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=31720.0)]))
+2025-02-19 15:16:45.985 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='35', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=34120.0)]))
+2025-02-19 15:17:03.038 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='3', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=38440.0)]))
+2025-02-19 15:17:14.085 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='36', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=40800.0)]))
+2025-02-19 15:20:48.709 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统开始初始化
+2025-02-19 15:20:48.713 - stimulatorLogger - BusinessManager.initial - DEBUG - BusinessManager初始化完成
+2025-02-19 15:20:48.713 - stimulatorLogger - ConfigManager.initial - DEBUG - ConfigManager初始化完成
+2025-02-19 15:20:48.714 - stimulatorLogger - ParadigmManager.initial - DEBUG - ParadigmManager初始化完成
+2025-02-19 15:20:48.714 - stimulatorLogger - TriggerManager.initial - DEBUG - TriggerManager初始化完成
+2025-02-19 15:20:48.714 - stimulatorLogger - CommandController.initial - DEBUG - CommandController初始化完成
+2025-02-19 15:20:48.714 - stimulatorLogger - FeedbackConntroller.initial - DEBUG - FeedbackController初始化完成
+2025-02-19 15:20:48.714 - stimulatorLogger - RandomNumberSeedsController.initial - DEBUG - RandomNumberSeedsController初始化完成
+2025-02-19 15:20:48.714 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统初始化完成
+2025-02-19 15:20:49.124 - stimulatorLogger - ApplicationImplement.run - INFO - 系统开始启动
+2025-02-19 15:20:49.150 - stimulatorLogger - ParadigmManager.startup - DEBUG - 当前选择的paradigm为:SSVEP
+2025-02-19 15:20:51.855 - stimulatorLogger - ParadigmManager.startup - DEBUG - ParadigmManager启动完成
+2025-02-19 15:20:51.855 - stimulatorLogger - TriggerManager.startup - DEBUG - 当前选择的trigger send mode为:NeuroscanTriggerSystemImplement
+2025-02-19 15:20:51.982 - stimulatorLogger - TriggerManager.startup - DEBUG - TriggerManager启动完成
+2025-02-19 15:20:51.983 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前paradigm已获取
+2025-02-19 15:20:51.983 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前trigger send已获取
+2025-02-19 15:20:58.625 - stimulatorLogger - BusinessManager.choice_start_block - DEBUG - 本次实验的被试者id为1+起始block为1
+2025-02-19 15:20:59.075 - stimulatorLogger - BusinessManager.startup - DEBUG - BusinessManager启动完成
+2025-02-19 15:20:59.088 - stimulatorLogger - ConfigManager.startup - DEBUG - ConfigManager启动已完成
+2025-02-19 15:20:59.289 - stimulatorLogger - RandomNumberSeedsController.startup - DEBUG - RandomNumberSeedsController启动完成
+2025-02-19 15:20:59.343 - stimulatorLogger - FeedbackConntroller.startup - DEBUG - FeedbackController启动完成
+2025-02-19 15:20:59.497 - stimulatorLogger - CommandController.startup - DEBUG - CommandController启动完成
+2025-02-19 15:20:59.518 - stimulatorLogger - ApplicationImplement.run - INFO - 系统启动完成
+2025-02-19 15:21:13.409 - stimulatorLogger - RandomNumberSeedsController.receive_message - INFO - 收到random_number_seeds: RandomNumberSeedsModel(seeds=0.3548060357570648)
+2025-02-19 15:21:14.408 - stimulatorLogger - CommandController.receive_message - INFO - 收到命令控制消息: StartStimulationControlModel()
+2025-02-19 15:21:28.345 - stimulatorLogger - BusinessManager.send_information - DEBUG - 发送information package:DataMessageModel(package=InformationPackageModel(subject_id='1', block_id='1'))
+2025-02-19 15:21:45.051 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='5', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=6560.0)]))
+2025-02-19 15:21:45.592 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='37', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=8400.0)]))
+2025-02-19 15:21:55.564 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='6', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=10760.0)]))
+2025-02-19 15:22:04.578 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='29', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=13120.0)]))
+2025-02-19 15:22:13.564 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='39', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=15480.0)]))
+2025-02-19 15:22:23.607 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='32', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=17800.0)]))
+2025-02-19 15:22:32.579 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='31', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=20160.0)]))
+2025-02-19 15:22:42.588 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='6', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=22520.0)]))
+2025-02-19 15:22:51.620 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='7', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=24880.0)]))
+2025-02-19 15:23:00.595 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='17', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=27240.0)]))
+2025-02-19 15:23:10.566 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='36', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=29600.0)]))
+2025-02-19 15:23:19.562 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='35', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=31960.0)]))
+2025-02-19 15:23:29.573 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='31', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=34280.0)]))
+2025-02-19 15:23:38.566 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='16', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=36640.0)]))
+2025-02-19 15:23:48.586 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='37', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=39040.0)]))
+2025-02-19 15:23:57.570 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='39', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=41440.0)]))
+2025-02-19 15:24:07.570 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='38', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=43800.0)]))
+2025-02-19 15:40:02.873 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统开始初始化
+2025-02-19 15:40:02.876 - stimulatorLogger - BusinessManager.initial - DEBUG - BusinessManager初始化完成
+2025-02-19 15:40:02.876 - stimulatorLogger - ConfigManager.initial - DEBUG - ConfigManager初始化完成
+2025-02-19 15:40:02.876 - stimulatorLogger - ParadigmManager.initial - DEBUG - ParadigmManager初始化完成
+2025-02-19 15:40:02.876 - stimulatorLogger - TriggerManager.initial - DEBUG - TriggerManager初始化完成
+2025-02-19 15:40:02.877 - stimulatorLogger - CommandController.initial - DEBUG - CommandController初始化完成
+2025-02-19 15:40:02.877 - stimulatorLogger - FeedbackConntroller.initial - DEBUG - FeedbackController初始化完成
+2025-02-19 15:40:02.877 - stimulatorLogger - RandomNumberSeedsController.initial - DEBUG - RandomNumberSeedsController初始化完成
+2025-02-19 15:40:02.877 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统初始化完成
+2025-02-19 15:40:03.117 - stimulatorLogger - ApplicationImplement.run - INFO - 系统开始启动
+2025-02-19 15:40:03.144 - stimulatorLogger - ParadigmManager.startup - DEBUG - 当前选择的paradigm为:SSVEP
+2025-02-19 15:40:04.225 - stimulatorLogger - ParadigmManager.startup - DEBUG - ParadigmManager启动完成
+2025-02-19 15:40:04.225 - stimulatorLogger - TriggerManager.startup - DEBUG - 当前选择的trigger send mode为:NeuroscanTriggerSystemImplement
+2025-02-19 15:40:04.228 - stimulatorLogger - TriggerManager.startup - DEBUG - TriggerManager启动完成
+2025-02-19 15:40:04.229 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前paradigm已获取
+2025-02-19 15:40:04.229 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前trigger send已获取
+2025-02-19 15:40:05.971 - stimulatorLogger - BusinessManager.choice_start_block - DEBUG - 本次实验的被试者id为1+起始block为1
+2025-02-19 15:40:06.249 - stimulatorLogger - BusinessManager.startup - DEBUG - BusinessManager启动完成
+2025-02-19 15:40:06.250 - stimulatorLogger - ConfigManager.startup - DEBUG - ConfigManager启动已完成
+2025-02-19 15:40:06.440 - stimulatorLogger - RandomNumberSeedsController.startup - DEBUG - RandomNumberSeedsController启动完成
+2025-02-19 15:40:06.496 - stimulatorLogger - FeedbackConntroller.startup - DEBUG - FeedbackController启动完成
+2025-02-19 15:40:06.663 - stimulatorLogger - CommandController.startup - DEBUG - CommandController启动完成
+2025-02-19 15:40:06.677 - stimulatorLogger - ApplicationImplement.run - INFO - 系统启动完成
+2025-02-19 15:40:15.351 - stimulatorLogger - RandomNumberSeedsController.receive_message - INFO - 收到random_number_seeds: RandomNumberSeedsModel(seeds=0.5204954743385315)
+2025-02-19 15:40:16.355 - stimulatorLogger - CommandController.receive_message - INFO - 收到命令控制消息: StartStimulationControlModel()
+2025-02-19 15:40:29.333 - stimulatorLogger - BusinessManager.send_information - DEBUG - 发送information package:DataMessageModel(package=InformationPackageModel(subject_id='1', block_id='1'))
+2025-02-19 15:40:39.549 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='9', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=6320.0)]))
+2025-02-19 15:40:48.471 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='9', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=8680.0)]))
+2025-02-19 15:40:58.464 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='9', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=11040.0)]))
+2025-02-19 15:41:07.458 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='9', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=13400.0)]))
+2025-02-19 15:41:16.450 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='18', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=15720.0)]))
+2025-02-19 15:41:26.455 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='19', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=18080.0)]))
+2025-02-19 15:41:35.462 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='10', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=20480.0)]))
+2025-02-19 15:41:45.500 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='10', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=22840.0)]))
+2025-02-19 15:41:54.500 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='10', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=25200.0)]))
+2025-02-19 15:42:04.464 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='10', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=27560.0)]))
+2025-02-19 15:42:13.463 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='4', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=29920.0)]))
+2025-02-19 15:42:23.465 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='4', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=32280.0)]))
+2025-02-19 15:42:32.469 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='32', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=34640.0)]))
+2025-02-19 15:42:41.469 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='39', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=37000.0)]))
+2025-02-19 15:42:51.493 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='16', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=39400.0)]))
+2025-02-19 15:43:01.477 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='11', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=41760.0)]))
+2025-02-19 15:43:10.472 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='11', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=44120.0)]))
+2025-02-19 15:43:19.462 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='11', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=46480.0)]))
+2025-02-19 15:43:29.464 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='39', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=48840.0)]))
+2025-02-19 15:52:34.790 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统开始初始化
+2025-02-19 15:52:34.794 - stimulatorLogger - BusinessManager.initial - DEBUG - BusinessManager初始化完成
+2025-02-19 15:52:34.794 - stimulatorLogger - ConfigManager.initial - DEBUG - ConfigManager初始化完成
+2025-02-19 15:52:34.794 - stimulatorLogger - ParadigmManager.initial - DEBUG - ParadigmManager初始化完成
+2025-02-19 15:52:34.794 - stimulatorLogger - TriggerManager.initial - DEBUG - TriggerManager初始化完成
+2025-02-19 15:52:34.794 - stimulatorLogger - CommandController.initial - DEBUG - CommandController初始化完成
+2025-02-19 15:52:34.794 - stimulatorLogger - FeedbackConntroller.initial - DEBUG - FeedbackController初始化完成
+2025-02-19 15:52:34.794 - stimulatorLogger - RandomNumberSeedsController.initial - DEBUG - RandomNumberSeedsController初始化完成
+2025-02-19 15:52:34.794 - stimulatorLogger - ApplicationImplement.initial - INFO - 系统初始化完成
+2025-02-19 15:52:35.053 - stimulatorLogger - ApplicationImplement.run - INFO - 系统开始启动
+2025-02-19 15:52:35.079 - stimulatorLogger - ParadigmManager.startup - DEBUG - 当前选择的paradigm为:SSVEP
+2025-02-19 15:52:36.112 - stimulatorLogger - ParadigmManager.startup - DEBUG - ParadigmManager启动完成
+2025-02-19 15:52:36.112 - stimulatorLogger - TriggerManager.startup - DEBUG - 当前选择的trigger send mode为:NeuroscanTriggerSystemImplement
+2025-02-19 15:52:36.114 - stimulatorLogger - TriggerManager.startup - DEBUG - TriggerManager启动完成
+2025-02-19 15:52:36.115 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前paradigm已获取
+2025-02-19 15:52:36.115 - stimulatorLogger - BusinessManager.startup - DEBUG - 当前trigger send已获取
+2025-02-19 15:52:39.552 - stimulatorLogger - BusinessManager.choice_start_block - DEBUG - 本次实验的被试者id为1+起始block为1
+2025-02-19 15:52:39.867 - stimulatorLogger - BusinessManager.startup - DEBUG - BusinessManager启动完成
+2025-02-19 15:52:39.868 - stimulatorLogger - ConfigManager.startup - DEBUG - ConfigManager启动已完成
+2025-02-19 15:52:40.050 - stimulatorLogger - RandomNumberSeedsController.startup - DEBUG - RandomNumberSeedsController启动完成
+2025-02-19 15:52:40.114 - stimulatorLogger - FeedbackConntroller.startup - DEBUG - FeedbackController启动完成
+2025-02-19 15:52:40.264 - stimulatorLogger - CommandController.startup - DEBUG - CommandController启动完成
+2025-02-19 15:52:40.271 - stimulatorLogger - ApplicationImplement.run - INFO - 系统启动完成
+2025-02-19 15:52:49.305 - stimulatorLogger - RandomNumberSeedsController.receive_message - INFO - 收到random_number_seeds: RandomNumberSeedsModel(seeds=0.16576476395130157)
+2025-02-19 15:52:50.271 - stimulatorLogger - CommandController.receive_message - INFO - 收到命令控制消息: StartStimulationControlModel()
+2025-02-19 15:53:05.699 - stimulatorLogger - BusinessManager.send_information - DEBUG - 发送information package:DataMessageModel(package=InformationPackageModel(subject_id='1', block_id='1'))
+2025-02-19 15:53:15.730 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='19', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=6840.0)]))
+2025-02-19 15:53:24.655 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='30', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=9240.0)]))
+2025-02-19 15:53:34.675 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='38', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=11560.0)]))
+2025-02-19 15:53:43.677 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='29', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=13920.0)]))
+2025-02-19 15:54:00.700 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='20', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=18160.0)]))
+2025-02-19 15:54:10.658 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='20', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=20520.0)]))
+2025-02-19 15:54:19.663 - stimulatorLogger - FeedbackConntroller.receive_message - INFO - 收到反馈信息: DataMessageModel(package=ResultPackageModel(result='20', report_source_information=[ReportSourceInformationModel(source_label='eeg_1', position=22880.0)]))
