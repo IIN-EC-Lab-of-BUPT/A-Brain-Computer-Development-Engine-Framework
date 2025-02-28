@@ -1,12 +1,12 @@
 # 介绍
-&emsp;&emsp;本项目以https://github.com/IIN-EC-Lab-of-BUPT/A-Brain-Computer-Development-Engine-Framework开源的脑机接口平台系统为基础进行拓展开发，新开发了支持neuroscan采集设备的采集模块，可以将neuroscan设备采集的脑电数据传输到本团队开发的脑机接口平台进行数据处理，提高了采集设备的多样性，为科研人员和开发者在脑电数据采集方面提供了更多选择。
+&emsp;&emsp;本项目以 https://github.com/IIN-EC-Lab-of-BUPT/A-Brain-Computer-Development-Engine-Framework 开源的脑机接口平台系统为基础进行拓展开发，新开发了支持neuroscan采集设备的采集模块，可以将neuroscan设备采集的脑电数据传输到本团队开发的脑机接口平台进行数据处理，提高了采集设备的多样性，为科研人员和开发者在脑电数据采集方面提供了更多选择。
 
 # 使用指南
 ## 1.安装配置脑机接口平台系统
 ### 1.1平台系统安装：
-&emsp;&emsp;首先确保您已按照https://github.com/IIN-EC-Lab-of-BUPT/A-Brain-Computer-Development-Engine-Framework中的使用指南在您的计算机上配置好脑机接口平台系统，且可以成功运行。
+&emsp;&emsp;首先确保您已按照 https://github.com/IIN-EC-Lab-of-BUPT/A-Brain-Computer-Development-Engine-Framework 中的使用指南在您的计算机上配置好脑机接口平台系统，且可以成功运行。
 ### 1.2替换采集文件夹：
-&emsp;&emsp;将https://github.com/IIN-EC-Lab-of-BUPT/A-Brain-Computer-Development-Engine-Framework中app文件夹中的Collector文件夹替换为本链接的Collector文件夹。您可以通过下载本项目代码，然后手动进行文件夹的替换工作。
+&emsp;&emsp;将 https://github.com/IIN-EC-Lab-of-BUPT/A-Brain-Computer-Development-Engine-Framework 中app文件夹中的Collector文件夹替换为本链接的Collector文件夹。您可以通过下载本项目代码，然后手动进行文件夹的替换工作。
 ## 2.在脑机接口平台系统的采集模块配置自己的neuroscan设备
 ### 2.1配置信息说明：
 &emsp;&emsp;在app/Collector/Collector/receiver/neuroscan/NeuroScan.yml文件中，配置neuroscan服务端与客户端连接的地址信息、发送配置与设备信息。
